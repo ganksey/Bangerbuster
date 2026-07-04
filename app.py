@@ -68,10 +68,10 @@ from bangerforge.projections import (
     attack_and_protect_plans,
     category_matchups,
     enrich_roster_profiles,
-    enrich_roster_window_profiles,
     project_category_totals,
     select_best_lineup,
 )
+from bangerforge.roster_profiles import enrich_roster_tab_profiles
 from bangerforge.roster_stat_mode import resolve_roster_stat_mode, roster_stat_label
 from bangerforge.stats import compare_snuggerud_vs_smith
 from bangerforge.utils import normalize_position, safe_int
@@ -154,7 +154,7 @@ def fetch_roster_profiles(
             done / max(total, 1),
             text=f"📡 {entry.name} ({done}/{total}) — {label}",
         )
-        batch = enrich_roster_window_profiles(
+        batch = enrich_roster_tab_profiles(
             [entry], week_start, week_end, settings,
         )
         if batch:

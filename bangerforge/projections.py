@@ -7,8 +7,8 @@ from typing import Any
 from bangerforge.config import CATEGORY_LABELS, LOWER_IS_BETTER, ROSTER_SLOTS
 from bangerforge.models import CategoryMatchup, PlayerProfile, RosterEntry
 from bangerforge.nhl_client import count_team_games_in_week
-from bangerforge.roster_stat_mode import resolve_roster_stat_mode, roster_stat_label
-from bangerforge.stats import build_player_profile, build_roster_player_profile
+from bangerforge.roster_profiles import enrich_roster_tab_profiles
+from bangerforge.stats import build_player_profile
 
 
 def schedule_boost(games: int, settings: dict[str, Any]) -> float:
@@ -61,32 +61,7 @@ def enrich_roster_display_profiles(
     settings: dict[str, Any],
 ) -> list[PlayerProfile]:
     """Roster-tab profiles — NHL data fetched per loaded player only."""
-    weights = settings.get("banger_weights", {})
-    w_tuple = tuple(weights.items())
-    stat_mode = resolve_roster_stat_mode(settings)
-    label = roster_stat_label(stat_mode, settings)
-    rolling_n = int(settings.get("rolling_games_sample", 25))
-
-    profiles: list[PlayerProfile] = []
-    for entry in roster:
-        if not entry.player_id:
-            continue
-        games = count_team_games_in_week(entry.team, week_start, week_end)
-        boost = schedule_boost(games, settings)
-        profiles.append(build_roster_player_profile(
-            entry.player_id,
-            entry.name,
-            entry.pos,
-            entry.team,
-            projected_games=games,
-            weights=w_tuple,
-            schedule_boost=boost,
-            notes=entry.notes,
-            stat_mode=stat_mode,
-            rolling_n=rolling_n,
-            stat_label=label,
-        ))
-    return profiles
+    return enrich_roster_tab_profiles(roster, week_start, week_end, settings)
 
 
 def enrich_roster_window_profiles(
@@ -96,7 +71,7 @@ def enrich_roster_window_profiles(
     settings: dict[str, Any],
 ) -> list[PlayerProfile]:
     """Backward-compatible alias for roster display enrichment."""
-    return enrich_roster_display_profiles(roster, week_start, week_end, settings)
+    return enrich_roster_tab_profiles(roster, week_start, week_end, settings)
 
 
 def project_category_totals(
