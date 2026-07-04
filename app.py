@@ -17,11 +17,13 @@ from bangerforge.config import (
     CATEGORY_LABELS,
     DEFAULT_BANGER_WEIGHTS,
     DEFAULT_OPPONENT_DEMO,
+    GOALIE_CATEGORIES,
+    SKATER_CATEGORIES,
+)
+from bangerforge.roster_constants import (
     DEFAULT_ROLLING_GAMES,
     DEFAULT_SEASON_START,
-    GOALIE_CATEGORIES,
     LEAGUE_ROSTER_SIZE,
-    SKATER_CATEGORIES,
 )
 from bangerforge.models import RosterEntry
 from bangerforge.nhl_client import (

@@ -9,7 +9,8 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 
-from bangerforge.config import DATA_DIR, LEAGUE_ROSTER_SIZE
+from bangerforge.config import DATA_DIR
+from bangerforge.roster_constants import LEAGUE_ROSTER_SIZE
 from bangerforge.models import RosterEntry
 from bangerforge.nhl_client import resolve_player
 from bangerforge.utils import normalize_position

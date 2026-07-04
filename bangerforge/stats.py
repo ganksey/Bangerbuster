@@ -8,9 +8,8 @@ from typing import Any
 
 import streamlit as st
 
-from bangerforge.config import (
-    CURRENT_SEASON_STR,
-    DEFAULT_BANGER_WEIGHTS,
+from bangerforge.config import CURRENT_SEASON_STR, DEFAULT_BANGER_WEIGHTS
+from bangerforge.roster_constants import (
     DEFAULT_ROLLING_GAMES,
     DEFAULT_SEASON_START,
     PRIOR_SEASON_INT,

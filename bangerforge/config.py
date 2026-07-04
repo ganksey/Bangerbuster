@@ -5,6 +5,14 @@ from __future__ import annotations
 from pathlib import Path
 from typing import TypedDict
 
+from bangerforge.roster_constants import (
+    DEFAULT_ROLLING_GAMES,
+    DEFAULT_SEASON_START,
+    LEAGUE_ROSTER_SIZE,
+    PRIOR_SEASON_INT,
+    PRIOR_SEASON_STR,
+)
+
 __all__ = [
     "ROOT_DIR",
     "DATA_DIR",
@@ -39,17 +47,6 @@ NHL_WEB_BASE = "https://api-web.nhle.com/v1"
 NHL_STATS_BASE = "https://api.nhle.com/stats/rest/en"
 CURRENT_SEASON = 20252026
 CURRENT_SEASON_STR = "20252026"
-
-PRIOR_SEASON_STR = "20242025"
-PRIOR_SEASON_INT = 20242025
-
-# Fantasy league roster size (skaters + goalies)
-LEAGUE_ROSTER_SIZE = 10
-
-# Roster stat modes (displayed only on My/Opponent roster tabs)
-# auto: prior season before season_start_date, rolling sample after
-DEFAULT_SEASON_START = "2025-10-08"
-DEFAULT_ROLLING_GAMES = 25
 
 # Fantasy roster slots
 ROSTER_SLOTS = {

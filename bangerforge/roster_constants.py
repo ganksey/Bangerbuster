@@ -1,0 +1,7 @@
+"""Roster/league constants — no dependencies, safe to import anywhere."""
+
+LEAGUE_ROSTER_SIZE = 10
+DEFAULT_SEASON_START = "2025-10-08"
+DEFAULT_ROLLING_GAMES = 25
+PRIOR_SEASON_STR = "20242025"
+PRIOR_SEASON_INT = 20242025

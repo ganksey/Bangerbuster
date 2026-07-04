@@ -6,7 +6,8 @@ import json
 from pathlib import Path
 from typing import Any
 
-from bangerforge.config import DATA_DIR, DEFAULT_KEEPERS, DEFAULT_SETTINGS, LEAGUE_ROSTER_SIZE
+from bangerforge.config import DATA_DIR, DEFAULT_KEEPERS, DEFAULT_SETTINGS
+from bangerforge.roster_constants import LEAGUE_ROSTER_SIZE
 from bangerforge.models import RosterEntry
 from bangerforge.opponents import (
     get_active_opponent_id,
