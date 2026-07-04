@@ -7,12 +7,8 @@ from typing import Any
 from bangerforge.config import CATEGORY_LABELS, LOWER_IS_BETTER, ROSTER_SLOTS
 from bangerforge.models import CategoryMatchup, PlayerProfile, RosterEntry
 from bangerforge.nhl_client import count_team_games_in_week
-from bangerforge.stats import (
-    build_player_profile,
-    build_roster_player_profile,
-    resolve_roster_stat_mode,
-    roster_stat_label,
-)
+from bangerforge.roster_stat_mode import resolve_roster_stat_mode, roster_stat_label
+from bangerforge.stats import build_player_profile, build_roster_player_profile
 
 
 def schedule_boost(games: int, settings: dict[str, Any]) -> float:

@@ -3,7 +3,6 @@
 from __future__ import annotations
 
 from concurrent.futures import ThreadPoolExecutor, as_completed
-from datetime import date
 from typing import Any
 
 import streamlit as st
@@ -11,10 +10,10 @@ import streamlit as st
 from bangerforge.config import CURRENT_SEASON_STR, DEFAULT_BANGER_WEIGHTS
 from bangerforge.roster_constants import (
     DEFAULT_ROLLING_GAMES,
-    DEFAULT_SEASON_START,
     PRIOR_SEASON_INT,
     PRIOR_SEASON_STR,
 )
+from bangerforge.roster_stat_mode import resolve_roster_stat_mode, roster_stat_label
 from bangerforge.models import PerGameStats, PlayerProfile
 from bangerforge.utils import normalize_position
 from bangerforge.nhl_client import (
@@ -31,25 +30,6 @@ from bangerforge.nhl_client import (
 
 def _safe_div(numerator: float, denominator: float) -> float:
     return numerator / denominator if denominator else 0.0
-
-
-def resolve_roster_stat_mode(settings: dict[str, Any]) -> str:
-    """Resolve active roster display mode from settings (auto flips on season start)."""
-    mode = str(settings.get("roster_stat_mode", "auto"))
-    if mode in ("prior_season", "rolling_25"):
-        return mode
-    season_start = str(settings.get("season_start_date", DEFAULT_SEASON_START))
-    if date.today().isoformat() < season_start:
-        return "prior_season"
-    return "rolling_25"
-
-
-def roster_stat_label(mode: str, settings: dict[str, Any]) -> str:
-    """Human-readable label for roster-tab stat source."""
-    if mode == "prior_season":
-        return "2024-25 full season (per-game)"
-    sample = int(settings.get("rolling_games_sample", DEFAULT_ROLLING_GAMES))
-    return f"Last {sample} GP — 2025-26 (per-game)"
 
 
 def _sum_hits_blocks_for_games(player_id: int, games: list[dict]) -> tuple[int, int]:
