@@ -17,9 +17,10 @@ from bangerforge.config import (
     CATEGORY_LABELS,
     DEFAULT_BANGER_WEIGHTS,
     DEFAULT_OPPONENT_DEMO,
+    DEFAULT_ROLLING_GAMES,
+    DEFAULT_SEASON_START,
     GOALIE_CATEGORIES,
-    ROSTER_STAT_WINDOW_END,
-    ROSTER_STAT_WINDOW_START,
+    LEAGUE_ROSTER_SIZE,
     SKATER_CATEGORIES,
 )
 from bangerforge.models import RosterEntry
@@ -35,6 +36,17 @@ from bangerforge.optimizer import (
     parse_name_list,
     rank_waiver_targets,
     suggest_five_moves,
+)
+from bangerforge.opponents import (
+    create_opponent,
+    delete_opponent,
+    get_active_opponent_id,
+    get_opponent_roster,
+    list_opponents,
+    migrate_legacy_opponent_file,
+    names_to_roster,
+    save_opponent_roster,
+    set_active_opponent,
 )
 from bangerforge.persistence import (
     load_my_roster,
@@ -53,12 +65,12 @@ from bangerforge.persistence import (
 from bangerforge.projections import (
     attack_and_protect_plans,
     category_matchups,
+    enrich_roster_display_profiles,
     enrich_roster_profiles,
-    enrich_roster_window_profiles,
     project_category_totals,
     select_best_lineup,
 )
-from bangerforge.stats import compare_snuggerud_vs_smith
+from bangerforge.stats import compare_snuggerud_vs_smith, resolve_roster_stat_mode, roster_stat_label
 from bangerforge.utils import normalize_position, safe_int
 from bangerforge.nhl_client import resolve_player
 
@@ -102,12 +114,50 @@ st.markdown(CUSTOM_CSS, unsafe_allow_html=True)
 def init_session() -> None:
     """Initialize session state from disk."""
     if "initialized" not in st.session_state:
+        migrate_legacy_opponent_file()
         st.session_state.settings = load_settings()
-        st.session_state.my_roster = load_my_roster()
+        st.session_state.my_roster = load_my_roster()[:LEAGUE_ROSTER_SIZE]
+        st.session_state.active_opponent_id = get_active_opponent_id()
         st.session_state.opponent_roster = load_opponent_current()
         st.session_state.waiver_agents = load_waiver_agents()
         st.session_state.confirmed_plan = load_weekly_plan()
         st.session_state.initialized = True
+
+
+def league_size() -> int:
+    return int(st.session_state.settings.get("league_roster_size", LEAGUE_ROSTER_SIZE))
+
+
+def fetch_roster_profiles(
+    roster: list[RosterEntry],
+    week_start: str,
+    week_end: str,
+    settings: dict[str, Any],
+) -> list[Any]:
+    """Fetch NHL stats for each loaded roster player with visible progress."""
+    if not roster:
+        return []
+    mode = resolve_roster_stat_mode(settings)
+    label = roster_stat_label(mode, settings)
+    profiles: list[Any] = []
+    progress = st.progress(0.0, text=f"📡 Pulling NHL data — {label}")
+    total = len([e for e in roster if e.player_id])
+    done = 0
+    for entry in roster:
+        if not entry.player_id:
+            continue
+        done += 1
+        progress.progress(
+            done / max(total, 1),
+            text=f"📡 {entry.name} ({done}/{total}) — {label}",
+        )
+        batch = enrich_roster_display_profiles(
+            [entry], week_start, week_end, settings,
+        )
+        if batch:
+            profiles.append(batch[0])
+    progress.empty()
+    return profiles
 
 
 def status_badge(status: str) -> str:
@@ -117,7 +167,7 @@ def status_badge(status: str) -> str:
 
 
 def roster_profile_to_row(p: Any) -> dict[str, Any]:
-    """Roster tab row — per-game rates from Feb 25 through end of reg season."""
+    """Roster tab row — per-game rates from active roster stat mode."""
     stats = p.window
     row = {
         "Name": p.name,
@@ -281,10 +331,13 @@ def render_sidebar() -> tuple[str, str]:
         st.sidebar.success("Cache cleared — data will reload.")
 
     if st.sidebar.button("📦 Load Demo Week", use_container_width=True):
-        st.session_state.opponent_roster = [
-            RosterEntry.from_dict(d) for d in DEFAULT_OPPONENT_DEMO
+        demo_oid = create_opponent("Demo Opponent")
+        demo_roster = [
+            RosterEntry.from_dict(d) for d in DEFAULT_OPPONENT_DEMO[:league_size()]
         ]
-        save_opponent_current(st.session_state.opponent_roster)
+        save_opponent_roster(demo_oid, demo_roster)
+        st.session_state.active_opponent_id = demo_oid
+        st.session_state.opponent_roster = demo_roster
         st.session_state.waiver_agents = [
             "Kiefer Sherwood", "Alexey Toropchenko", "Nicolas Deslauriers",
             "Jake Neighbours", "Brandon Carlo",
@@ -293,9 +346,11 @@ def render_sidebar() -> tuple[str, str]:
         st.sidebar.success("Demo opponent + waivers loaded!")
 
     st.sidebar.markdown("---")
+    mode = resolve_roster_stat_mode(st.session_state.settings)
     st.sidebar.caption(
-        "All stats shown as **per-game rates** from the current 2025-26 season. "
-        "Season totals appear as footnotes only."
+        f"Roster tabs: **{roster_stat_label(mode, st.session_state.settings)}**. "
+        "Other tabs use current-season recent/season blend. "
+        f"League roster size: **{league_size()}**."
     )
     return week_start.isoformat(), week_end.isoformat()
 
@@ -380,41 +435,52 @@ def tab_dashboard(week_start: str, week_end: str) -> None:
 def tab_my_roster(week_start: str, week_end: str) -> None:
     st.markdown("### 🏒 My Roster")
     settings = st.session_state.settings
+    max_slots = league_size()
+    roster = st.session_state.my_roster
+
+    st.info(
+        f"**{len(roster)}/{max_slots} players loaded.** "
+        "NHL stats are fetched when players appear on this roster — "
+        "not when you search or paste names elsewhere."
+    )
 
     add_col1, add_col2 = st.columns([3, 1])
     with add_col1:
         search_q = st.text_input("Add player (search)", placeholder="Jimmy Snuggerud")
     with add_col2:
         if st.button("➕ Add Player") and search_q:
-            hits = search_players(search_q, limit=5)
-            if hits:
-                h = hits[0]
-                st.session_state.my_roster.append(RosterEntry(
-                    name=h["name"], player_id=h["player_id"],
-                    pos=normalize_position(h["pos"]), team=h["team"],
-                ))
-                save_my_roster(st.session_state.my_roster)
-                st.success(f"Added {h['name']}")
+            if len(roster) >= max_slots:
+                st.warning(f"Roster full ({max_slots} players). Drop someone first.")
             else:
-                st.warning("No player found.")
+                hits = search_players(search_q, limit=5)
+                if hits:
+                    h = hits[0]
+                    roster.append(RosterEntry(
+                        name=h["name"], player_id=h["player_id"],
+                        pos=normalize_position(h["pos"]), team=h["team"],
+                    ))
+                    st.session_state.my_roster = roster[:max_slots]
+                    save_my_roster(st.session_state.my_roster)
+                    st.success(f"Added {h['name']} — stats will pull on next render.")
+                else:
+                    st.warning("No player found.")
 
+    if not roster:
+        st.warning("Roster empty — add players or reload defaults.")
+        return
+
+    mode = resolve_roster_stat_mode(settings)
+    stat_caption = roster_stat_label(mode, settings)
     try:
-        with st.spinner(f"Loading roster stats ({ROSTER_STAT_WINDOW_START} – reg season end)..."):
-            profiles = enrich_roster_window_profiles(
-                st.session_state.my_roster, week_start, week_end, settings,
-            )
+        profiles = fetch_roster_profiles(roster, week_start, week_end, settings)
     except NHLAPIError as exc:
         st.error(str(exc))
         return
 
-    if not profiles:
-        st.warning("Roster empty — add players or reload defaults.")
-        return
-
+    fetched = sum(1 for p in profiles if p.data_fetched)
     st.caption(
-        f"Stats are **per-game** from **{ROSTER_STAT_WINDOW_START}** through "
-        f"**{ROSTER_STAT_WINDOW_END}** (end of regular season). "
-        f"**GP** = games played in that window."
+        f"**{fetched}/{len(profiles)}** players with NHL data. "
+        f"Per-game rates: **{stat_caption}**. **GP** = games in that sample."
     )
     df = roster_dataframe(profiles)
     id_lookup = {p.name: p.player_id for p in profiles}
@@ -446,64 +512,125 @@ def tab_opponent(week_start: str, week_end: str) -> None:
     st.markdown("### 👤 Opponent Roster")
     settings = st.session_state.settings
     week_num = int(settings.get("current_week_number", 13))
+    max_slots = league_size()
+
+    st.info(
+        f"Create named opponents and load up to **{max_slots}** players each week. "
+        "You manage who's on the roster — BangerForge pulls NHL stats only when "
+        "players are saved here."
+    )
+
+    opponents = list_opponents()
+    opp_labels = {o["id"]: f"{o['name']} ({o['player_count']}/{max_slots})" for o in opponents}
+    active_id = st.session_state.get("active_opponent_id", "")
+
+    mgr1, mgr2, mgr3 = st.columns([2, 1, 1])
+    with mgr1:
+        if opponents:
+            ids = [o["id"] for o in opponents]
+            default_idx = ids.index(active_id) if active_id in ids else 0
+            picked = st.selectbox(
+                "Active opponent",
+                ids,
+                index=default_idx,
+                format_func=lambda oid: opp_labels.get(oid, oid),
+            )
+            if picked != active_id:
+                set_active_opponent(picked)
+                st.session_state.active_opponent_id = picked
+                st.session_state.opponent_roster = get_opponent_roster(picked)
+                st.rerun()
+        else:
+            st.caption("No opponents yet — create one below.")
+
+    with mgr2:
+        new_name = st.text_input("New opponent name", placeholder="Week 13 — Mike")
+        if st.button("➕ Create Opponent") and new_name.strip():
+            oid = create_opponent(new_name.strip())
+            st.session_state.active_opponent_id = oid
+            st.session_state.opponent_roster = []
+            st.success(f"Created '{new_name.strip()}'")
+            st.rerun()
+
+    with mgr3:
+        if active_id and st.button("🗑️ Delete Active"):
+            delete_opponent(active_id)
+            st.session_state.active_opponent_id = get_active_opponent_id()
+            st.session_state.opponent_roster = load_opponent_current()
+            st.rerun()
+
+    roster = st.session_state.opponent_roster
+    st.markdown(f"**Roster: {len(roster)}/{max_slots} players**")
 
     paste = st.text_area(
-        "Paste opponent names (one per line)",
+        f"Paste opponent names (one per line, max {max_slots})",
         placeholder="Will Smith\nMacklin Celebrini\n...",
         height=120,
     )
     up_col1, up_col2 = st.columns(2)
     with up_col1:
-        if st.button("📋 Import Names") and paste:
-            names = parse_name_list(paste)
-            new_roster: list[RosterEntry] = []
-            for n in names:
-                hit = resolve_player(n)
-                if hit:
-                    new_roster.append(RosterEntry(
-                        name=hit["name"], player_id=hit["player_id"],
-                        pos=normalize_position(hit["pos"]), team=hit["team"],
-                    ))
-            if new_roster:
-                st.session_state.opponent_roster = new_roster
-                save_opponent_current(new_roster)
-                st.success(f"Imported {len(new_roster)} players.")
+        if st.button("📋 Load Names to Roster") and paste:
+            if not active_id:
+                st.warning("Create an opponent first.")
+            else:
+                names = parse_name_list(paste)[:max_slots]
+                new_roster = names_to_roster(names, max_size=max_slots)
+                if new_roster:
+                    st.session_state.opponent_roster = new_roster
+                    save_opponent_roster(active_id, new_roster)
+                    st.success(
+                        f"Loaded {len(new_roster)} players — "
+                        "📡 NHL stats will pull below."
+                    )
+                    st.rerun()
+                else:
+                    st.warning("No names resolved. Check spelling.")
     with up_col2:
         uploaded = st.file_uploader("CSV upload (Name column)", type=["csv"])
-        if uploaded:
+        if uploaded and active_id:
             imp_df = pd.read_csv(uploaded)
             name_col = "Name" if "Name" in imp_df.columns else imp_df.columns[0]
-            names = imp_df[name_col].dropna().tolist()
-            st.session_state["_csv_names"] = names
+            names = imp_df[name_col].dropna().tolist()[:max_slots]
+            new_roster = names_to_roster(names, max_size=max_slots)
+            if new_roster and st.button("📋 Load CSV to Roster"):
+                st.session_state.opponent_roster = new_roster
+                save_opponent_roster(active_id, new_roster)
+                st.success(f"Loaded {len(new_roster)} from CSV.")
+                st.rerun()
 
-    save_week = st.text_input("Version label", value=f"Week {week_num} Opponent")
-    if st.button("💾 Save Current Opponent as Week Snapshot"):
-        save_opponent_week(save_week, st.session_state.opponent_roster)
+    save_week = st.text_input("Week snapshot label", value=f"Week {week_num} Opponent")
+    if st.button("💾 Save Week Snapshot") and roster:
+        save_opponent_week(save_week, roster)
         st.success(f"Saved as '{save_week}'")
 
     history = load_opponent_history()
     if history:
-        pick = st.selectbox("Load previous opponent", ["—"] + list(history.keys()))
+        pick = st.selectbox("Load previous snapshot", ["—"] + list(history.keys()))
         if pick != "—" and st.button("Load Snapshot"):
-            st.session_state.opponent_roster = [
-                RosterEntry.from_dict(r) for r in history[pick]
-            ]
-            save_opponent_current(st.session_state.opponent_roster)
-            st.success(f"Loaded {pick}")
+            loaded = [RosterEntry.from_dict(r) for r in history[pick]][:max_slots]
+            st.session_state.opponent_roster = loaded
+            if active_id:
+                save_opponent_roster(active_id, loaded)
+            st.success(f"Loaded {pick} — stats will pull below.")
+            st.rerun()
 
+    if not roster:
+        st.warning("No players on this opponent — paste names and click Load.")
+        return
+
+    mode = resolve_roster_stat_mode(settings)
     try:
-        with st.spinner(f"Loading opponent stats ({ROSTER_STAT_WINDOW_START} – reg season end)..."):
-            profiles = enrich_roster_window_profiles(
-                st.session_state.opponent_roster, week_start, week_end, settings,
-            )
+        profiles = fetch_roster_profiles(roster, week_start, week_end, settings)
     except NHLAPIError as exc:
         st.error(str(exc))
         return
 
     if profiles:
+        fetched = sum(1 for p in profiles if p.data_fetched)
         st.caption(
-            f"Per-game rates from **{ROSTER_STAT_WINDOW_START}** through "
-            f"**{ROSTER_STAT_WINDOW_END}**. **GP** = games in that window."
+            f"**{fetched}/{len(profiles)}** with NHL data. "
+            f"Per-game: **{roster_stat_label(mode, settings)}**. "
+            f"**GP** = games in sample."
         )
         st.dataframe(roster_dataframe(profiles), use_container_width=True, hide_index=True)
 
@@ -736,6 +863,42 @@ def tab_settings() -> None:
                 key=f"w_{cat}",
             )
 
+    st.markdown("#### Roster Tab Stats")
+    mode_options = {
+        "auto": "Auto (prior season until season starts, then rolling sample)",
+        "prior_season": "2024-25 full season (per-game)",
+        "rolling_25": "Rolling last N games (2025-26)",
+    }
+    cur_mode = settings.get("roster_stat_mode", "auto")
+    roster_mode = st.selectbox(
+        "Roster stat mode",
+        list(mode_options.keys()),
+        index=list(mode_options.keys()).index(cur_mode) if cur_mode in mode_options else 0,
+        format_func=lambda k: mode_options[k],
+    )
+    season_start = st.date_input(
+        "Season start (for auto mode)",
+        value=datetime.strptime(
+            str(settings.get("season_start_date", DEFAULT_SEASON_START)), "%Y-%m-%d",
+        ).date(),
+    )
+    rolling_n = st.slider(
+        "Rolling sample size (games)",
+        10, 40, int(settings.get("rolling_games_sample", DEFAULT_ROLLING_GAMES)),
+    )
+    roster_size = st.number_input(
+        "League roster size",
+        min_value=6, max_value=20,
+        value=int(settings.get("league_roster_size", LEAGUE_ROSTER_SIZE)),
+    )
+    resolved = resolve_roster_stat_mode({
+        **settings,
+        "roster_stat_mode": roster_mode,
+        "season_start_date": season_start.isoformat(),
+        "rolling_games_sample": rolling_n,
+    })
+    st.caption(f"Active roster display: **{roster_stat_label(resolved, settings)}**")
+
     st.markdown("#### Projection Tuning")
     recent_w = st.slider(
         "Recent form window (games)",
@@ -747,6 +910,10 @@ def tab_settings() -> None:
         settings["active_skater_categories"] = sk_sel
         settings["active_goalie_categories"] = g_sel
         settings["banger_weights"] = new_weights
+        settings["roster_stat_mode"] = roster_mode
+        settings["season_start_date"] = season_start.isoformat()
+        settings["rolling_games_sample"] = rolling_n
+        settings["league_roster_size"] = int(roster_size)
         settings["recent_games_window"] = recent_w
         settings["theme"] = theme
         st.session_state.settings = settings

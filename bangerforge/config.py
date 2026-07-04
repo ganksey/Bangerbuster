@@ -15,9 +15,16 @@ NHL_STATS_BASE = "https://api.nhle.com/stats/rest/en"
 CURRENT_SEASON = 20252026
 CURRENT_SEASON_STR = "20252026"
 
-# Roster display window: per-game rates + GP only on My/Opponent Roster tabs
-ROSTER_STAT_WINDOW_START = "2026-02-25"
-ROSTER_STAT_WINDOW_END = "2026-04-19"  # regular-season cutoff (inclusive)
+PRIOR_SEASON_STR = "20242025"
+PRIOR_SEASON_INT = 20242025
+
+# Fantasy league roster size (skaters + goalies)
+LEAGUE_ROSTER_SIZE = 10
+
+# Roster stat modes (displayed only on My/Opponent roster tabs)
+# auto: prior season before season_start_date, rolling sample after
+DEFAULT_SEASON_START = "2025-10-08"
+DEFAULT_ROLLING_GAMES = 25
 
 # Fantasy roster slots
 ROSTER_SLOTS = {
@@ -90,6 +97,10 @@ DEFAULT_BANGER_WEIGHTS: dict[str, float] = {
 }
 
 DEFAULT_SETTINGS: dict = {
+    "league_roster_size": LEAGUE_ROSTER_SIZE,
+    "roster_stat_mode": "auto",
+    "season_start_date": DEFAULT_SEASON_START,
+    "rolling_games_sample": DEFAULT_ROLLING_GAMES,
     "recent_games_window": 10,
     "min_games_for_recent": 3,
     "schedule_boost_4g": 1.08,

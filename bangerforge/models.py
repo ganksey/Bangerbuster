@@ -50,9 +50,11 @@ class PlayerProfile:
     is_goalie: bool = False
     recent: PerGameStats = field(default_factory=PerGameStats)
     season: PerGameStats = field(default_factory=PerGameStats)
-    window: PerGameStats = field(default_factory=PerGameStats)  # Feb 25 – end reg (roster only)
+    window: PerGameStats = field(default_factory=PerGameStats)  # roster display stats
     projected_games_week: int = 0
     banger_score: float = 0.0
+    stat_label: str = ""
+    data_fetched: bool = False
     notes: str = ""
 
     def active_rates(self, prefer_recent: bool = True) -> PerGameStats:

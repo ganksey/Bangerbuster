@@ -7,7 +7,12 @@ from typing import Any
 from bangerforge.config import CATEGORY_LABELS, LOWER_IS_BETTER, ROSTER_SLOTS
 from bangerforge.models import CategoryMatchup, PlayerProfile, RosterEntry
 from bangerforge.nhl_client import count_team_games_in_week
-from bangerforge.stats import build_player_profile, build_roster_player_profile
+from bangerforge.stats import (
+    build_player_profile,
+    build_roster_player_profile,
+    resolve_roster_stat_mode,
+    roster_stat_label,
+)
 
 
 def schedule_boost(games: int, settings: dict[str, Any]) -> float:
@@ -53,15 +58,19 @@ def enrich_roster_profiles(
     return profiles
 
 
-def enrich_roster_window_profiles(
+def enrich_roster_display_profiles(
     roster: list[RosterEntry],
     week_start: str,
     week_end: str,
     settings: dict[str, Any],
 ) -> list[PlayerProfile]:
-    """Roster-tab profiles using Feb 25 – end-of-season per-game window."""
+    """Roster-tab profiles — NHL data fetched per loaded player only."""
     weights = settings.get("banger_weights", {})
     w_tuple = tuple(weights.items())
+    stat_mode = resolve_roster_stat_mode(settings)
+    label = roster_stat_label(stat_mode, settings)
+    rolling_n = int(settings.get("rolling_games_sample", 25))
+
     profiles: list[PlayerProfile] = []
     for entry in roster:
         if not entry.player_id:
@@ -77,8 +86,21 @@ def enrich_roster_window_profiles(
             weights=w_tuple,
             schedule_boost=boost,
             notes=entry.notes,
+            stat_mode=stat_mode,
+            rolling_n=rolling_n,
+            stat_label=label,
         ))
     return profiles
+
+
+def enrich_roster_window_profiles(
+    roster: list[RosterEntry],
+    week_start: str,
+    week_end: str,
+    settings: dict[str, Any],
+) -> list[PlayerProfile]:
+    """Backward-compatible alias for roster display enrichment."""
+    return enrich_roster_display_profiles(roster, week_start, week_end, settings)
 
 
 def project_category_totals(

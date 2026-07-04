@@ -6,8 +6,14 @@ import json
 from pathlib import Path
 from typing import Any
 
-from bangerforge.config import DATA_DIR, DEFAULT_KEEPERS, DEFAULT_SETTINGS
+from bangerforge.config import DATA_DIR, DEFAULT_KEEPERS, DEFAULT_SETTINGS, LEAGUE_ROSTER_SIZE
 from bangerforge.models import RosterEntry
+from bangerforge.opponents import (
+    get_active_opponent_id,
+    get_opponent_roster,
+    migrate_legacy_opponent_file,
+    save_opponent_roster,
+)
 
 
 def _read_json(path: Path, default: Any) -> Any:
@@ -43,16 +49,29 @@ def load_my_roster() -> list[RosterEntry]:
 
 
 def save_my_roster(roster: list[RosterEntry]) -> None:
-    _write_json(DATA_DIR / "my_roster.json", [r.to_dict() for r in roster])
+    capped = roster[:LEAGUE_ROSTER_SIZE]
+    _write_json(DATA_DIR / "my_roster.json", [r.to_dict() for r in capped])
 
 
 def load_opponent_current() -> list[RosterEntry]:
+    migrate_legacy_opponent_file()
+    oid = get_active_opponent_id()
+    if oid:
+        return get_opponent_roster(oid)
     raw = _read_json(DATA_DIR / "opponent_roster.json", [])
-    return [RosterEntry.from_dict(r) for r in raw]
+    return [RosterEntry.from_dict(r) for r in raw[:LEAGUE_ROSTER_SIZE]]
 
 
 def save_opponent_current(roster: list[RosterEntry]) -> None:
-    _write_json(DATA_DIR / "opponent_roster.json", [r.to_dict() for r in roster])
+    migrate_legacy_opponent_file()
+    oid = get_active_opponent_id()
+    if oid:
+        save_opponent_roster(oid, roster)
+        return
+    _write_json(
+        DATA_DIR / "opponent_roster.json",
+        [r.to_dict() for r in roster[:LEAGUE_ROSTER_SIZE]],
+    )
 
 
 def load_opponent_history() -> dict[str, list[dict[str, Any]]]:

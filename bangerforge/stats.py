@@ -3,14 +3,18 @@
 from __future__ import annotations
 
 from concurrent.futures import ThreadPoolExecutor, as_completed
+from datetime import date
 from typing import Any
 
 import streamlit as st
 
 from bangerforge.config import (
+    CURRENT_SEASON_STR,
     DEFAULT_BANGER_WEIGHTS,
-    ROSTER_STAT_WINDOW_END,
-    ROSTER_STAT_WINDOW_START,
+    DEFAULT_ROLLING_GAMES,
+    DEFAULT_SEASON_START,
+    PRIOR_SEASON_INT,
+    PRIOR_SEASON_STR,
 )
 from bangerforge.models import PerGameStats, PlayerProfile
 from bangerforge.utils import normalize_position
@@ -30,21 +34,27 @@ def _safe_div(numerator: float, denominator: float) -> float:
     return numerator / denominator if denominator else 0.0
 
 
-def _filter_logs_by_roster_window(
-    logs: list[dict],
-    *,
-    start: str = ROSTER_STAT_WINDOW_START,
-    end: str = ROSTER_STAT_WINDOW_END,
-) -> list[dict]:
-    """Keep regular-season game log rows from Feb 25 through reg-season end."""
-    return [
-        g for g in logs
-        if start <= str(g.get("gameDate", "")) <= end
-    ]
+def resolve_roster_stat_mode(settings: dict[str, Any]) -> str:
+    """Resolve active roster display mode from settings (auto flips on season start)."""
+    mode = str(settings.get("roster_stat_mode", "auto"))
+    if mode in ("prior_season", "rolling_25"):
+        return mode
+    season_start = str(settings.get("season_start_date", DEFAULT_SEASON_START))
+    if date.today().isoformat() < season_start:
+        return "prior_season"
+    return "rolling_25"
+
+
+def roster_stat_label(mode: str, settings: dict[str, Any]) -> str:
+    """Human-readable label for roster-tab stat source."""
+    if mode == "prior_season":
+        return "2024-25 full season (per-game)"
+    sample = int(settings.get("rolling_games_sample", DEFAULT_ROLLING_GAMES))
+    return f"Last {sample} GP — 2025-26 (per-game)"
 
 
 def _sum_hits_blocks_for_games(player_id: int, games: list[dict]) -> tuple[int, int]:
-    """Aggregate hits/blocks from boxscores for games in the roster window."""
+    """Aggregate hits/blocks from boxscores for specific games."""
     game_ids = sorted({int(g["gameId"]) for g in games if g.get("gameId")})
     if not game_ids:
         return 0, 0
@@ -64,17 +74,17 @@ def _sum_hits_blocks_for_games(player_id: int, games: list[dict]) -> tuple[int, 
     return hits, blocks
 
 
-@st.cache_data(ttl=1800, show_spinner=False)
-def compute_skater_roster_window_stats(
+def _skater_rates_from_logs(
     player_id: int,
-    start: str = ROSTER_STAT_WINDOW_START,
-    end: str = ROSTER_STAT_WINDOW_END,
+    logs: list[dict],
+    *,
+    source: str,
+    hits_blocks_from_boxscores: bool = False,
+    realtime_season: int | None = None,
 ) -> PerGameStats:
-    """Per-game rates from Feb 25 through end of regular season (roster display)."""
-    logs = _filter_logs_by_roster_window(fetch_skater_game_log(player_id), start=start, end=end)
     gp = len(logs)
     if gp == 0:
-        return PerGameStats(source="window", games_played=0)
+        return PerGameStats(source=source, games_played=0)
 
     totals = {
         "goals": sum(g.get("goals", 0) for g in logs),
@@ -84,7 +94,18 @@ def compute_skater_roster_window_stats(
         "shots": sum(g.get("shots", 0) for g in logs),
         "pim": sum(g.get("pim", 0) for g in logs),
     }
-    hits, blocks = _sum_hits_blocks_for_games(player_id, logs)
+
+    if hits_blocks_from_boxscores:
+        hits, blocks = _sum_hits_blocks_for_games(player_id, logs)
+    elif realtime_season is not None:
+        realtime = fetch_skater_realtime_bulk(season=realtime_season).get(player_id, {})
+        rt_gp = max(int(realtime.get("gamesPlayed", 0)), gp, 1)
+        hits = int(realtime.get("hits", 0))
+        blocks = int(realtime.get("blockedShots", 0))
+        hits = int(_safe_div(hits, rt_gp) * gp)
+        blocks = int(_safe_div(blocks, rt_gp) * gp)
+    else:
+        hits, blocks = 0, 0
 
     return PerGameStats(
         goals_pg=_safe_div(totals["goals"], gp),
@@ -100,33 +121,21 @@ def compute_skater_roster_window_stats(
         season_assists=totals["assists"],
         season_points=totals["points"],
         season_games=gp,
-        source="window",
+        source=source,
     )
 
 
-@st.cache_data(ttl=1800, show_spinner=False)
-def compute_goalie_roster_window_stats(
-    player_id: int,
-    start: str = ROSTER_STAT_WINDOW_START,
-    end: str = ROSTER_STAT_WINDOW_END,
-) -> PerGameStats:
-    """Goalie per-game rates from Feb 25 through end of regular season."""
-    logs = fetch_goalie_game_log(player_id)
-    window = [
-        g for g in logs
-        if start <= str(g.get("gameDate", "")) <= end
-        and (g.get("gamesStarted") or int(g.get("shotsAgainst", 0)) > 0)
-    ]
-    gp = len(window)
+def _goalie_rates_from_logs(logs: list[dict], *, source: str) -> PerGameStats:
+    gp = len(logs)
     if gp == 0:
-        return PerGameStats(source="window", games_played=0)
+        return PerGameStats(source=source, games_played=0)
 
-    wins = sum(1 for g in window if g.get("decision") == "W")
-    saves = sum(int(g.get("shotsAgainst", 0)) - int(g.get("goalsAgainst", 0)) for g in window)
-    shots = sum(int(g.get("shotsAgainst", 0)) for g in window)
-    ga = sum(int(g.get("goalsAgainst", 0)) for g in window)
-    shutouts = sum(int(g.get("shutouts", 0)) for g in window)
-    toi_min = sum(_parse_toi_minutes(g.get("toi", "0:00")) for g in window)
+    wins = sum(1 for g in logs if g.get("decision") == "W")
+    saves = sum(int(g.get("shotsAgainst", 0)) - int(g.get("goalsAgainst", 0)) for g in logs)
+    shots = sum(int(g.get("shotsAgainst", 0)) for g in logs)
+    ga = sum(int(g.get("goalsAgainst", 0)) for g in logs)
+    shutouts = sum(int(g.get("shutouts", 0)) for g in logs)
+    toi_min = sum(_parse_toi_minutes(g.get("toi", "0:00")) for g in logs)
 
     return PerGameStats(
         wins_pg=_safe_div(wins, gp),
@@ -136,8 +145,55 @@ def compute_goalie_roster_window_stats(
         shutouts_pg=_safe_div(shutouts, gp),
         games_played=gp,
         season_games=gp,
-        source="window",
+        source=source,
     )
+
+
+@st.cache_data(ttl=1800, show_spinner=False)
+def compute_skater_prior_season_stats(player_id: int) -> PerGameStats:
+    """Per-game rates from full 2024-25 regular season."""
+    logs = fetch_skater_game_log(player_id, season=PRIOR_SEASON_STR)
+    return _skater_rates_from_logs(
+        player_id,
+        logs,
+        source="prior_season",
+        realtime_season=PRIOR_SEASON_INT,
+    )
+
+
+@st.cache_data(ttl=1800, show_spinner=False)
+def compute_goalie_prior_season_stats(player_id: int) -> PerGameStats:
+    """Goalie per-game rates from full 2024-25 regular season."""
+    logs = fetch_goalie_game_log(player_id, season=PRIOR_SEASON_STR)
+    starts = [
+        g for g in logs
+        if g.get("gamesStarted") or int(g.get("shotsAgainst", 0)) > 0
+    ]
+    return _goalie_rates_from_logs(starts, source="prior_season")
+
+
+@st.cache_data(ttl=1800, show_spinner=False)
+def compute_skater_rolling_stats(player_id: int, sample: int = DEFAULT_ROLLING_GAMES) -> PerGameStats:
+    """Per-game rates from last N regular-season games (current season)."""
+    logs = fetch_skater_game_log(player_id, season=CURRENT_SEASON_STR)
+    recent = logs[:sample]
+    return _skater_rates_from_logs(
+        player_id,
+        recent,
+        source="rolling_25",
+        hits_blocks_from_boxscores=True,
+    )
+
+
+@st.cache_data(ttl=1800, show_spinner=False)
+def compute_goalie_rolling_stats(player_id: int, sample: int = DEFAULT_ROLLING_GAMES) -> PerGameStats:
+    """Goalie per-game rates from last N starts (current season)."""
+    logs = fetch_goalie_game_log(player_id, season=CURRENT_SEASON_STR)
+    starts = [
+        g for g in logs
+        if g.get("gamesStarted") or int(g.get("shotsAgainst", 0)) > 0
+    ]
+    return _goalie_rates_from_logs(starts[:sample], source="rolling_25")
 
 
 @st.cache_data(ttl=1800, show_spinner=False)
@@ -340,6 +396,21 @@ def banger_score(
     return round(score * schedule_boost, 2)
 
 
+def _roster_display_stats(
+    player_id: int,
+    is_goalie: bool,
+    stat_mode: str,
+    rolling_n: int,
+) -> PerGameStats:
+    if stat_mode == "rolling_25":
+        if is_goalie:
+            return compute_goalie_rolling_stats(player_id, rolling_n)
+        return compute_skater_rolling_stats(player_id, rolling_n)
+    if is_goalie:
+        return compute_goalie_prior_season_stats(player_id)
+    return compute_skater_prior_season_stats(player_id)
+
+
 @st.cache_data(ttl=900, show_spinner=False)
 def build_player_profile(
     player_id: int,
@@ -392,22 +463,25 @@ def build_roster_player_profile(
     weights: tuple[tuple[str, float], ...] = (),
     schedule_boost: float = 1.0,
     notes: str = "",
+    stat_mode: str = "prior_season",
+    rolling_n: int = DEFAULT_ROLLING_GAMES,
+    stat_label: str = "",
 ) -> PlayerProfile:
-    """Profile for roster tabs — stats from Feb 25 through end of reg season only."""
+    """Profile for roster tabs — stats from prior season or rolling sample."""
     is_goalie = pos.upper() == "G"
     wdict = dict(weights) if weights else dict(DEFAULT_BANGER_WEIGHTS)
 
+    display = _roster_display_stats(player_id, is_goalie, stat_mode, rolling_n)
+
     if is_goalie:
-        window = compute_goalie_roster_window_stats(player_id)
         recent = compute_goalie_recent_stats(player_id, 10)
         season = compute_goalie_season_stats(player_id)
     else:
-        window = compute_skater_roster_window_stats(player_id)
         recent = compute_skater_recent_stats(player_id, 10)
         season = compute_skater_season_stats(player_id)
 
     pg = projected_games or 1
-    score = banger_score(window, wdict, pg, is_goalie, schedule_boost)
+    score = banger_score(display, wdict, pg, is_goalie, schedule_boost)
 
     return PlayerProfile(
         player_id=player_id,
@@ -417,9 +491,11 @@ def build_roster_player_profile(
         is_goalie=is_goalie,
         recent=recent,
         season=season,
-        window=window,
+        window=display,
         projected_games_week=projected_games,
         banger_score=score,
+        stat_label=stat_label,
+        data_fetched=display.games_played > 0,
         notes=notes,
     )
 

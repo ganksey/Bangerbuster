@@ -92,9 +92,32 @@ def fetch_goalie_game_log(player_id: int, season: str = CURRENT_SEASON_STR) -> l
     return data.get("gameLog", [])
 
 
+def _load_season_disk_cache(cache_file: str, season: int) -> dict[str, Any] | None:
+    path = DATA_DIR / cache_file
+    if not path.exists():
+        return None
+    try:
+        payload = json.loads(path.read_text(encoding="utf-8"))
+        if payload.get("version") == str(season):
+            return payload.get("data")
+    except (json.JSONDecodeError, KeyError, OSError):
+        return None
+    return None
+
+
+def _save_season_disk_cache(cache_file: str, season: int, data: Any) -> None:
+    DATA_DIR.mkdir(parents=True, exist_ok=True)
+    path = DATA_DIR / cache_file
+    path.write_text(
+        json.dumps({"version": str(season), "data": data}, indent=2),
+        encoding="utf-8",
+    )
+
+
 def _fetch_bulk_stats(endpoint: str, cache_file: str, season: int = 20252026) -> dict[int, dict[str, Any]]:
     """Fetch skater/goalie bulk stats with disk persistence."""
-    cached = _load_disk_cache(cache_file)
+    season_file = cache_file.replace(".json", f"_{season}.json")
+    cached = _load_season_disk_cache(season_file, season)
     if cached is not None:
         return {int(k): v for k, v in cached.items()}
 
@@ -105,7 +128,7 @@ def _fetch_bulk_stats(endpoint: str, cache_file: str, season: int = 20252026) ->
     )
     data = _request_json(url)
     result = {int(row["playerId"]): row for row in data.get("data", [])}
-    _save_disk_cache(cache_file, {str(k): v for k, v in result.items()})
+    _save_season_disk_cache(season_file, season, {str(k): v for k, v in result.items()})
     return result
 
 
