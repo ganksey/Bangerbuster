@@ -1,0 +1,31 @@
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+.env
+.venv/
+venv/
+.streamlit/secrets.toml
+
+# Local user data (recreated on first run)
+data/settings.json
+data/my_roster.json
+data/opponent_roster.json
+data/opponent_weeks.json
+data/waiver_agents.json
+data/weekly_plan.json
+data/player_cache.json
+
+# IDE / OS
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Accidental terminal captures
+terminals/
+
+# Keep shipped caches in repo:
+# !bangerforge/player_cache_seed.json
+# !data/skater_*_cache.json
+# !data/goalie_summary_cache.json

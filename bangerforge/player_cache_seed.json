@@ -1,0 +1,8399 @@
+{
+  "version": "20252026",
+  "players": {
+    "leo carlsson": {
+      "player_id": 8484153,
+      "name": "Leo Carlsson",
+      "pos": "C",
+      "team": "ANA"
+    },
+    "8484153": {
+      "player_id": 8484153,
+      "name": "Leo Carlsson",
+      "pos": "C",
+      "team": "ANA"
+    },
+    "nathan gaucher": {
+      "player_id": 8483444,
+      "name": "Nathan Gaucher",
+      "pos": "C",
+      "team": "ANA"
+    },
+    "8483444": {
+      "player_id": 8483444,
+      "name": "Nathan Gaucher",
+      "pos": "C",
+      "team": "ANA"
+    },
+    "cutter gauthier": {
+      "player_id": 8483445,
+      "name": "Cutter Gauthier",
+      "pos": "LW",
+      "team": "ANA"
+    },
+    "8483445": {
+      "player_id": 8483445,
+      "name": "Cutter Gauthier",
+      "pos": "LW",
+      "team": "ANA"
+    },
+    "mikael granlund": {
+      "player_id": 8475798,
+      "name": "Mikael Granlund",
+      "pos": "C",
+      "team": "ANA"
+    },
+    "8475798": {
+      "player_id": 8475798,
+      "name": "Mikael Granlund",
+      "pos": "C",
+      "team": "ANA"
+    },
+    "a.j. greer": {
+      "player_id": 8478421,
+      "name": "A.J. Greer",
+      "pos": "LW",
+      "team": "ANA"
+    },
+    "8478421": {
+      "player_id": 8478421,
+      "name": "A.J. Greer",
+      "pos": "LW",
+      "team": "ANA"
+    },
+    "alex killorn": {
+      "player_id": 8473986,
+      "name": "Alex Killorn",
+      "pos": "LW",
+      "team": "ANA"
+    },
+    "8473986": {
+      "player_id": 8473986,
+      "name": "Alex Killorn",
+      "pos": "LW",
+      "team": "ANA"
+    },
+    "chris kreider": {
+      "player_id": 8475184,
+      "name": "Chris Kreider",
+      "pos": "LW",
+      "team": "ANA"
+    },
+    "8475184": {
+      "player_id": 8475184,
+      "name": "Chris Kreider",
+      "pos": "LW",
+      "team": "ANA"
+    },
+    "nico myatovic": {
+      "player_id": 8484201,
+      "name": "Nico Myatovic",
+      "pos": "LW",
+      "team": "ANA"
+    },
+    "8484201": {
+      "player_id": 8484201,
+      "name": "Nico Myatovic",
+      "pos": "LW",
+      "team": "ANA"
+    },
+    "ryan poehling": {
+      "player_id": 8480068,
+      "name": "Ryan Poehling",
+      "pos": "C",
+      "team": "ANA"
+    },
+    "8480068": {
+      "player_id": 8480068,
+      "name": "Ryan Poehling",
+      "pos": "C",
+      "team": "ANA"
+    },
+    "beckett sennecke": {
+      "player_id": 8484762,
+      "name": "Beckett Sennecke",
+      "pos": "RW",
+      "team": "ANA"
+    },
+    "8484762": {
+      "player_id": 8484762,
+      "name": "Beckett Sennecke",
+      "pos": "RW",
+      "team": "ANA"
+    },
+    "troy terry": {
+      "player_id": 8478873,
+      "name": "Troy Terry",
+      "pos": "RW",
+      "team": "ANA"
+    },
+    "8478873": {
+      "player_id": 8478873,
+      "name": "Troy Terry",
+      "pos": "RW",
+      "team": "ANA"
+    },
+    "frank vatrano": {
+      "player_id": 8478366,
+      "name": "Frank Vatrano",
+      "pos": "RW",
+      "team": "ANA"
+    },
+    "8478366": {
+      "player_id": 8478366,
+      "name": "Frank Vatrano",
+      "pos": "RW",
+      "team": "ANA"
+    },
+    "anton wahlberg": {
+      "player_id": 8484238,
+      "name": "Anton Wahlberg",
+      "pos": "C",
+      "team": "ANA"
+    },
+    "8484238": {
+      "player_id": 8484238,
+      "name": "Anton Wahlberg",
+      "pos": "C",
+      "team": "ANA"
+    },
+    "tim washe": {
+      "player_id": 8485512,
+      "name": "Tim Washe",
+      "pos": "C",
+      "team": "ANA"
+    },
+    "8485512": {
+      "player_id": 8485512,
+      "name": "Tim Washe",
+      "pos": "C",
+      "team": "ANA"
+    },
+    "drew helleson": {
+      "player_id": 8481563,
+      "name": "Drew Helleson",
+      "pos": "D",
+      "team": "ANA"
+    },
+    "8481563": {
+      "player_id": 8481563,
+      "name": "Drew Helleson",
+      "pos": "D",
+      "team": "ANA"
+    },
+    "tyson hinds": {
+      "player_id": 8482731,
+      "name": "Tyson Hinds",
+      "pos": "D",
+      "team": "ANA"
+    },
+    "8482731": {
+      "player_id": 8482731,
+      "name": "Tyson Hinds",
+      "pos": "D",
+      "team": "ANA"
+    },
+    "jackson lacombe": {
+      "player_id": 8481605,
+      "name": "Jackson LaCombe",
+      "pos": "D",
+      "team": "ANA"
+    },
+    "8481605": {
+      "player_id": 8481605,
+      "name": "Jackson LaCombe",
+      "pos": "D",
+      "team": "ANA"
+    },
+    "pavel mintyukov": {
+      "player_id": 8483490,
+      "name": "Pavel Mintyukov",
+      "pos": "D",
+      "team": "ANA"
+    },
+    "8483490": {
+      "player_id": 8483490,
+      "name": "Pavel Mintyukov",
+      "pos": "D",
+      "team": "ANA"
+    },
+    "ian moore": {
+      "player_id": 8482178,
+      "name": "Ian Moore",
+      "pos": "D",
+      "team": "ANA"
+    },
+    "8482178": {
+      "player_id": 8482178,
+      "name": "Ian Moore",
+      "pos": "D",
+      "team": "ANA"
+    },
+    "noah warren": {
+      "player_id": 8483521,
+      "name": "Noah Warren",
+      "pos": "D",
+      "team": "ANA"
+    },
+    "8483521": {
+      "player_id": 8483521,
+      "name": "Noah Warren",
+      "pos": "D",
+      "team": "ANA"
+    },
+    "vyacheslav buteyets": {
+      "player_id": 8483746,
+      "name": "Vyacheslav Buteyets",
+      "pos": "G",
+      "team": "ANA"
+    },
+    "8483746": {
+      "player_id": 8483746,
+      "name": "Vyacheslav Buteyets",
+      "pos": "G",
+      "team": "ANA"
+    },
+    "lukas dostal": {
+      "player_id": 8480843,
+      "name": "Lukas Dostal",
+      "pos": "G",
+      "team": "ANA"
+    },
+    "8480843": {
+      "player_id": 8480843,
+      "name": "Lukas Dostal",
+      "pos": "G",
+      "team": "ANA"
+    },
+    "ville husso": {
+      "player_id": 8478024,
+      "name": "Ville Husso",
+      "pos": "G",
+      "team": "ANA"
+    },
+    "8478024": {
+      "player_id": 8478024,
+      "name": "Ville Husso",
+      "pos": "G",
+      "team": "ANA"
+    },
+    "michael eyssimont": {
+      "player_id": 8479591,
+      "name": "Michael Eyssimont",
+      "pos": "C",
+      "team": "BOS"
+    },
+    "8479591": {
+      "player_id": 8479591,
+      "name": "Michael Eyssimont",
+      "pos": "C",
+      "team": "BOS"
+    },
+    "morgan geekie": {
+      "player_id": 8479987,
+      "name": "Morgan Geekie",
+      "pos": "C",
+      "team": "BOS"
+    },
+    "8479987": {
+      "player_id": 8479987,
+      "name": "Morgan Geekie",
+      "pos": "C",
+      "team": "BOS"
+    },
+    "james hagens": {
+      "player_id": 8485395,
+      "name": "James Hagens",
+      "pos": "C",
+      "team": "BOS"
+    },
+    "8485395": {
+      "player_id": 8485395,
+      "name": "James Hagens",
+      "pos": "C",
+      "team": "BOS"
+    },
+    "tanner jeannot": {
+      "player_id": 8479661,
+      "name": "Tanner Jeannot",
+      "pos": "LW",
+      "team": "BOS"
+    },
+    "8479661": {
+      "player_id": 8479661,
+      "name": "Tanner Jeannot",
+      "pos": "LW",
+      "team": "BOS"
+    },
+    "mark kastelic": {
+      "player_id": 8480355,
+      "name": "Mark Kastelic",
+      "pos": "C",
+      "team": "BOS"
+    },
+    "8480355": {
+      "player_id": 8480355,
+      "name": "Mark Kastelic",
+      "pos": "C",
+      "team": "BOS"
+    },
+    "marat khusnutdinov": {
+      "player_id": 8482177,
+      "name": "Marat Khusnutdinov",
+      "pos": "C",
+      "team": "BOS"
+    },
+    "8482177": {
+      "player_id": 8482177,
+      "name": "Marat Khusnutdinov",
+      "pos": "C",
+      "team": "BOS"
+    },
+    "sean kuraly": {
+      "player_id": 8476374,
+      "name": "Sean Kuraly",
+      "pos": "C",
+      "team": "BOS"
+    },
+    "8476374": {
+      "player_id": 8476374,
+      "name": "Sean Kuraly",
+      "pos": "C",
+      "team": "BOS"
+    },
+    "elias lindholm": {
+      "player_id": 8477496,
+      "name": "Elias Lindholm",
+      "pos": "C",
+      "team": "BOS"
+    },
+    "8477496": {
+      "player_id": 8477496,
+      "name": "Elias Lindholm",
+      "pos": "C",
+      "team": "BOS"
+    },
+    "fraser minten": {
+      "player_id": 8483489,
+      "name": "Fraser Minten",
+      "pos": "C",
+      "team": "BOS"
+    },
+    "8483489": {
+      "player_id": 8483489,
+      "name": "Fraser Minten",
+      "pos": "C",
+      "team": "BOS"
+    },
+    "casey mittelstadt": {
+      "player_id": 8479999,
+      "name": "Casey Mittelstadt",
+      "pos": "C",
+      "team": "BOS"
+    },
+    "8479999": {
+      "player_id": 8479999,
+      "name": "Casey Mittelstadt",
+      "pos": "C",
+      "team": "BOS"
+    },
+    "david pastrnak": {
+      "player_id": 8477956,
+      "name": "David Pastrnak",
+      "pos": "RW",
+      "team": "BOS"
+    },
+    "8477956": {
+      "player_id": 8477956,
+      "name": "David Pastrnak",
+      "pos": "RW",
+      "team": "BOS"
+    },
+    "jj peterka": {
+      "player_id": 8482175,
+      "name": "JJ Peterka",
+      "pos": "RW",
+      "team": "BOS"
+    },
+    "8482175": {
+      "player_id": 8482175,
+      "name": "JJ Peterka",
+      "pos": "RW",
+      "team": "BOS"
+    },
+    "alex steeves": {
+      "player_id": 8482634,
+      "name": "Alex Steeves",
+      "pos": "C",
+      "team": "BOS"
+    },
+    "8482634": {
+      "player_id": 8482634,
+      "name": "Alex Steeves",
+      "pos": "C",
+      "team": "BOS"
+    },
+    "pavel zacha": {
+      "player_id": 8478401,
+      "name": "Pavel Zacha",
+      "pos": "C",
+      "team": "BOS"
+    },
+    "8478401": {
+      "player_id": 8478401,
+      "name": "Pavel Zacha",
+      "pos": "C",
+      "team": "BOS"
+    },
+    "jonathan aspirot": {
+      "player_id": 8481219,
+      "name": "Jonathan Aspirot",
+      "pos": "D",
+      "team": "BOS"
+    },
+    "8481219": {
+      "player_id": 8481219,
+      "name": "Jonathan Aspirot",
+      "pos": "D",
+      "team": "BOS"
+    },
+    "henri jokiharju": {
+      "player_id": 8480035,
+      "name": "Henri Jokiharju",
+      "pos": "D",
+      "team": "BOS"
+    },
+    "8480035": {
+      "player_id": 8480035,
+      "name": "Henri Jokiharju",
+      "pos": "D",
+      "team": "BOS"
+    },
+    "hampus lindholm": {
+      "player_id": 8476854,
+      "name": "Hampus Lindholm",
+      "pos": "D",
+      "team": "BOS"
+    },
+    "8476854": {
+      "player_id": 8476854,
+      "name": "Hampus Lindholm",
+      "pos": "D",
+      "team": "BOS"
+    },
+    "mason lohrei": {
+      "player_id": 8482511,
+      "name": "Mason Lohrei",
+      "pos": "D",
+      "team": "BOS"
+    },
+    "8482511": {
+      "player_id": 8482511,
+      "name": "Mason Lohrei",
+      "pos": "D",
+      "team": "BOS"
+    },
+    "charlie mcavoy": {
+      "player_id": 8479325,
+      "name": "Charlie McAvoy",
+      "pos": "D",
+      "team": "BOS"
+    },
+    "8479325": {
+      "player_id": 8479325,
+      "name": "Charlie McAvoy",
+      "pos": "D",
+      "team": "BOS"
+    },
+    "nikita zadorov": {
+      "player_id": 8477507,
+      "name": "Nikita Zadorov",
+      "pos": "D",
+      "team": "BOS"
+    },
+    "8477507": {
+      "player_id": 8477507,
+      "name": "Nikita Zadorov",
+      "pos": "D",
+      "team": "BOS"
+    },
+    "joonas korpisalo": {
+      "player_id": 8476914,
+      "name": "Joonas Korpisalo",
+      "pos": "G",
+      "team": "BOS"
+    },
+    "8476914": {
+      "player_id": 8476914,
+      "name": "Joonas Korpisalo",
+      "pos": "G",
+      "team": "BOS"
+    },
+    "jeremy swayman": {
+      "player_id": 8480280,
+      "name": "Jeremy Swayman",
+      "pos": "G",
+      "team": "BOS"
+    },
+    "8480280": {
+      "player_id": 8480280,
+      "name": "Jeremy Swayman",
+      "pos": "G",
+      "team": "BOS"
+    },
+    "zach benson": {
+      "player_id": 8484145,
+      "name": "Zach Benson",
+      "pos": "LW",
+      "team": "BUF"
+    },
+    "8484145": {
+      "player_id": 8484145,
+      "name": "Zach Benson",
+      "pos": "LW",
+      "team": "BUF"
+    },
+    "sam carrick": {
+      "player_id": 8475842,
+      "name": "Sam Carrick",
+      "pos": "C",
+      "team": "BUF"
+    },
+    "8475842": {
+      "player_id": 8475842,
+      "name": "Sam Carrick",
+      "pos": "C",
+      "team": "BUF"
+    },
+    "justin danforth": {
+      "player_id": 8479941,
+      "name": "Justin Danforth",
+      "pos": "RW",
+      "team": "BUF"
+    },
+    "8479941": {
+      "player_id": 8479941,
+      "name": "Justin Danforth",
+      "pos": "RW",
+      "team": "BUF"
+    },
+    "josh doan": {
+      "player_id": 8482659,
+      "name": "Josh Doan",
+      "pos": "RW",
+      "team": "BUF"
+    },
+    "8482659": {
+      "player_id": 8482659,
+      "name": "Josh Doan",
+      "pos": "RW",
+      "team": "BUF"
+    },
+    "riley fiddler-schultz": {
+      "player_id": 8483090,
+      "name": "Riley Fiddler-Schultz",
+      "pos": "C",
+      "team": "BUF"
+    },
+    "8483090": {
+      "player_id": 8483090,
+      "name": "Riley Fiddler-Schultz",
+      "pos": "C",
+      "team": "BUF"
+    },
+    "konsta helenius": {
+      "player_id": 8484797,
+      "name": "Konsta Helenius",
+      "pos": "C",
+      "team": "BUF"
+    },
+    "8484797": {
+      "player_id": 8484797,
+      "name": "Konsta Helenius",
+      "pos": "C",
+      "team": "BUF"
+    },
+    "tyson kozak": {
+      "player_id": 8482896,
+      "name": "Tyson Kozak",
+      "pos": "C",
+      "team": "BUF"
+    },
+    "8482896": {
+      "player_id": 8482896,
+      "name": "Tyson Kozak",
+      "pos": "C",
+      "team": "BUF"
+    },
+    "peyton krebs": {
+      "player_id": 8481522,
+      "name": "Peyton Krebs",
+      "pos": "C",
+      "team": "BUF"
+    },
+    "8481522": {
+      "player_id": 8481522,
+      "name": "Peyton Krebs",
+      "pos": "C",
+      "team": "BUF"
+    },
+    "jiri kulich": {
+      "player_id": 8483468,
+      "name": "Jiri Kulich",
+      "pos": "C",
+      "team": "BUF"
+    },
+    "8483468": {
+      "player_id": 8483468,
+      "name": "Jiri Kulich",
+      "pos": "C",
+      "team": "BUF"
+    },
+    "beck malenstyn": {
+      "player_id": 8479359,
+      "name": "Beck Malenstyn",
+      "pos": "LW",
+      "team": "BUF"
+    },
+    "8479359": {
+      "player_id": 8479359,
+      "name": "Beck Malenstyn",
+      "pos": "LW",
+      "team": "BUF"
+    },
+    "ryan mcleod": {
+      "player_id": 8480802,
+      "name": "Ryan McLeod",
+      "pos": "C",
+      "team": "BUF"
+    },
+    "8480802": {
+      "player_id": 8480802,
+      "name": "Ryan McLeod",
+      "pos": "C",
+      "team": "BUF"
+    },
+    "josh norris": {
+      "player_id": 8480064,
+      "name": "Josh Norris",
+      "pos": "C",
+      "team": "BUF"
+    },
+    "8480064": {
+      "player_id": 8480064,
+      "name": "Josh Norris",
+      "pos": "C",
+      "team": "BUF"
+    },
+    "noah ostlund": {
+      "player_id": 8483500,
+      "name": "Noah Ostlund",
+      "pos": "C",
+      "team": "BUF"
+    },
+    "8483500": {
+      "player_id": 8483500,
+      "name": "Noah Ostlund",
+      "pos": "C",
+      "team": "BUF"
+    },
+    "jack quinn": {
+      "player_id": 8482097,
+      "name": "Jack Quinn",
+      "pos": "RW",
+      "team": "BUF"
+    },
+    "8482097": {
+      "player_id": 8482097,
+      "name": "Jack Quinn",
+      "pos": "RW",
+      "team": "BUF"
+    },
+    "tage thompson": {
+      "player_id": 8479420,
+      "name": "Tage Thompson",
+      "pos": "C",
+      "team": "BUF"
+    },
+    "8479420": {
+      "player_id": 8479420,
+      "name": "Tage Thompson",
+      "pos": "C",
+      "team": "BUF"
+    },
+    "jason zucker": {
+      "player_id": 8475722,
+      "name": "Jason Zucker",
+      "pos": "LW",
+      "team": "BUF"
+    },
+    "8475722": {
+      "player_id": 8475722,
+      "name": "Jason Zucker",
+      "pos": "LW",
+      "team": "BUF"
+    },
+    "louis crevier": {
+      "player_id": 8481806,
+      "name": "Louis Crevier",
+      "pos": "D",
+      "team": "BUF"
+    },
+    "8481806": {
+      "player_id": 8481806,
+      "name": "Louis Crevier",
+      "pos": "D",
+      "team": "BUF"
+    },
+    "rasmus dahlin": {
+      "player_id": 8480839,
+      "name": "Rasmus Dahlin",
+      "pos": "D",
+      "team": "BUF"
+    },
+    "8480839": {
+      "player_id": 8480839,
+      "name": "Rasmus Dahlin",
+      "pos": "D",
+      "team": "BUF"
+    },
+    "ryan johnson": {
+      "player_id": 8481564,
+      "name": "Ryan Johnson",
+      "pos": "D",
+      "team": "BUF"
+    },
+    "8481564": {
+      "player_id": 8481564,
+      "name": "Ryan Johnson",
+      "pos": "D",
+      "team": "BUF"
+    },
+    "vsevolod komarov": {
+      "player_id": 8483732,
+      "name": "Vsevolod Komarov",
+      "pos": "D",
+      "team": "BUF"
+    },
+    "8483732": {
+      "player_id": 8483732,
+      "name": "Vsevolod Komarov",
+      "pos": "D",
+      "team": "BUF"
+    },
+    "zach metsa": {
+      "player_id": 8484305,
+      "name": "Zach Metsa",
+      "pos": "D",
+      "team": "BUF"
+    },
+    "8484305": {
+      "player_id": 8484305,
+      "name": "Zach Metsa",
+      "pos": "D",
+      "team": "BUF"
+    },
+    "radim mrtka": {
+      "player_id": 8485404,
+      "name": "Radim Mrtka",
+      "pos": "D",
+      "team": "BUF"
+    },
+    "8485404": {
+      "player_id": 8485404,
+      "name": "Radim Mrtka",
+      "pos": "D",
+      "team": "BUF"
+    },
+    "owen power": {
+      "player_id": 8482671,
+      "name": "Owen Power",
+      "pos": "D",
+      "team": "BUF"
+    },
+    "8482671": {
+      "player_id": 8482671,
+      "name": "Owen Power",
+      "pos": "D",
+      "team": "BUF"
+    },
+    "mattias samuelsson": {
+      "player_id": 8480807,
+      "name": "Mattias Samuelsson",
+      "pos": "D",
+      "team": "BUF"
+    },
+    "8480807": {
+      "player_id": 8480807,
+      "name": "Mattias Samuelsson",
+      "pos": "D",
+      "team": "BUF"
+    },
+    "conor timmins": {
+      "player_id": 8479982,
+      "name": "Conor Timmins",
+      "pos": "D",
+      "team": "BUF"
+    },
+    "8479982": {
+      "player_id": 8479982,
+      "name": "Conor Timmins",
+      "pos": "D",
+      "team": "BUF"
+    },
+    "olen zellweger": {
+      "player_id": 8482803,
+      "name": "Olen Zellweger",
+      "pos": "D",
+      "team": "BUF"
+    },
+    "8482803": {
+      "player_id": 8482803,
+      "name": "Olen Zellweger",
+      "pos": "D",
+      "team": "BUF"
+    },
+    "colten ellis": {
+      "player_id": 8481551,
+      "name": "Colten Ellis",
+      "pos": "G",
+      "team": "BUF"
+    },
+    "8481551": {
+      "player_id": 8481551,
+      "name": "Colten Ellis",
+      "pos": "G",
+      "team": "BUF"
+    },
+    "devon levi": {
+      "player_id": 8482221,
+      "name": "Devon Levi",
+      "pos": "G",
+      "team": "BUF"
+    },
+    "8482221": {
+      "player_id": 8482221,
+      "name": "Devon Levi",
+      "pos": "G",
+      "team": "BUF"
+    },
+    "ukko-pekka luukkonen": {
+      "player_id": 8480045,
+      "name": "Ukko-Pekka Luukkonen",
+      "pos": "G",
+      "team": "BUF"
+    },
+    "8480045": {
+      "player_id": 8480045,
+      "name": "Ukko-Pekka Luukkonen",
+      "pos": "G",
+      "team": "BUF"
+    },
+    "alex lyon": {
+      "player_id": 8479312,
+      "name": "Alex Lyon",
+      "pos": "G",
+      "team": "BUF"
+    },
+    "8479312": {
+      "player_id": 8479312,
+      "name": "Alex Lyon",
+      "pos": "G",
+      "team": "BUF"
+    },
+    "mikael backlund": {
+      "player_id": 8474150,
+      "name": "Mikael Backlund",
+      "pos": "C",
+      "team": "CGY"
+    },
+    "8474150": {
+      "player_id": 8474150,
+      "name": "Mikael Backlund",
+      "pos": "C",
+      "team": "CGY"
+    },
+    "blake coleman": {
+      "player_id": 8476399,
+      "name": "Blake Coleman",
+      "pos": "LW",
+      "team": "CGY"
+    },
+    "8476399": {
+      "player_id": 8476399,
+      "name": "Blake Coleman",
+      "pos": "LW",
+      "team": "CGY"
+    },
+    "matt coronato": {
+      "player_id": 8482679,
+      "name": "Matt Coronato",
+      "pos": "RW",
+      "team": "CGY"
+    },
+    "8482679": {
+      "player_id": 8482679,
+      "name": "Matt Coronato",
+      "pos": "RW",
+      "team": "CGY"
+    },
+    "joel farabee": {
+      "player_id": 8480797,
+      "name": "Joel Farabee",
+      "pos": "LW",
+      "team": "CGY"
+    },
+    "8480797": {
+      "player_id": 8480797,
+      "name": "Joel Farabee",
+      "pos": "LW",
+      "team": "CGY"
+    },
+    "morgan frost": {
+      "player_id": 8480028,
+      "name": "Morgan Frost",
+      "pos": "C",
+      "team": "CGY"
+    },
+    "8480028": {
+      "player_id": 8480028,
+      "name": "Morgan Frost",
+      "pos": "C",
+      "team": "CGY"
+    },
+    "matvei gridin": {
+      "player_id": 8484860,
+      "name": "Matvei Gridin",
+      "pos": "RW",
+      "team": "CGY"
+    },
+    "8484860": {
+      "player_id": 8484860,
+      "name": "Matvei Gridin",
+      "pos": "RW",
+      "team": "CGY"
+    },
+    "tyson gross": {
+      "player_id": 8486056,
+      "name": "Tyson Gross",
+      "pos": "C",
+      "team": "CGY"
+    },
+    "8486056": {
+      "player_id": 8486056,
+      "name": "Tyson Gross",
+      "pos": "C",
+      "team": "CGY"
+    },
+    "samuel honzek": {
+      "player_id": 8484180,
+      "name": "Samuel Honzek",
+      "pos": "LW",
+      "team": "CGY"
+    },
+    "8484180": {
+      "player_id": 8484180,
+      "name": "Samuel Honzek",
+      "pos": "LW",
+      "team": "CGY"
+    },
+    "jonathan huberdeau": {
+      "player_id": 8476456,
+      "name": "Jonathan Huberdeau",
+      "pos": "LW",
+      "team": "CGY"
+    },
+    "8476456": {
+      "player_id": 8476456,
+      "name": "Jonathan Huberdeau",
+      "pos": "LW",
+      "team": "CGY"
+    },
+    "rory kerins": {
+      "player_id": 8482209,
+      "name": "Rory Kerins",
+      "pos": "C",
+      "team": "CGY"
+    },
+    "8482209": {
+      "player_id": 8482209,
+      "name": "Rory Kerins",
+      "pos": "C",
+      "team": "CGY"
+    },
+    "adam klapka": {
+      "player_id": 8483609,
+      "name": "Adam Klapka",
+      "pos": "RW",
+      "team": "CGY"
+    },
+    "8483609": {
+      "player_id": 8483609,
+      "name": "Adam Klapka",
+      "pos": "RW",
+      "team": "CGY"
+    },
+    "martin pospisil": {
+      "player_id": 8481028,
+      "name": "Martin Pospisil",
+      "pos": "C",
+      "team": "CGY"
+    },
+    "8481028": {
+      "player_id": 8481028,
+      "name": "Martin Pospisil",
+      "pos": "C",
+      "team": "CGY"
+    },
+    "yegor sharangovich": {
+      "player_id": 8481068,
+      "name": "Yegor Sharangovich",
+      "pos": "C",
+      "team": "CGY"
+    },
+    "8481068": {
+      "player_id": 8481068,
+      "name": "Yegor Sharangovich",
+      "pos": "C",
+      "team": "CGY"
+    },
+    "ryan strome": {
+      "player_id": 8476458,
+      "name": "Ryan Strome",
+      "pos": "C",
+      "team": "CGY"
+    },
+    "8476458": {
+      "player_id": 8476458,
+      "name": "Ryan Strome",
+      "pos": "C",
+      "team": "CGY"
+    },
+    "aydar suniev": {
+      "player_id": 8484234,
+      "name": "Aydar Suniev",
+      "pos": "LW",
+      "team": "CGY"
+    },
+    "8484234": {
+      "player_id": 8484234,
+      "name": "Aydar Suniev",
+      "pos": "LW",
+      "team": "CGY"
+    },
+    "maxim tsyplakov": {
+      "player_id": 8484958,
+      "name": "Maxim Tsyplakov",
+      "pos": "RW",
+      "team": "CGY"
+    },
+    "8484958": {
+      "player_id": 8484958,
+      "name": "Maxim Tsyplakov",
+      "pos": "RW",
+      "team": "CGY"
+    },
+    "connor zary": {
+      "player_id": 8482074,
+      "name": "Connor Zary",
+      "pos": "C",
+      "team": "CGY"
+    },
+    "8482074": {
+      "player_id": 8482074,
+      "name": "Connor Zary",
+      "pos": "C",
+      "team": "CGY"
+    },
+    "kevin bahl": {
+      "player_id": 8480860,
+      "name": "Kevin Bahl",
+      "pos": "D",
+      "team": "CGY"
+    },
+    "8480860": {
+      "player_id": 8480860,
+      "name": "Kevin Bahl",
+      "pos": "D",
+      "team": "CGY"
+    },
+    "hunter brzustewicz": {
+      "player_id": 8484150,
+      "name": "Hunter Brzustewicz",
+      "pos": "D",
+      "team": "CGY"
+    },
+    "8484150": {
+      "player_id": 8484150,
+      "name": "Hunter Brzustewicz",
+      "pos": "D",
+      "team": "CGY"
+    },
+    "joel hanley": {
+      "player_id": 8477810,
+      "name": "Joel Hanley",
+      "pos": "D",
+      "team": "CGY"
+    },
+    "8477810": {
+      "player_id": 8477810,
+      "name": "Joel Hanley",
+      "pos": "D",
+      "team": "CGY"
+    },
+    "yan kuznetsov": {
+      "player_id": 8482165,
+      "name": "Yan Kuznetsov",
+      "pos": "D",
+      "team": "CGY"
+    },
+    "8482165": {
+      "player_id": 8482165,
+      "name": "Yan Kuznetsov",
+      "pos": "D",
+      "team": "CGY"
+    },
+    "olli maatta": {
+      "player_id": 8476874,
+      "name": "Olli Maatta",
+      "pos": "D",
+      "team": "CGY"
+    },
+    "8476874": {
+      "player_id": 8476874,
+      "name": "Olli Maatta",
+      "pos": "D",
+      "team": "CGY"
+    },
+    "simon nemec": {
+      "player_id": 8483495,
+      "name": "Simon Nemec",
+      "pos": "D",
+      "team": "CGY"
+    },
+    "8483495": {
+      "player_id": 8483495,
+      "name": "Simon Nemec",
+      "pos": "D",
+      "team": "CGY"
+    },
+    "brayden pachal": {
+      "player_id": 8481167,
+      "name": "Brayden Pachal",
+      "pos": "D",
+      "team": "CGY"
+    },
+    "8481167": {
+      "player_id": 8481167,
+      "name": "Brayden Pachal",
+      "pos": "D",
+      "team": "CGY"
+    },
+    "zayne parekh": {
+      "player_id": 8484768,
+      "name": "Zayne Parekh",
+      "pos": "D",
+      "team": "CGY"
+    },
+    "8484768": {
+      "player_id": 8484768,
+      "name": "Zayne Parekh",
+      "pos": "D",
+      "team": "CGY"
+    },
+    "zach whitecloud": {
+      "player_id": 8480727,
+      "name": "Zach Whitecloud",
+      "pos": "D",
+      "team": "CGY"
+    },
+    "8480727": {
+      "player_id": 8480727,
+      "name": "Zach Whitecloud",
+      "pos": "D",
+      "team": "CGY"
+    },
+    "abram wiebe": {
+      "player_id": 8483709,
+      "name": "Abram Wiebe",
+      "pos": "D",
+      "team": "CGY"
+    },
+    "8483709": {
+      "player_id": 8483709,
+      "name": "Abram Wiebe",
+      "pos": "D",
+      "team": "CGY"
+    },
+    "devin cooley": {
+      "player_id": 8482445,
+      "name": "Devin Cooley",
+      "pos": "G",
+      "team": "CGY"
+    },
+    "8482445": {
+      "player_id": 8482445,
+      "name": "Devin Cooley",
+      "pos": "G",
+      "team": "CGY"
+    },
+    "dustin wolf": {
+      "player_id": 8481692,
+      "name": "Dustin Wolf",
+      "pos": "G",
+      "team": "CGY"
+    },
+    "8481692": {
+      "player_id": 8481692,
+      "name": "Dustin Wolf",
+      "pos": "G",
+      "team": "CGY"
+    },
+    "sebastian aho": {
+      "player_id": 8478427,
+      "name": "Sebastian Aho",
+      "pos": "C",
+      "team": "CAR"
+    },
+    "8478427": {
+      "player_id": 8478427,
+      "name": "Sebastian Aho",
+      "pos": "C",
+      "team": "CAR"
+    },
+    "jackson blake": {
+      "player_id": 8482809,
+      "name": "Jackson Blake",
+      "pos": "RW",
+      "team": "CAR"
+    },
+    "8482809": {
+      "player_id": 8482809,
+      "name": "Jackson Blake",
+      "pos": "RW",
+      "team": "CAR"
+    },
+    "william carrier": {
+      "player_id": 8477478,
+      "name": "William Carrier",
+      "pos": "LW",
+      "team": "CAR"
+    },
+    "8477478": {
+      "player_id": 8477478,
+      "name": "William Carrier",
+      "pos": "LW",
+      "team": "CAR"
+    },
+    "nicolas deslauriers": {
+      "player_id": 8475235,
+      "name": "Nicolas Deslauriers",
+      "pos": "LW",
+      "team": "CAR"
+    },
+    "8475235": {
+      "player_id": 8475235,
+      "name": "Nicolas Deslauriers",
+      "pos": "LW",
+      "team": "CAR"
+    },
+    "nikolaj ehlers": {
+      "player_id": 8477940,
+      "name": "Nikolaj Ehlers",
+      "pos": "LW",
+      "team": "CAR"
+    },
+    "8477940": {
+      "player_id": 8477940,
+      "name": "Nikolaj Ehlers",
+      "pos": "LW",
+      "team": "CAR"
+    },
+    "taylor hall": {
+      "player_id": 8475791,
+      "name": "Taylor Hall",
+      "pos": "LW",
+      "team": "CAR"
+    },
+    "8475791": {
+      "player_id": 8475791,
+      "name": "Taylor Hall",
+      "pos": "LW",
+      "team": "CAR"
+    },
+    "mark jankowski": {
+      "player_id": 8476873,
+      "name": "Mark Jankowski",
+      "pos": "LW",
+      "team": "CAR"
+    },
+    "8476873": {
+      "player_id": 8476873,
+      "name": "Mark Jankowski",
+      "pos": "LW",
+      "team": "CAR"
+    },
+    "seth jarvis": {
+      "player_id": 8482093,
+      "name": "Seth Jarvis",
+      "pos": "RW",
+      "team": "CAR"
+    },
+    "8482093": {
+      "player_id": 8482093,
+      "name": "Seth Jarvis",
+      "pos": "RW",
+      "team": "CAR"
+    },
+    "jesperi kotkaniemi": {
+      "player_id": 8480829,
+      "name": "Jesperi Kotkaniemi",
+      "pos": "C",
+      "team": "CAR"
+    },
+    "8480829": {
+      "player_id": 8480829,
+      "name": "Jesperi Kotkaniemi",
+      "pos": "C",
+      "team": "CAR"
+    },
+    "jordan martinook": {
+      "player_id": 8476921,
+      "name": "Jordan Martinook",
+      "pos": "LW",
+      "team": "CAR"
+    },
+    "8476921": {
+      "player_id": 8476921,
+      "name": "Jordan Martinook",
+      "pos": "LW",
+      "team": "CAR"
+    },
+    "eric robinson": {
+      "player_id": 8480762,
+      "name": "Eric Robinson",
+      "pos": "LW",
+      "team": "CAR"
+    },
+    "8480762": {
+      "player_id": 8480762,
+      "name": "Eric Robinson",
+      "pos": "LW",
+      "team": "CAR"
+    },
+    "jordan staal": {
+      "player_id": 8473533,
+      "name": "Jordan Staal",
+      "pos": "C",
+      "team": "CAR"
+    },
+    "8473533": {
+      "player_id": 8473533,
+      "name": "Jordan Staal",
+      "pos": "C",
+      "team": "CAR"
+    },
+    "logan stankoven": {
+      "player_id": 8482702,
+      "name": "Logan Stankoven",
+      "pos": "C",
+      "team": "CAR"
+    },
+    "8482702": {
+      "player_id": 8482702,
+      "name": "Logan Stankoven",
+      "pos": "C",
+      "team": "CAR"
+    },
+    "andrei svechnikov": {
+      "player_id": 8480830,
+      "name": "Andrei Svechnikov",
+      "pos": "RW",
+      "team": "CAR"
+    },
+    "8480830": {
+      "player_id": 8480830,
+      "name": "Andrei Svechnikov",
+      "pos": "RW",
+      "team": "CAR"
+    },
+    "jalen chatfield": {
+      "player_id": 8478970,
+      "name": "Jalen Chatfield",
+      "pos": "D",
+      "team": "CAR"
+    },
+    "8478970": {
+      "player_id": 8478970,
+      "name": "Jalen Chatfield",
+      "pos": "D",
+      "team": "CAR"
+    },
+    "shayne gostisbehere": {
+      "player_id": 8476906,
+      "name": "Shayne Gostisbehere",
+      "pos": "D",
+      "team": "CAR"
+    },
+    "8476906": {
+      "player_id": 8476906,
+      "name": "Shayne Gostisbehere",
+      "pos": "D",
+      "team": "CAR"
+    },
+    "k'andre miller": {
+      "player_id": 8480817,
+      "name": "K'Andre Miller",
+      "pos": "D",
+      "team": "CAR"
+    },
+    "8480817": {
+      "player_id": 8480817,
+      "name": "K'Andre Miller",
+      "pos": "D",
+      "team": "CAR"
+    },
+    "alexander nikishin": {
+      "player_id": 8482100,
+      "name": "Alexander Nikishin",
+      "pos": "D",
+      "team": "CAR"
+    },
+    "8482100": {
+      "player_id": 8482100,
+      "name": "Alexander Nikishin",
+      "pos": "D",
+      "team": "CAR"
+    },
+    "jaccob slavin": {
+      "player_id": 8476958,
+      "name": "Jaccob Slavin",
+      "pos": "D",
+      "team": "CAR"
+    },
+    "8476958": {
+      "player_id": 8476958,
+      "name": "Jaccob Slavin",
+      "pos": "D",
+      "team": "CAR"
+    },
+    "sean walker": {
+      "player_id": 8480336,
+      "name": "Sean Walker",
+      "pos": "D",
+      "team": "CAR"
+    },
+    "8480336": {
+      "player_id": 8480336,
+      "name": "Sean Walker",
+      "pos": "D",
+      "team": "CAR"
+    },
+    "brandon bussi": {
+      "player_id": 8483548,
+      "name": "Brandon Bussi",
+      "pos": "G",
+      "team": "CAR"
+    },
+    "8483548": {
+      "player_id": 8483548,
+      "name": "Brandon Bussi",
+      "pos": "G",
+      "team": "CAR"
+    },
+    "pyotr kochetkov": {
+      "player_id": 8481611,
+      "name": "Pyotr Kochetkov",
+      "pos": "G",
+      "team": "CAR"
+    },
+    "8481611": {
+      "player_id": 8481611,
+      "name": "Pyotr Kochetkov",
+      "pos": "G",
+      "team": "CAR"
+    },
+    "connor bedard": {
+      "player_id": 8484144,
+      "name": "Connor Bedard",
+      "pos": "C",
+      "team": "CHI"
+    },
+    "8484144": {
+      "player_id": 8484144,
+      "name": "Connor Bedard",
+      "pos": "C",
+      "team": "CHI"
+    },
+    "tyler bertuzzi": {
+      "player_id": 8477479,
+      "name": "Tyler Bertuzzi",
+      "pos": "LW",
+      "team": "CHI"
+    },
+    "8477479": {
+      "player_id": 8477479,
+      "name": "Tyler Bertuzzi",
+      "pos": "LW",
+      "team": "CHI"
+    },
+    "sacha boisvert": {
+      "player_id": 8484793,
+      "name": "Sacha Boisvert",
+      "pos": "C",
+      "team": "CHI"
+    },
+    "8484793": {
+      "player_id": 8484793,
+      "name": "Sacha Boisvert",
+      "pos": "C",
+      "team": "CHI"
+    },
+    "ryan donato": {
+      "player_id": 8477987,
+      "name": "Ryan Donato",
+      "pos": "C",
+      "team": "CHI"
+    },
+    "8477987": {
+      "player_id": 8477987,
+      "name": "Ryan Donato",
+      "pos": "C",
+      "team": "CHI"
+    },
+    "anton frondell": {
+      "player_id": 8485391,
+      "name": "Anton Frondell",
+      "pos": "C",
+      "team": "CHI"
+    },
+    "8485391": {
+      "player_id": 8485391,
+      "name": "Anton Frondell",
+      "pos": "C",
+      "team": "CHI"
+    },
+    "ryan greene": {
+      "player_id": 8483450,
+      "name": "Ryan Greene",
+      "pos": "C",
+      "team": "CHI"
+    },
+    "8483450": {
+      "player_id": 8483450,
+      "name": "Ryan Greene",
+      "pos": "C",
+      "team": "CHI"
+    },
+    "jordan greenway": {
+      "player_id": 8478413,
+      "name": "Jordan Greenway",
+      "pos": "LW",
+      "team": "CHI"
+    },
+    "8478413": {
+      "player_id": 8478413,
+      "name": "Jordan Greenway",
+      "pos": "LW",
+      "team": "CHI"
+    },
+    "nick lardis": {
+      "player_id": 8484185,
+      "name": "Nick Lardis",
+      "pos": "LW",
+      "team": "CHI"
+    },
+    "8484185": {
+      "player_id": 8484185,
+      "name": "Nick Lardis",
+      "pos": "LW",
+      "team": "CHI"
+    },
+    "andrew mangiapane": {
+      "player_id": 8478233,
+      "name": "Andrew Mangiapane",
+      "pos": "LW",
+      "team": "CHI"
+    },
+    "8478233": {
+      "player_id": 8478233,
+      "name": "Andrew Mangiapane",
+      "pos": "LW",
+      "team": "CHI"
+    },
+    "oliver moore": {
+      "player_id": 8484197,
+      "name": "Oliver Moore",
+      "pos": "C",
+      "team": "CHI"
+    },
+    "8484197": {
+      "player_id": 8484197,
+      "name": "Oliver Moore",
+      "pos": "C",
+      "team": "CHI"
+    },
+    "frank nazar": {
+      "player_id": 8483493,
+      "name": "Frank Nazar",
+      "pos": "C",
+      "team": "CHI"
+    },
+    "8483493": {
+      "player_id": 8483493,
+      "name": "Frank Nazar",
+      "pos": "C",
+      "team": "CHI"
+    },
+    "landon slaggert": {
+      "player_id": 8482172,
+      "name": "Landon Slaggert",
+      "pos": "LW",
+      "team": "CHI"
+    },
+    "8482172": {
+      "player_id": 8482172,
+      "name": "Landon Slaggert",
+      "pos": "LW",
+      "team": "CHI"
+    },
+    "teuvo teravainen": {
+      "player_id": 8476882,
+      "name": "Teuvo Teravainen",
+      "pos": "C",
+      "team": "CHI"
+    },
+    "8476882": {
+      "player_id": 8476882,
+      "name": "Teuvo Teravainen",
+      "pos": "C",
+      "team": "CHI"
+    },
+    "dominic toninato": {
+      "player_id": 8476952,
+      "name": "Dominic Toninato",
+      "pos": "C",
+      "team": "CHI"
+    },
+    "8476952": {
+      "player_id": 8476952,
+      "name": "Dominic Toninato",
+      "pos": "C",
+      "team": "CHI"
+    },
+    "bowen byram": {
+      "player_id": 8481524,
+      "name": "Bowen Byram",
+      "pos": "D",
+      "team": "CHI"
+    },
+    "8481524": {
+      "player_id": 8481524,
+      "name": "Bowen Byram",
+      "pos": "D",
+      "team": "CHI"
+    },
+    "ethan del mastro": {
+      "player_id": 8482807,
+      "name": "Ethan Del Mastro",
+      "pos": "D",
+      "team": "CHI"
+    },
+    "8482807": {
+      "player_id": 8482807,
+      "name": "Ethan Del Mastro",
+      "pos": "D",
+      "team": "CHI"
+    },
+    "wyatt kaiser": {
+      "player_id": 8482176,
+      "name": "Wyatt Kaiser",
+      "pos": "D",
+      "team": "CHI"
+    },
+    "8482176": {
+      "player_id": 8482176,
+      "name": "Wyatt Kaiser",
+      "pos": "D",
+      "team": "CHI"
+    },
+    "kevin korchinski": {
+      "player_id": 8483466,
+      "name": "Kevin Korchinski",
+      "pos": "D",
+      "team": "CHI"
+    },
+    "8483466": {
+      "player_id": 8483466,
+      "name": "Kevin Korchinski",
+      "pos": "D",
+      "team": "CHI"
+    },
+    "artyom levshunov": {
+      "player_id": 8484783,
+      "name": "Artyom Levshunov",
+      "pos": "D",
+      "team": "CHI"
+    },
+    "8484783": {
+      "player_id": 8484783,
+      "name": "Artyom Levshunov",
+      "pos": "D",
+      "team": "CHI"
+    },
+    "sam rinzel": {
+      "player_id": 8483506,
+      "name": "Sam Rinzel",
+      "pos": "D",
+      "team": "CHI"
+    },
+    "8483506": {
+      "player_id": 8483506,
+      "name": "Sam Rinzel",
+      "pos": "D",
+      "team": "CHI"
+    },
+    "alex vlasic": {
+      "player_id": 8481568,
+      "name": "Alex Vlasic",
+      "pos": "D",
+      "team": "CHI"
+    },
+    "8481568": {
+      "player_id": 8481568,
+      "name": "Alex Vlasic",
+      "pos": "D",
+      "team": "CHI"
+    },
+    "spencer knight": {
+      "player_id": 8481519,
+      "name": "Spencer Knight",
+      "pos": "G",
+      "team": "CHI"
+    },
+    "8481519": {
+      "player_id": 8481519,
+      "name": "Spencer Knight",
+      "pos": "G",
+      "team": "CHI"
+    },
+    "arvid soderblom": {
+      "player_id": 8482821,
+      "name": "Arvid Soderblom",
+      "pos": "G",
+      "team": "CHI"
+    },
+    "8482821": {
+      "player_id": 8482821,
+      "name": "Arvid Soderblom",
+      "pos": "G",
+      "team": "CHI"
+    },
+    "zakhar bardakov": {
+      "player_id": 8482947,
+      "name": "Zakhar Bardakov",
+      "pos": "C",
+      "team": "COL"
+    },
+    "8482947": {
+      "player_id": 8482947,
+      "name": "Zakhar Bardakov",
+      "pos": "C",
+      "team": "COL"
+    },
+    "nazem kadri": {
+      "player_id": 8475172,
+      "name": "Nazem Kadri",
+      "pos": "C",
+      "team": "COL"
+    },
+    "8475172": {
+      "player_id": 8475172,
+      "name": "Nazem Kadri",
+      "pos": "C",
+      "team": "COL"
+    },
+    "parker kelly": {
+      "player_id": 8480448,
+      "name": "Parker Kelly",
+      "pos": "C",
+      "team": "COL"
+    },
+    "8480448": {
+      "player_id": 8480448,
+      "name": "Parker Kelly",
+      "pos": "C",
+      "team": "COL"
+    },
+    "gabriel landeskog": {
+      "player_id": 8476455,
+      "name": "Gabriel Landeskog",
+      "pos": "LW",
+      "team": "COL"
+    },
+    "8476455": {
+      "player_id": 8476455,
+      "name": "Gabriel Landeskog",
+      "pos": "LW",
+      "team": "COL"
+    },
+    "artturi lehkonen": {
+      "player_id": 8477476,
+      "name": "Artturi Lehkonen",
+      "pos": "LW",
+      "team": "COL"
+    },
+    "8477476": {
+      "player_id": 8477476,
+      "name": "Artturi Lehkonen",
+      "pos": "LW",
+      "team": "COL"
+    },
+    "nathan mackinnon": {
+      "player_id": 8477492,
+      "name": "Nathan MacKinnon",
+      "pos": "C",
+      "team": "COL"
+    },
+    "8477492": {
+      "player_id": 8477492,
+      "name": "Nathan MacKinnon",
+      "pos": "C",
+      "team": "COL"
+    },
+    "martin necas": {
+      "player_id": 8480039,
+      "name": "Martin Necas",
+      "pos": "C",
+      "team": "COL"
+    },
+    "8480039": {
+      "player_id": 8480039,
+      "name": "Martin Necas",
+      "pos": "C",
+      "team": "COL"
+    },
+    "brock nelson": {
+      "player_id": 8475754,
+      "name": "Brock Nelson",
+      "pos": "C",
+      "team": "COL"
+    },
+    "8475754": {
+      "player_id": 8475754,
+      "name": "Brock Nelson",
+      "pos": "C",
+      "team": "COL"
+    },
+    "logan o'connor": {
+      "player_id": 8481186,
+      "name": "Logan O'Connor",
+      "pos": "RW",
+      "team": "COL"
+    },
+    "8481186": {
+      "player_id": 8481186,
+      "name": "Logan O'Connor",
+      "pos": "RW",
+      "team": "COL"
+    },
+    "nicolas roy": {
+      "player_id": 8478462,
+      "name": "Nicolas Roy",
+      "pos": "C",
+      "team": "COL"
+    },
+    "8478462": {
+      "player_id": 8478462,
+      "name": "Nicolas Roy",
+      "pos": "C",
+      "team": "COL"
+    },
+    "fedor svechkov": {
+      "player_id": 8482768,
+      "name": "Fedor Svechkov",
+      "pos": "C",
+      "team": "COL"
+    },
+    "8482768": {
+      "player_id": 8482768,
+      "name": "Fedor Svechkov",
+      "pos": "C",
+      "team": "COL"
+    },
+    "brent burns": {
+      "player_id": 8470613,
+      "name": "Brent Burns",
+      "pos": "D",
+      "team": "COL"
+    },
+    "8470613": {
+      "player_id": 8470613,
+      "name": "Brent Burns",
+      "pos": "D",
+      "team": "COL"
+    },
+    "brett kulak": {
+      "player_id": 8476967,
+      "name": "Brett Kulak",
+      "pos": "D",
+      "team": "COL"
+    },
+    "8476967": {
+      "player_id": 8476967,
+      "name": "Brett Kulak",
+      "pos": "D",
+      "team": "COL"
+    },
+    "cale makar": {
+      "player_id": 8480069,
+      "name": "Cale Makar",
+      "pos": "D",
+      "team": "COL"
+    },
+    "8480069": {
+      "player_id": 8480069,
+      "name": "Cale Makar",
+      "pos": "D",
+      "team": "COL"
+    },
+    "sam malinski": {
+      "player_id": 8484258,
+      "name": "Sam Malinski",
+      "pos": "D",
+      "team": "COL"
+    },
+    "8484258": {
+      "player_id": 8484258,
+      "name": "Sam Malinski",
+      "pos": "D",
+      "team": "COL"
+    },
+    "josh manson": {
+      "player_id": 8476312,
+      "name": "Josh Manson",
+      "pos": "D",
+      "team": "COL"
+    },
+    "8476312": {
+      "player_id": 8476312,
+      "name": "Josh Manson",
+      "pos": "D",
+      "team": "COL"
+    },
+    "devon toews": {
+      "player_id": 8478038,
+      "name": "Devon Toews",
+      "pos": "D",
+      "team": "COL"
+    },
+    "8478038": {
+      "player_id": 8478038,
+      "name": "Devon Toews",
+      "pos": "D",
+      "team": "COL"
+    },
+    "mackenzie blackwood": {
+      "player_id": 8478406,
+      "name": "Mackenzie Blackwood",
+      "pos": "G",
+      "team": "COL"
+    },
+    "8478406": {
+      "player_id": 8478406,
+      "name": "Mackenzie Blackwood",
+      "pos": "G",
+      "team": "COL"
+    },
+    "scott wedgewood": {
+      "player_id": 8475809,
+      "name": "Scott Wedgewood",
+      "pos": "G",
+      "team": "COL"
+    },
+    "8475809": {
+      "player_id": 8475809,
+      "name": "Scott Wedgewood",
+      "pos": "G",
+      "team": "COL"
+    },
+    "charlie coyle": {
+      "player_id": 8475745,
+      "name": "Charlie Coyle",
+      "pos": "C",
+      "team": "CBJ"
+    },
+    "8475745": {
+      "player_id": 8475745,
+      "name": "Charlie Coyle",
+      "pos": "C",
+      "team": "CBJ"
+    },
+    "adam fantilli": {
+      "player_id": 8484166,
+      "name": "Adam Fantilli",
+      "pos": "C",
+      "team": "CBJ"
+    },
+    "8484166": {
+      "player_id": 8484166,
+      "name": "Adam Fantilli",
+      "pos": "C",
+      "team": "CBJ"
+    },
+    "conor garland": {
+      "player_id": 8478856,
+      "name": "Conor Garland",
+      "pos": "RW",
+      "team": "CBJ"
+    },
+    "8478856": {
+      "player_id": 8478856,
+      "name": "Conor Garland",
+      "pos": "RW",
+      "team": "CBJ"
+    },
+    "kent johnson": {
+      "player_id": 8482660,
+      "name": "Kent Johnson",
+      "pos": "C",
+      "team": "CBJ"
+    },
+    "8482660": {
+      "player_id": 8482660,
+      "name": "Kent Johnson",
+      "pos": "C",
+      "team": "CBJ"
+    },
+    "isac lundestr\u00f6m": {
+      "player_id": 8480806,
+      "name": "Isac Lundestr\u00f6m",
+      "pos": "C",
+      "team": "CBJ"
+    },
+    "8480806": {
+      "player_id": 8480806,
+      "name": "Isac Lundestr\u00f6m",
+      "pos": "C",
+      "team": "CBJ"
+    },
+    "kirill marchenko": {
+      "player_id": 8480893,
+      "name": "Kirill Marchenko",
+      "pos": "RW",
+      "team": "CBJ"
+    },
+    "8480893": {
+      "player_id": 8480893,
+      "name": "Kirill Marchenko",
+      "pos": "RW",
+      "team": "CBJ"
+    },
+    "sean monahan": {
+      "player_id": 8477497,
+      "name": "Sean Monahan",
+      "pos": "C",
+      "team": "CBJ"
+    },
+    "8477497": {
+      "player_id": 8477497,
+      "name": "Sean Monahan",
+      "pos": "C",
+      "team": "CBJ"
+    },
+    "valeri nichushkin": {
+      "player_id": 8477501,
+      "name": "Valeri Nichushkin",
+      "pos": "RW",
+      "team": "CBJ"
+    },
+    "8477501": {
+      "player_id": 8477501,
+      "name": "Valeri Nichushkin",
+      "pos": "RW",
+      "team": "CBJ"
+    },
+    "mathieu olivier": {
+      "player_id": 8479671,
+      "name": "Mathieu Olivier",
+      "pos": "RW",
+      "team": "CBJ"
+    },
+    "8479671": {
+      "player_id": 8479671,
+      "name": "Mathieu Olivier",
+      "pos": "RW",
+      "team": "CBJ"
+    },
+    "cole sillinger": {
+      "player_id": 8482705,
+      "name": "Cole Sillinger",
+      "pos": "C",
+      "team": "CBJ"
+    },
+    "8482705": {
+      "player_id": 8482705,
+      "name": "Cole Sillinger",
+      "pos": "C",
+      "team": "CBJ"
+    },
+    "dmitri voronkov": {
+      "player_id": 8481716,
+      "name": "Dmitri Voronkov",
+      "pos": "LW",
+      "team": "CBJ"
+    },
+    "8481716": {
+      "player_id": 8481716,
+      "name": "Dmitri Voronkov",
+      "pos": "LW",
+      "team": "CBJ"
+    },
+    "miles wood": {
+      "player_id": 8477425,
+      "name": "Miles Wood",
+      "pos": "LW",
+      "team": "CBJ"
+    },
+    "8477425": {
+      "player_id": 8477425,
+      "name": "Miles Wood",
+      "pos": "LW",
+      "team": "CBJ"
+    },
+    "jake christiansen": {
+      "player_id": 8481161,
+      "name": "Jake Christiansen",
+      "pos": "D",
+      "team": "CBJ"
+    },
+    "8481161": {
+      "player_id": 8481161,
+      "name": "Jake Christiansen",
+      "pos": "D",
+      "team": "CBJ"
+    },
+    "dante fabbro": {
+      "player_id": 8479371,
+      "name": "Dante Fabbro",
+      "pos": "D",
+      "team": "CBJ"
+    },
+    "8479371": {
+      "player_id": 8479371,
+      "name": "Dante Fabbro",
+      "pos": "D",
+      "team": "CBJ"
+    },
+    "denton mateychuk": {
+      "player_id": 8483485,
+      "name": "Denton Mateychuk",
+      "pos": "D",
+      "team": "CBJ"
+    },
+    "8483485": {
+      "player_id": 8483485,
+      "name": "Denton Mateychuk",
+      "pos": "D",
+      "team": "CBJ"
+    },
+    "ivan provorov": {
+      "player_id": 8478500,
+      "name": "Ivan Provorov",
+      "pos": "D",
+      "team": "CBJ"
+    },
+    "8478500": {
+      "player_id": 8478500,
+      "name": "Ivan Provorov",
+      "pos": "D",
+      "team": "CBJ"
+    },
+    "damon severson": {
+      "player_id": 8476923,
+      "name": "Damon Severson",
+      "pos": "D",
+      "team": "CBJ"
+    },
+    "8476923": {
+      "player_id": 8476923,
+      "name": "Damon Severson",
+      "pos": "D",
+      "team": "CBJ"
+    },
+    "zach werenski": {
+      "player_id": 8478460,
+      "name": "Zach Werenski",
+      "pos": "D",
+      "team": "CBJ"
+    },
+    "8478460": {
+      "player_id": 8478460,
+      "name": "Zach Werenski",
+      "pos": "D",
+      "team": "CBJ"
+    },
+    "jet greaves": {
+      "player_id": 8482982,
+      "name": "Jet Greaves",
+      "pos": "G",
+      "team": "CBJ"
+    },
+    "8482982": {
+      "player_id": 8482982,
+      "name": "Jet Greaves",
+      "pos": "G",
+      "team": "CBJ"
+    },
+    "elvis merzlikins": {
+      "player_id": 8478007,
+      "name": "Elvis Merzlikins",
+      "pos": "G",
+      "team": "CBJ"
+    },
+    "8478007": {
+      "player_id": 8478007,
+      "name": "Elvis Merzlikins",
+      "pos": "G",
+      "team": "CBJ"
+    },
+    "colin blackwell": {
+      "player_id": 8476278,
+      "name": "Colin Blackwell",
+      "pos": "C",
+      "team": "DAL"
+    },
+    "8476278": {
+      "player_id": 8476278,
+      "name": "Colin Blackwell",
+      "pos": "C",
+      "team": "DAL"
+    },
+    "oskar b\u00e4ck": {
+      "player_id": 8480840,
+      "name": "Oskar B\u00e4ck",
+      "pos": "C",
+      "team": "DAL"
+    },
+    "8480840": {
+      "player_id": 8480840,
+      "name": "Oskar B\u00e4ck",
+      "pos": "C",
+      "team": "DAL"
+    },
+    "matt duchene": {
+      "player_id": 8475168,
+      "name": "Matt Duchene",
+      "pos": "C",
+      "team": "DAL"
+    },
+    "8475168": {
+      "player_id": 8475168,
+      "name": "Matt Duchene",
+      "pos": "C",
+      "team": "DAL"
+    },
+    "radek faksa": {
+      "player_id": 8476889,
+      "name": "Radek Faksa",
+      "pos": "C",
+      "team": "DAL"
+    },
+    "8476889": {
+      "player_id": 8476889,
+      "name": "Radek Faksa",
+      "pos": "C",
+      "team": "DAL"
+    },
+    "roope hintz": {
+      "player_id": 8478449,
+      "name": "Roope Hintz",
+      "pos": "C",
+      "team": "DAL"
+    },
+    "8478449": {
+      "player_id": 8478449,
+      "name": "Roope Hintz",
+      "pos": "C",
+      "team": "DAL"
+    },
+    "justin hryckowian": {
+      "player_id": 8484829,
+      "name": "Justin Hryckowian",
+      "pos": "C",
+      "team": "DAL"
+    },
+    "8484829": {
+      "player_id": 8484829,
+      "name": "Justin Hryckowian",
+      "pos": "C",
+      "team": "DAL"
+    },
+    "arttu hyry": {
+      "player_id": 8484938,
+      "name": "Arttu Hyry",
+      "pos": "RW",
+      "team": "DAL"
+    },
+    "8484938": {
+      "player_id": 8484938,
+      "name": "Arttu Hyry",
+      "pos": "RW",
+      "team": "DAL"
+    },
+    "wyatt johnston": {
+      "player_id": 8482740,
+      "name": "Wyatt Johnston",
+      "pos": "C",
+      "team": "DAL"
+    },
+    "8482740": {
+      "player_id": 8482740,
+      "name": "Wyatt Johnston",
+      "pos": "C",
+      "team": "DAL"
+    },
+    "mikko rantanen": {
+      "player_id": 8478420,
+      "name": "Mikko Rantanen",
+      "pos": "RW",
+      "team": "DAL"
+    },
+    "8478420": {
+      "player_id": 8478420,
+      "name": "Mikko Rantanen",
+      "pos": "RW",
+      "team": "DAL"
+    },
+    "jason robertson": {
+      "player_id": 8480027,
+      "name": "Jason Robertson",
+      "pos": "LW",
+      "team": "DAL"
+    },
+    "8480027": {
+      "player_id": 8480027,
+      "name": "Jason Robertson",
+      "pos": "LW",
+      "team": "DAL"
+    },
+    "tyler seguin": {
+      "player_id": 8475794,
+      "name": "Tyler Seguin",
+      "pos": "C",
+      "team": "DAL"
+    },
+    "8475794": {
+      "player_id": 8475794,
+      "name": "Tyler Seguin",
+      "pos": "C",
+      "team": "DAL"
+    },
+    "sam steel": {
+      "player_id": 8479351,
+      "name": "Sam Steel",
+      "pos": "C",
+      "team": "DAL"
+    },
+    "8479351": {
+      "player_id": 8479351,
+      "name": "Sam Steel",
+      "pos": "C",
+      "team": "DAL"
+    },
+    "lian bichsel": {
+      "player_id": 8483425,
+      "name": "Lian Bichsel",
+      "pos": "D",
+      "team": "DAL"
+    },
+    "8483425": {
+      "player_id": 8483425,
+      "name": "Lian Bichsel",
+      "pos": "D",
+      "team": "DAL"
+    },
+    "kyle capobianco": {
+      "player_id": 8478476,
+      "name": "Kyle Capobianco",
+      "pos": "D",
+      "team": "DAL"
+    },
+    "8478476": {
+      "player_id": 8478476,
+      "name": "Kyle Capobianco",
+      "pos": "D",
+      "team": "DAL"
+    },
+    "thomas harley": {
+      "player_id": 8481581,
+      "name": "Thomas Harley",
+      "pos": "D",
+      "team": "DAL"
+    },
+    "8481581": {
+      "player_id": 8481581,
+      "name": "Thomas Harley",
+      "pos": "D",
+      "team": "DAL"
+    },
+    "miro heiskanen": {
+      "player_id": 8480036,
+      "name": "Miro Heiskanen",
+      "pos": "D",
+      "team": "DAL"
+    },
+    "8480036": {
+      "player_id": 8480036,
+      "name": "Miro Heiskanen",
+      "pos": "D",
+      "team": "DAL"
+    },
+    "esa lindell": {
+      "player_id": 8476902,
+      "name": "Esa Lindell",
+      "pos": "D",
+      "team": "DAL"
+    },
+    "8476902": {
+      "player_id": 8476902,
+      "name": "Esa Lindell",
+      "pos": "D",
+      "team": "DAL"
+    },
+    "nils lundkvist": {
+      "player_id": 8480878,
+      "name": "Nils Lundkvist",
+      "pos": "D",
+      "team": "DAL"
+    },
+    "8480878": {
+      "player_id": 8480878,
+      "name": "Nils Lundkvist",
+      "pos": "D",
+      "team": "DAL"
+    },
+    "tyler myers": {
+      "player_id": 8474574,
+      "name": "Tyler Myers",
+      "pos": "D",
+      "team": "DAL"
+    },
+    "8474574": {
+      "player_id": 8474574,
+      "name": "Tyler Myers",
+      "pos": "D",
+      "team": "DAL"
+    },
+    "casey desmith": {
+      "player_id": 8479193,
+      "name": "Casey DeSmith",
+      "pos": "G",
+      "team": "DAL"
+    },
+    "8479193": {
+      "player_id": 8479193,
+      "name": "Casey DeSmith",
+      "pos": "G",
+      "team": "DAL"
+    },
+    "jake oettinger": {
+      "player_id": 8479979,
+      "name": "Jake Oettinger",
+      "pos": "G",
+      "team": "DAL"
+    },
+    "8479979": {
+      "player_id": 8479979,
+      "name": "Jake Oettinger",
+      "pos": "G",
+      "team": "DAL"
+    },
+    "mason appleton": {
+      "player_id": 8478891,
+      "name": "Mason Appleton",
+      "pos": "C",
+      "team": "DET"
+    },
+    "8478891": {
+      "player_id": 8478891,
+      "name": "Mason Appleton",
+      "pos": "C",
+      "team": "DET"
+    },
+    "j.t. compher": {
+      "player_id": 8477456,
+      "name": "J.T. Compher",
+      "pos": "LW",
+      "team": "DET"
+    },
+    "8477456": {
+      "player_id": 8477456,
+      "name": "J.T. Compher",
+      "pos": "LW",
+      "team": "DET"
+    },
+    "andrew copp": {
+      "player_id": 8477429,
+      "name": "Andrew Copp",
+      "pos": "C",
+      "team": "DET"
+    },
+    "8477429": {
+      "player_id": 8477429,
+      "name": "Andrew Copp",
+      "pos": "C",
+      "team": "DET"
+    },
+    "alex debrincat": {
+      "player_id": 8479337,
+      "name": "Alex DeBrincat",
+      "pos": "RW",
+      "team": "DET"
+    },
+    "8479337": {
+      "player_id": 8479337,
+      "name": "Alex DeBrincat",
+      "pos": "RW",
+      "team": "DET"
+    },
+    "emmitt finnie": {
+      "player_id": 8484471,
+      "name": "Emmitt Finnie",
+      "pos": "C",
+      "team": "DET"
+    },
+    "8484471": {
+      "player_id": 8484471,
+      "name": "Emmitt Finnie",
+      "pos": "C",
+      "team": "DET"
+    },
+    "marco kasper": {
+      "player_id": 8483464,
+      "name": "Marco Kasper",
+      "pos": "C",
+      "team": "DET"
+    },
+    "8483464": {
+      "player_id": 8483464,
+      "name": "Marco Kasper",
+      "pos": "C",
+      "team": "DET"
+    },
+    "dylan larkin": {
+      "player_id": 8477946,
+      "name": "Dylan Larkin",
+      "pos": "C",
+      "team": "DET"
+    },
+    "8477946": {
+      "player_id": 8477946,
+      "name": "Dylan Larkin",
+      "pos": "C",
+      "team": "DET"
+    },
+    "michael rasmussen": {
+      "player_id": 8479992,
+      "name": "Michael Rasmussen",
+      "pos": "C",
+      "team": "DET"
+    },
+    "8479992": {
+      "player_id": 8479992,
+      "name": "Michael Rasmussen",
+      "pos": "C",
+      "team": "DET"
+    },
+    "lucas raymond": {
+      "player_id": 8482078,
+      "name": "Lucas Raymond",
+      "pos": "LW",
+      "team": "DET"
+    },
+    "8482078": {
+      "player_id": 8482078,
+      "name": "Lucas Raymond",
+      "pos": "LW",
+      "team": "DET"
+    },
+    "jacob bernard-docker": {
+      "player_id": 8480879,
+      "name": "Jacob Bernard-Docker",
+      "pos": "D",
+      "team": "DET"
+    },
+    "8480879": {
+      "player_id": 8480879,
+      "name": "Jacob Bernard-Docker",
+      "pos": "D",
+      "team": "DET"
+    },
+    "ben chiarot": {
+      "player_id": 8475279,
+      "name": "Ben Chiarot",
+      "pos": "D",
+      "team": "DET"
+    },
+    "8475279": {
+      "player_id": 8475279,
+      "name": "Ben Chiarot",
+      "pos": "D",
+      "team": "DET"
+    },
+    "simon edvinsson": {
+      "player_id": 8482762,
+      "name": "Simon Edvinsson",
+      "pos": "D",
+      "team": "DET"
+    },
+    "8482762": {
+      "player_id": 8482762,
+      "name": "Simon Edvinsson",
+      "pos": "D",
+      "team": "DET"
+    },
+    "justin faulk": {
+      "player_id": 8475753,
+      "name": "Justin Faulk",
+      "pos": "D",
+      "team": "DET"
+    },
+    "8475753": {
+      "player_id": 8475753,
+      "name": "Justin Faulk",
+      "pos": "D",
+      "team": "DET"
+    },
+    "albert johansson": {
+      "player_id": 8481607,
+      "name": "Albert Johansson",
+      "pos": "D",
+      "team": "DET"
+    },
+    "8481607": {
+      "player_id": 8481607,
+      "name": "Albert Johansson",
+      "pos": "D",
+      "team": "DET"
+    },
+    "moritz seider": {
+      "player_id": 8481542,
+      "name": "Moritz Seider",
+      "pos": "D",
+      "team": "DET"
+    },
+    "8481542": {
+      "player_id": 8481542,
+      "name": "Moritz Seider",
+      "pos": "D",
+      "team": "DET"
+    },
+    "john gibson": {
+      "player_id": 8476434,
+      "name": "John Gibson",
+      "pos": "G",
+      "team": "DET"
+    },
+    "8476434": {
+      "player_id": 8476434,
+      "name": "John Gibson",
+      "pos": "G",
+      "team": "DET"
+    },
+    "colton dach": {
+      "player_id": 8482703,
+      "name": "Colton Dach",
+      "pos": "C",
+      "team": "EDM"
+    },
+    "8482703": {
+      "player_id": 8482703,
+      "name": "Colton Dach",
+      "pos": "C",
+      "team": "EDM"
+    },
+    "jason dickinson": {
+      "player_id": 8477450,
+      "name": "Jason Dickinson",
+      "pos": "C",
+      "team": "EDM"
+    },
+    "8477450": {
+      "player_id": 8477450,
+      "name": "Jason Dickinson",
+      "pos": "C",
+      "team": "EDM"
+    },
+    "leon draisaitl": {
+      "player_id": 8477934,
+      "name": "Leon Draisaitl",
+      "pos": "C",
+      "team": "EDM"
+    },
+    "8477934": {
+      "player_id": 8477934,
+      "name": "Leon Draisaitl",
+      "pos": "C",
+      "team": "EDM"
+    },
+    "trent frederic": {
+      "player_id": 8479365,
+      "name": "Trent Frederic",
+      "pos": "C",
+      "team": "EDM"
+    },
+    "8479365": {
+      "player_id": 8479365,
+      "name": "Trent Frederic",
+      "pos": "C",
+      "team": "EDM"
+    },
+    "zach hyman": {
+      "player_id": 8475786,
+      "name": "Zach Hyman",
+      "pos": "LW",
+      "team": "EDM"
+    },
+    "8475786": {
+      "player_id": 8475786,
+      "name": "Zach Hyman",
+      "pos": "LW",
+      "team": "EDM"
+    },
+    "mattias janmark": {
+      "player_id": 8477406,
+      "name": "Mattias Janmark",
+      "pos": "C",
+      "team": "EDM"
+    },
+    "8477406": {
+      "player_id": 8477406,
+      "name": "Mattias Janmark",
+      "pos": "C",
+      "team": "EDM"
+    },
+    "connor mcdavid": {
+      "player_id": 8478402,
+      "name": "Connor McDavid",
+      "pos": "C",
+      "team": "EDM"
+    },
+    "8478402": {
+      "player_id": 8478402,
+      "name": "Connor McDavid",
+      "pos": "C",
+      "team": "EDM"
+    },
+    "ryan nugent-hopkins": {
+      "player_id": 8476454,
+      "name": "Ryan Nugent-Hopkins",
+      "pos": "C",
+      "team": "EDM"
+    },
+    "8476454": {
+      "player_id": 8476454,
+      "name": "Ryan Nugent-Hopkins",
+      "pos": "C",
+      "team": "EDM"
+    },
+    "vasily podkolzin": {
+      "player_id": 8481617,
+      "name": "Vasily Podkolzin",
+      "pos": "RW",
+      "team": "EDM"
+    },
+    "8481617": {
+      "player_id": 8481617,
+      "name": "Vasily Podkolzin",
+      "pos": "RW",
+      "team": "EDM"
+    },
+    "josh samanski": {
+      "player_id": 8484509,
+      "name": "Josh Samanski",
+      "pos": "C",
+      "team": "EDM"
+    },
+    "8484509": {
+      "player_id": 8484509,
+      "name": "Josh Samanski",
+      "pos": "C",
+      "team": "EDM"
+    },
+    "matt savoie": {
+      "player_id": 8483512,
+      "name": "Matt Savoie",
+      "pos": "C",
+      "team": "EDM"
+    },
+    "8483512": {
+      "player_id": 8483512,
+      "name": "Matt Savoie",
+      "pos": "C",
+      "team": "EDM"
+    },
+    "evan bouchard": {
+      "player_id": 8480803,
+      "name": "Evan Bouchard",
+      "pos": "D",
+      "team": "EDM"
+    },
+    "8480803": {
+      "player_id": 8480803,
+      "name": "Evan Bouchard",
+      "pos": "D",
+      "team": "EDM"
+    },
+    "mattias ekholm": {
+      "player_id": 8475218,
+      "name": "Mattias Ekholm",
+      "pos": "D",
+      "team": "EDM"
+    },
+    "8475218": {
+      "player_id": 8475218,
+      "name": "Mattias Ekholm",
+      "pos": "D",
+      "team": "EDM"
+    },
+    "ty emberson": {
+      "player_id": 8480834,
+      "name": "Ty Emberson",
+      "pos": "D",
+      "team": "EDM"
+    },
+    "8480834": {
+      "player_id": 8480834,
+      "name": "Ty Emberson",
+      "pos": "D",
+      "team": "EDM"
+    },
+    "connor murphy": {
+      "player_id": 8476473,
+      "name": "Connor Murphy",
+      "pos": "D",
+      "team": "EDM"
+    },
+    "8476473": {
+      "player_id": 8476473,
+      "name": "Connor Murphy",
+      "pos": "D",
+      "team": "EDM"
+    },
+    "darnell nurse": {
+      "player_id": 8477498,
+      "name": "Darnell Nurse",
+      "pos": "D",
+      "team": "EDM"
+    },
+    "8477498": {
+      "player_id": 8477498,
+      "name": "Darnell Nurse",
+      "pos": "D",
+      "team": "EDM"
+    },
+    "spencer stastney": {
+      "player_id": 8481056,
+      "name": "Spencer Stastney",
+      "pos": "D",
+      "team": "EDM"
+    },
+    "8481056": {
+      "player_id": 8481056,
+      "name": "Spencer Stastney",
+      "pos": "D",
+      "team": "EDM"
+    },
+    "jake walman": {
+      "player_id": 8478013,
+      "name": "Jake Walman",
+      "pos": "D",
+      "team": "EDM"
+    },
+    "8478013": {
+      "player_id": 8478013,
+      "name": "Jake Walman",
+      "pos": "D",
+      "team": "EDM"
+    },
+    "tristan jarry": {
+      "player_id": 8477465,
+      "name": "Tristan Jarry",
+      "pos": "G",
+      "team": "EDM"
+    },
+    "8477465": {
+      "player_id": 8477465,
+      "name": "Tristan Jarry",
+      "pos": "G",
+      "team": "EDM"
+    },
+    "aleksander barkov": {
+      "player_id": 8477493,
+      "name": "Aleksander Barkov",
+      "pos": "C",
+      "team": "FLA"
+    },
+    "8477493": {
+      "player_id": 8477493,
+      "name": "Aleksander Barkov",
+      "pos": "C",
+      "team": "FLA"
+    },
+    "sam bennett": {
+      "player_id": 8477935,
+      "name": "Sam Bennett",
+      "pos": "C",
+      "team": "FLA"
+    },
+    "8477935": {
+      "player_id": 8477935,
+      "name": "Sam Bennett",
+      "pos": "C",
+      "team": "FLA"
+    },
+    "jonah gadjovich": {
+      "player_id": 8479981,
+      "name": "Jonah Gadjovich",
+      "pos": "LW",
+      "team": "FLA"
+    },
+    "8479981": {
+      "player_id": 8479981,
+      "name": "Jonah Gadjovich",
+      "pos": "LW",
+      "team": "FLA"
+    },
+    "garnet hathaway": {
+      "player_id": 8477903,
+      "name": "Garnet Hathaway",
+      "pos": "RW",
+      "team": "FLA"
+    },
+    "8477903": {
+      "player_id": 8477903,
+      "name": "Garnet Hathaway",
+      "pos": "RW",
+      "team": "FLA"
+    },
+    "anton lundell": {
+      "player_id": 8482113,
+      "name": "Anton Lundell",
+      "pos": "C",
+      "team": "FLA"
+    },
+    "8482113": {
+      "player_id": 8482113,
+      "name": "Anton Lundell",
+      "pos": "C",
+      "team": "FLA"
+    },
+    "eetu luostarinen": {
+      "player_id": 8480185,
+      "name": "Eetu Luostarinen",
+      "pos": "C",
+      "team": "FLA"
+    },
+    "8480185": {
+      "player_id": 8480185,
+      "name": "Eetu Luostarinen",
+      "pos": "C",
+      "team": "FLA"
+    },
+    "brad marchand": {
+      "player_id": 8473419,
+      "name": "Brad Marchand",
+      "pos": "LW",
+      "team": "FLA"
+    },
+    "8473419": {
+      "player_id": 8473419,
+      "name": "Brad Marchand",
+      "pos": "LW",
+      "team": "FLA"
+    },
+    "cole reinhardt": {
+      "player_id": 8481133,
+      "name": "Cole Reinhardt",
+      "pos": "LW",
+      "team": "FLA"
+    },
+    "8481133": {
+      "player_id": 8481133,
+      "name": "Cole Reinhardt",
+      "pos": "LW",
+      "team": "FLA"
+    },
+    "sam reinhart": {
+      "player_id": 8477933,
+      "name": "Sam Reinhart",
+      "pos": "C",
+      "team": "FLA"
+    },
+    "8477933": {
+      "player_id": 8477933,
+      "name": "Sam Reinhart",
+      "pos": "C",
+      "team": "FLA"
+    },
+    "brady tkachuk": {
+      "player_id": 8480801,
+      "name": "Brady Tkachuk",
+      "pos": "LW",
+      "team": "FLA"
+    },
+    "8480801": {
+      "player_id": 8480801,
+      "name": "Brady Tkachuk",
+      "pos": "LW",
+      "team": "FLA"
+    },
+    "matthew tkachuk": {
+      "player_id": 8479314,
+      "name": "Matthew Tkachuk",
+      "pos": "LW",
+      "team": "FLA"
+    },
+    "8479314": {
+      "player_id": 8479314,
+      "name": "Matthew Tkachuk",
+      "pos": "LW",
+      "team": "FLA"
+    },
+    "carter verhaeghe": {
+      "player_id": 8477409,
+      "name": "Carter Verhaeghe",
+      "pos": "C",
+      "team": "FLA"
+    },
+    "8477409": {
+      "player_id": 8477409,
+      "name": "Carter Verhaeghe",
+      "pos": "C",
+      "team": "FLA"
+    },
+    "uvis balinskis": {
+      "player_id": 8484304,
+      "name": "Uvis Balinskis",
+      "pos": "D",
+      "team": "FLA"
+    },
+    "8484304": {
+      "player_id": 8484304,
+      "name": "Uvis Balinskis",
+      "pos": "D",
+      "team": "FLA"
+    },
+    "aaron ekblad": {
+      "player_id": 8477932,
+      "name": "Aaron Ekblad",
+      "pos": "D",
+      "team": "FLA"
+    },
+    "8477932": {
+      "player_id": 8477932,
+      "name": "Aaron Ekblad",
+      "pos": "D",
+      "team": "FLA"
+    },
+    "gustav forsling": {
+      "player_id": 8478055,
+      "name": "Gustav Forsling",
+      "pos": "D",
+      "team": "FLA"
+    },
+    "8478055": {
+      "player_id": 8478055,
+      "name": "Gustav Forsling",
+      "pos": "D",
+      "team": "FLA"
+    },
+    "seth jones": {
+      "player_id": 8477495,
+      "name": "Seth Jones",
+      "pos": "D",
+      "team": "FLA"
+    },
+    "8477495": {
+      "player_id": 8477495,
+      "name": "Seth Jones",
+      "pos": "D",
+      "team": "FLA"
+    },
+    "dmitry kulikov": {
+      "player_id": 8475179,
+      "name": "Dmitry Kulikov",
+      "pos": "D",
+      "team": "FLA"
+    },
+    "8475179": {
+      "player_id": 8475179,
+      "name": "Dmitry Kulikov",
+      "pos": "D",
+      "team": "FLA"
+    },
+    "niko mikkola": {
+      "player_id": 8478859,
+      "name": "Niko Mikkola",
+      "pos": "D",
+      "team": "FLA"
+    },
+    "8478859": {
+      "player_id": 8478859,
+      "name": "Niko Mikkola",
+      "pos": "D",
+      "team": "FLA"
+    },
+    "jacob markstrom": {
+      "player_id": 8474593,
+      "name": "Jacob Markstrom",
+      "pos": "G",
+      "team": "FLA"
+    },
+    "8474593": {
+      "player_id": 8474593,
+      "name": "Jacob Markstrom",
+      "pos": "G",
+      "team": "FLA"
+    },
+    "akira schmid": {
+      "player_id": 8481033,
+      "name": "Akira Schmid",
+      "pos": "G",
+      "team": "FLA"
+    },
+    "8481033": {
+      "player_id": 8481033,
+      "name": "Akira Schmid",
+      "pos": "G",
+      "team": "FLA"
+    },
+    "joel armia": {
+      "player_id": 8476469,
+      "name": "Joel Armia",
+      "pos": "RW",
+      "team": "LAK"
+    },
+    "8476469": {
+      "player_id": 8476469,
+      "name": "Joel Armia",
+      "pos": "RW",
+      "team": "LAK"
+    },
+    "quinton byfield": {
+      "player_id": 8482124,
+      "name": "Quinton Byfield",
+      "pos": "RW",
+      "team": "LAK"
+    },
+    "8482124": {
+      "player_id": 8482124,
+      "name": "Quinton Byfield",
+      "pos": "RW",
+      "team": "LAK"
+    },
+    "kevin fiala": {
+      "player_id": 8477942,
+      "name": "Kevin Fiala",
+      "pos": "LW",
+      "team": "LAK"
+    },
+    "8477942": {
+      "player_id": 8477942,
+      "name": "Kevin Fiala",
+      "pos": "LW",
+      "team": "LAK"
+    },
+    "samuel helenius": {
+      "player_id": 8482726,
+      "name": "Samuel Helenius",
+      "pos": "C",
+      "team": "LAK"
+    },
+    "8482726": {
+      "player_id": 8482726,
+      "name": "Samuel Helenius",
+      "pos": "C",
+      "team": "LAK"
+    },
+    "adrian kempe": {
+      "player_id": 8477960,
+      "name": "Adrian Kempe",
+      "pos": "RW",
+      "team": "LAK"
+    },
+    "8477960": {
+      "player_id": 8477960,
+      "name": "Adrian Kempe",
+      "pos": "RW",
+      "team": "LAK"
+    },
+    "alex laferriere": {
+      "player_id": 8482155,
+      "name": "Alex Laferriere",
+      "pos": "RW",
+      "team": "LAK"
+    },
+    "8482155": {
+      "player_id": 8482155,
+      "name": "Alex Laferriere",
+      "pos": "RW",
+      "team": "LAK"
+    },
+    "trevor moore": {
+      "player_id": 8479675,
+      "name": "Trevor Moore",
+      "pos": "LW",
+      "team": "LAK"
+    },
+    "8479675": {
+      "player_id": 8479675,
+      "name": "Trevor Moore",
+      "pos": "LW",
+      "team": "LAK"
+    },
+    "artemi panarin": {
+      "player_id": 8478550,
+      "name": "Artemi Panarin",
+      "pos": "LW",
+      "team": "LAK"
+    },
+    "8478550": {
+      "player_id": 8478550,
+      "name": "Artemi Panarin",
+      "pos": "LW",
+      "team": "LAK"
+    },
+    "alex turcotte": {
+      "player_id": 8481532,
+      "name": "Alex Turcotte",
+      "pos": "C",
+      "team": "LAK"
+    },
+    "8481532": {
+      "player_id": 8481532,
+      "name": "Alex Turcotte",
+      "pos": "C",
+      "team": "LAK"
+    },
+    "taylor ward": {
+      "player_id": 8483406,
+      "name": "Taylor Ward",
+      "pos": "RW",
+      "team": "LAK"
+    },
+    "8483406": {
+      "player_id": 8483406,
+      "name": "Taylor Ward",
+      "pos": "RW",
+      "team": "LAK"
+    },
+    "mikey anderson": {
+      "player_id": 8479998,
+      "name": "Mikey Anderson",
+      "pos": "D",
+      "team": "LAK"
+    },
+    "8479998": {
+      "player_id": 8479998,
+      "name": "Mikey Anderson",
+      "pos": "D",
+      "team": "LAK"
+    },
+    "cody ceci": {
+      "player_id": 8476879,
+      "name": "Cody Ceci",
+      "pos": "D",
+      "team": "LAK"
+    },
+    "8476879": {
+      "player_id": 8476879,
+      "name": "Cody Ceci",
+      "pos": "D",
+      "team": "LAK"
+    },
+    "brandt clarke": {
+      "player_id": 8482730,
+      "name": "Brandt Clarke",
+      "pos": "D",
+      "team": "LAK"
+    },
+    "8482730": {
+      "player_id": 8482730,
+      "name": "Brandt Clarke",
+      "pos": "D",
+      "team": "LAK"
+    },
+    "drew doughty": {
+      "player_id": 8474563,
+      "name": "Drew Doughty",
+      "pos": "D",
+      "team": "LAK"
+    },
+    "8474563": {
+      "player_id": 8474563,
+      "name": "Drew Doughty",
+      "pos": "D",
+      "team": "LAK"
+    },
+    "brian dumoulin": {
+      "player_id": 8475208,
+      "name": "Brian Dumoulin",
+      "pos": "D",
+      "team": "LAK"
+    },
+    "8475208": {
+      "player_id": 8475208,
+      "name": "Brian Dumoulin",
+      "pos": "D",
+      "team": "LAK"
+    },
+    "joel edmundson": {
+      "player_id": 8476441,
+      "name": "Joel Edmundson",
+      "pos": "D",
+      "team": "LAK"
+    },
+    "8476441": {
+      "player_id": 8476441,
+      "name": "Joel Edmundson",
+      "pos": "D",
+      "team": "LAK"
+    },
+    "anton forsberg": {
+      "player_id": 8476341,
+      "name": "Anton Forsberg",
+      "pos": "G",
+      "team": "LAK"
+    },
+    "8476341": {
+      "player_id": 8476341,
+      "name": "Anton Forsberg",
+      "pos": "G",
+      "team": "LAK"
+    },
+    "darcy kuemper": {
+      "player_id": 8475311,
+      "name": "Darcy Kuemper",
+      "pos": "G",
+      "team": "LAK"
+    },
+    "8475311": {
+      "player_id": 8475311,
+      "name": "Darcy Kuemper",
+      "pos": "G",
+      "team": "LAK"
+    },
+    "matt boldy": {
+      "player_id": 8481557,
+      "name": "Matt Boldy",
+      "pos": "LW",
+      "team": "MIN"
+    },
+    "8481557": {
+      "player_id": 8481557,
+      "name": "Matt Boldy",
+      "pos": "LW",
+      "team": "MIN"
+    },
+    "bobby brink": {
+      "player_id": 8481553,
+      "name": "Bobby Brink",
+      "pos": "RW",
+      "team": "MIN"
+    },
+    "8481553": {
+      "player_id": 8481553,
+      "name": "Bobby Brink",
+      "pos": "RW",
+      "team": "MIN"
+    },
+    "joel eriksson ek": {
+      "player_id": 8478493,
+      "name": "Joel Eriksson Ek",
+      "pos": "C",
+      "team": "MIN"
+    },
+    "8478493": {
+      "player_id": 8478493,
+      "name": "Joel Eriksson Ek",
+      "pos": "C",
+      "team": "MIN"
+    },
+    "marcus foligno": {
+      "player_id": 8475220,
+      "name": "Marcus Foligno",
+      "pos": "LW",
+      "team": "MIN"
+    },
+    "8475220": {
+      "player_id": 8475220,
+      "name": "Marcus Foligno",
+      "pos": "LW",
+      "team": "MIN"
+    },
+    "hunter haight": {
+      "player_id": 8483452,
+      "name": "Hunter Haight",
+      "pos": "C",
+      "team": "MIN"
+    },
+    "8483452": {
+      "player_id": 8483452,
+      "name": "Hunter Haight",
+      "pos": "C",
+      "team": "MIN"
+    },
+    "ryan hartman": {
+      "player_id": 8477451,
+      "name": "Ryan Hartman",
+      "pos": "RW",
+      "team": "MIN"
+    },
+    "8477451": {
+      "player_id": 8477451,
+      "name": "Ryan Hartman",
+      "pos": "RW",
+      "team": "MIN"
+    },
+    "kirill kaprizov": {
+      "player_id": 8478864,
+      "name": "Kirill Kaprizov",
+      "pos": "LW",
+      "team": "MIN"
+    },
+    "8478864": {
+      "player_id": 8478864,
+      "name": "Kirill Kaprizov",
+      "pos": "LW",
+      "team": "MIN"
+    },
+    "michael mccarron": {
+      "player_id": 8477446,
+      "name": "Michael McCarron",
+      "pos": "C",
+      "team": "MIN"
+    },
+    "8477446": {
+      "player_id": 8477446,
+      "name": "Michael McCarron",
+      "pos": "C",
+      "team": "MIN"
+    },
+    "nico sturm": {
+      "player_id": 8481477,
+      "name": "Nico Sturm",
+      "pos": "C",
+      "team": "MIN"
+    },
+    "8481477": {
+      "player_id": 8481477,
+      "name": "Nico Sturm",
+      "pos": "C",
+      "team": "MIN"
+    },
+    "yakov trenin": {
+      "player_id": 8478508,
+      "name": "Yakov Trenin",
+      "pos": "C",
+      "team": "MIN"
+    },
+    "8478508": {
+      "player_id": 8478508,
+      "name": "Yakov Trenin",
+      "pos": "C",
+      "team": "MIN"
+    },
+    "danila yurov": {
+      "player_id": 8483525,
+      "name": "Danila Yurov",
+      "pos": "RW",
+      "team": "MIN"
+    },
+    "8483525": {
+      "player_id": 8483525,
+      "name": "Danila Yurov",
+      "pos": "RW",
+      "team": "MIN"
+    },
+    "jonas brodin": {
+      "player_id": 8476463,
+      "name": "Jonas Brodin",
+      "pos": "D",
+      "team": "MIN"
+    },
+    "8476463": {
+      "player_id": 8476463,
+      "name": "Jonas Brodin",
+      "pos": "D",
+      "team": "MIN"
+    },
+    "brock faber": {
+      "player_id": 8482122,
+      "name": "Brock Faber",
+      "pos": "D",
+      "team": "MIN"
+    },
+    "8482122": {
+      "player_id": 8482122,
+      "name": "Brock Faber",
+      "pos": "D",
+      "team": "MIN"
+    },
+    "viking gustafsson nyberg": {
+      "player_id": 8486166,
+      "name": "Viking Gustafsson Nyberg",
+      "pos": "D",
+      "team": "MIN"
+    },
+    "8486166": {
+      "player_id": 8486166,
+      "name": "Viking Gustafsson Nyberg",
+      "pos": "D",
+      "team": "MIN"
+    },
+    "quinn hughes": {
+      "player_id": 8480800,
+      "name": "Quinn Hughes",
+      "pos": "D",
+      "team": "MIN"
+    },
+    "8480800": {
+      "player_id": 8480800,
+      "name": "Quinn Hughes",
+      "pos": "D",
+      "team": "MIN"
+    },
+    "daemon hunt": {
+      "player_id": 8482094,
+      "name": "Daemon Hunt",
+      "pos": "D",
+      "team": "MIN"
+    },
+    "8482094": {
+      "player_id": 8482094,
+      "name": "Daemon Hunt",
+      "pos": "D",
+      "team": "MIN"
+    },
+    "matt kiersted": {
+      "player_id": 8482641,
+      "name": "Matt Kiersted",
+      "pos": "D",
+      "team": "MIN"
+    },
+    "8482641": {
+      "player_id": 8482641,
+      "name": "Matt Kiersted",
+      "pos": "D",
+      "team": "MIN"
+    },
+    "carson lambos": {
+      "player_id": 8482781,
+      "name": "Carson Lambos",
+      "pos": "D",
+      "team": "MIN"
+    },
+    "8482781": {
+      "player_id": 8482781,
+      "name": "Carson Lambos",
+      "pos": "D",
+      "team": "MIN"
+    },
+    "jake middleton": {
+      "player_id": 8478136,
+      "name": "Jake Middleton",
+      "pos": "D",
+      "team": "MIN"
+    },
+    "8478136": {
+      "player_id": 8478136,
+      "name": "Jake Middleton",
+      "pos": "D",
+      "team": "MIN"
+    },
+    "david spacek": {
+      "player_id": 8483766,
+      "name": "David Spacek",
+      "pos": "D",
+      "team": "MIN"
+    },
+    "8483766": {
+      "player_id": 8483766,
+      "name": "David Spacek",
+      "pos": "D",
+      "team": "MIN"
+    },
+    "jared spurgeon": {
+      "player_id": 8474716,
+      "name": "Jared Spurgeon",
+      "pos": "D",
+      "team": "MIN"
+    },
+    "8474716": {
+      "player_id": 8474716,
+      "name": "Jared Spurgeon",
+      "pos": "D",
+      "team": "MIN"
+    },
+    "filip gustavsson": {
+      "player_id": 8479406,
+      "name": "Filip Gustavsson",
+      "pos": "G",
+      "team": "MIN"
+    },
+    "8479406": {
+      "player_id": 8479406,
+      "name": "Filip Gustavsson",
+      "pos": "G",
+      "team": "MIN"
+    },
+    "riley mercer": {
+      "player_id": 8483918,
+      "name": "Riley Mercer",
+      "pos": "G",
+      "team": "MIN"
+    },
+    "8483918": {
+      "player_id": 8483918,
+      "name": "Riley Mercer",
+      "pos": "G",
+      "team": "MIN"
+    },
+    "jesper wallstedt": {
+      "player_id": 8482661,
+      "name": "Jesper Wallstedt",
+      "pos": "G",
+      "team": "MIN"
+    },
+    "8482661": {
+      "player_id": 8482661,
+      "name": "Jesper Wallstedt",
+      "pos": "G",
+      "team": "MIN"
+    },
+    "chase wutzke": {
+      "player_id": 8485037,
+      "name": "Chase Wutzke",
+      "pos": "G",
+      "team": "MIN"
+    },
+    "8485037": {
+      "player_id": 8485037,
+      "name": "Chase Wutzke",
+      "pos": "G",
+      "team": "MIN"
+    },
+    "josh anderson": {
+      "player_id": 8476981,
+      "name": "Josh Anderson",
+      "pos": "RW",
+      "team": "MTL"
+    },
+    "8476981": {
+      "player_id": 8476981,
+      "name": "Josh Anderson",
+      "pos": "RW",
+      "team": "MTL"
+    },
+    "owen beck": {
+      "player_id": 8483424,
+      "name": "Owen Beck",
+      "pos": "C",
+      "team": "MTL"
+    },
+    "8483424": {
+      "player_id": 8483424,
+      "name": "Owen Beck",
+      "pos": "C",
+      "team": "MTL"
+    },
+    "zachary bolduc": {
+      "player_id": 8482737,
+      "name": "Zachary Bolduc",
+      "pos": "RW",
+      "team": "MTL"
+    },
+    "8482737": {
+      "player_id": 8482737,
+      "name": "Zachary Bolduc",
+      "pos": "RW",
+      "team": "MTL"
+    },
+    "cole caufield": {
+      "player_id": 8481540,
+      "name": "Cole Caufield",
+      "pos": "RW",
+      "team": "MTL"
+    },
+    "8481540": {
+      "player_id": 8481540,
+      "name": "Cole Caufield",
+      "pos": "RW",
+      "team": "MTL"
+    },
+    "kirby dach": {
+      "player_id": 8481523,
+      "name": "Kirby Dach",
+      "pos": "C",
+      "team": "MTL"
+    },
+    "8481523": {
+      "player_id": 8481523,
+      "name": "Kirby Dach",
+      "pos": "C",
+      "team": "MTL"
+    },
+    "phillip danault": {
+      "player_id": 8476479,
+      "name": "Phillip Danault",
+      "pos": "C",
+      "team": "MTL"
+    },
+    "8476479": {
+      "player_id": 8476479,
+      "name": "Phillip Danault",
+      "pos": "C",
+      "team": "MTL"
+    },
+    "ivan demidov": {
+      "player_id": 8484984,
+      "name": "Ivan Demidov",
+      "pos": "RW",
+      "team": "MTL"
+    },
+    "8484984": {
+      "player_id": 8484984,
+      "name": "Ivan Demidov",
+      "pos": "RW",
+      "team": "MTL"
+    },
+    "jake evans": {
+      "player_id": 8478133,
+      "name": "Jake Evans",
+      "pos": "C",
+      "team": "MTL"
+    },
+    "8478133": {
+      "player_id": 8478133,
+      "name": "Jake Evans",
+      "pos": "C",
+      "team": "MTL"
+    },
+    "oliver kapanen": {
+      "player_id": 8482775,
+      "name": "Oliver Kapanen",
+      "pos": "C",
+      "team": "MTL"
+    },
+    "8482775": {
+      "player_id": 8482775,
+      "name": "Oliver Kapanen",
+      "pos": "C",
+      "team": "MTL"
+    },
+    "alex newhook": {
+      "player_id": 8481618,
+      "name": "Alex Newhook",
+      "pos": "C",
+      "team": "MTL"
+    },
+    "8481618": {
+      "player_id": 8481618,
+      "name": "Alex Newhook",
+      "pos": "C",
+      "team": "MTL"
+    },
+    "juraj slafkovsk\u00fd": {
+      "player_id": 8483515,
+      "name": "Juraj Slafkovsk\u00fd",
+      "pos": "LW",
+      "team": "MTL"
+    },
+    "8483515": {
+      "player_id": 8483515,
+      "name": "Juraj Slafkovsk\u00fd",
+      "pos": "LW",
+      "team": "MTL"
+    },
+    "nick suzuki": {
+      "player_id": 8480018,
+      "name": "Nick Suzuki",
+      "pos": "C",
+      "team": "MTL"
+    },
+    "8480018": {
+      "player_id": 8480018,
+      "name": "Nick Suzuki",
+      "pos": "C",
+      "team": "MTL"
+    },
+    "alexandre texier": {
+      "player_id": 8480074,
+      "name": "Alexandre Texier",
+      "pos": "LW",
+      "team": "MTL"
+    },
+    "8480074": {
+      "player_id": 8480074,
+      "name": "Alexandre Texier",
+      "pos": "LW",
+      "team": "MTL"
+    },
+    "florian xhekaj": {
+      "player_id": 8484403,
+      "name": "Florian Xhekaj",
+      "pos": "LW",
+      "team": "MTL"
+    },
+    "8484403": {
+      "player_id": 8484403,
+      "name": "Florian Xhekaj",
+      "pos": "LW",
+      "team": "MTL"
+    },
+    "alexandre carrier": {
+      "player_id": 8478851,
+      "name": "Alexandre Carrier",
+      "pos": "D",
+      "team": "MTL"
+    },
+    "8478851": {
+      "player_id": 8478851,
+      "name": "Alexandre Carrier",
+      "pos": "D",
+      "team": "MTL"
+    },
+    "noah dobson": {
+      "player_id": 8480865,
+      "name": "Noah Dobson",
+      "pos": "D",
+      "team": "MTL"
+    },
+    "8480865": {
+      "player_id": 8480865,
+      "name": "Noah Dobson",
+      "pos": "D",
+      "team": "MTL"
+    },
+    "adam engstrom": {
+      "player_id": 8483686,
+      "name": "Adam Engstrom",
+      "pos": "D",
+      "team": "MTL"
+    },
+    "8483686": {
+      "player_id": 8483686,
+      "name": "Adam Engstrom",
+      "pos": "D",
+      "team": "MTL"
+    },
+    "kaiden guhle": {
+      "player_id": 8482087,
+      "name": "Kaiden Guhle",
+      "pos": "D",
+      "team": "MTL"
+    },
+    "8482087": {
+      "player_id": 8482087,
+      "name": "Kaiden Guhle",
+      "pos": "D",
+      "team": "MTL"
+    },
+    "lane hutson": {
+      "player_id": 8483457,
+      "name": "Lane Hutson",
+      "pos": "D",
+      "team": "MTL"
+    },
+    "8483457": {
+      "player_id": 8483457,
+      "name": "Lane Hutson",
+      "pos": "D",
+      "team": "MTL"
+    },
+    "mike matheson": {
+      "player_id": 8476875,
+      "name": "Mike Matheson",
+      "pos": "D",
+      "team": "MTL"
+    },
+    "8476875": {
+      "player_id": 8476875,
+      "name": "Mike Matheson",
+      "pos": "D",
+      "team": "MTL"
+    },
+    "david reinbacher": {
+      "player_id": 8484220,
+      "name": "David Reinbacher",
+      "pos": "D",
+      "team": "MTL"
+    },
+    "8484220": {
+      "player_id": 8484220,
+      "name": "David Reinbacher",
+      "pos": "D",
+      "team": "MTL"
+    },
+    "jayden struble": {
+      "player_id": 8481593,
+      "name": "Jayden Struble",
+      "pos": "D",
+      "team": "MTL"
+    },
+    "8481593": {
+      "player_id": 8481593,
+      "name": "Jayden Struble",
+      "pos": "D",
+      "team": "MTL"
+    },
+    "maksymilian szuber": {
+      "player_id": 8483763,
+      "name": "Maksymilian Szuber",
+      "pos": "D",
+      "team": "MTL"
+    },
+    "8483763": {
+      "player_id": 8483763,
+      "name": "Maksymilian Szuber",
+      "pos": "D",
+      "team": "MTL"
+    },
+    "arber xhekaj": {
+      "player_id": 8482964,
+      "name": "Arber Xhekaj",
+      "pos": "D",
+      "team": "MTL"
+    },
+    "8482964": {
+      "player_id": 8482964,
+      "name": "Arber Xhekaj",
+      "pos": "D",
+      "team": "MTL"
+    },
+    "jakub dobes": {
+      "player_id": 8482487,
+      "name": "Jakub Dobes",
+      "pos": "G",
+      "team": "MTL"
+    },
+    "8482487": {
+      "player_id": 8482487,
+      "name": "Jakub Dobes",
+      "pos": "G",
+      "team": "MTL"
+    },
+    "jacob fowler": {
+      "player_id": 8484170,
+      "name": "Jacob Fowler",
+      "pos": "G",
+      "team": "MTL"
+    },
+    "8484170": {
+      "player_id": 8484170,
+      "name": "Jacob Fowler",
+      "pos": "G",
+      "team": "MTL"
+    },
+    "samuel montembeault": {
+      "player_id": 8478470,
+      "name": "Samuel Montembeault",
+      "pos": "G",
+      "team": "MTL"
+    },
+    "8478470": {
+      "player_id": 8478470,
+      "name": "Samuel Montembeault",
+      "pos": "G",
+      "team": "MTL"
+    },
+    "ross colton": {
+      "player_id": 8479525,
+      "name": "Ross Colton",
+      "pos": "C",
+      "team": "NSH"
+    },
+    "8479525": {
+      "player_id": 8479525,
+      "name": "Ross Colton",
+      "pos": "C",
+      "team": "NSH"
+    },
+    "jack drury": {
+      "player_id": 8480835,
+      "name": "Jack Drury",
+      "pos": "C",
+      "team": "NSH"
+    },
+    "8480835": {
+      "player_id": 8480835,
+      "name": "Jack Drury",
+      "pos": "C",
+      "team": "NSH"
+    },
+    "adam edstrom": {
+      "player_id": 8481726,
+      "name": "Adam Edstrom",
+      "pos": "C",
+      "team": "NSH"
+    },
+    "8481726": {
+      "player_id": 8481726,
+      "name": "Adam Edstrom",
+      "pos": "C",
+      "team": "NSH"
+    },
+    "luke evangelista": {
+      "player_id": 8482146,
+      "name": "Luke Evangelista",
+      "pos": "RW",
+      "team": "NSH"
+    },
+    "8482146": {
+      "player_id": 8482146,
+      "name": "Luke Evangelista",
+      "pos": "RW",
+      "team": "NSH"
+    },
+    "aiden fink": {
+      "player_id": 8484494,
+      "name": "Aiden Fink",
+      "pos": "RW",
+      "team": "NSH"
+    },
+    "8484494": {
+      "player_id": 8484494,
+      "name": "Aiden Fink",
+      "pos": "RW",
+      "team": "NSH"
+    },
+    "filip forsberg": {
+      "player_id": 8476887,
+      "name": "Filip Forsberg",
+      "pos": "LW",
+      "team": "NSH"
+    },
+    "8476887": {
+      "player_id": 8476887,
+      "name": "Filip Forsberg",
+      "pos": "LW",
+      "team": "NSH"
+    },
+    "nils hoglander": {
+      "player_id": 8481535,
+      "name": "Nils Hoglander",
+      "pos": "LW",
+      "team": "NSH"
+    },
+    "8481535": {
+      "player_id": 8481535,
+      "name": "Nils Hoglander",
+      "pos": "LW",
+      "team": "NSH"
+    },
+    "jonathan marchessault": {
+      "player_id": 8476539,
+      "name": "Jonathan Marchessault",
+      "pos": "C",
+      "team": "NSH"
+    },
+    "8476539": {
+      "player_id": 8476539,
+      "name": "Jonathan Marchessault",
+      "pos": "C",
+      "team": "NSH"
+    },
+    "ryan o'reilly": {
+      "player_id": 8475158,
+      "name": "Ryan O'Reilly",
+      "pos": "C",
+      "team": "NSH"
+    },
+    "8475158": {
+      "player_id": 8475158,
+      "name": "Ryan O'Reilly",
+      "pos": "C",
+      "team": "NSH"
+    },
+    "steven stamkos": {
+      "player_id": 8474564,
+      "name": "Steven Stamkos",
+      "pos": "C",
+      "team": "NSH"
+    },
+    "8474564": {
+      "player_id": 8474564,
+      "name": "Steven Stamkos",
+      "pos": "C",
+      "team": "NSH"
+    },
+    "ozzy wiesblatt": {
+      "player_id": 8482103,
+      "name": "Ozzy Wiesblatt",
+      "pos": "C",
+      "team": "NSH"
+    },
+    "8482103": {
+      "player_id": 8482103,
+      "name": "Ozzy Wiesblatt",
+      "pos": "C",
+      "team": "NSH"
+    },
+    "matthew wood": {
+      "player_id": 8484241,
+      "name": "Matthew Wood",
+      "pos": "RW",
+      "team": "NSH"
+    },
+    "8484241": {
+      "player_id": 8484241,
+      "name": "Matthew Wood",
+      "pos": "RW",
+      "team": "NSH"
+    },
+    "justin barron": {
+      "player_id": 8482111,
+      "name": "Justin Barron",
+      "pos": "D",
+      "team": "NSH"
+    },
+    "8482111": {
+      "player_id": 8482111,
+      "name": "Justin Barron",
+      "pos": "D",
+      "team": "NSH"
+    },
+    "nicolas hague": {
+      "player_id": 8479980,
+      "name": "Nicolas Hague",
+      "pos": "D",
+      "team": "NSH"
+    },
+    "8479980": {
+      "player_id": 8479980,
+      "name": "Nicolas Hague",
+      "pos": "D",
+      "team": "NSH"
+    },
+    "roman josi": {
+      "player_id": 8474600,
+      "name": "Roman Josi",
+      "pos": "D",
+      "team": "NSH"
+    },
+    "8474600": {
+      "player_id": 8474600,
+      "name": "Roman Josi",
+      "pos": "D",
+      "team": "NSH"
+    },
+    "ilya lyubushkin": {
+      "player_id": 8480950,
+      "name": "Ilya Lyubushkin",
+      "pos": "D",
+      "team": "NSH"
+    },
+    "8480950": {
+      "player_id": 8480950,
+      "name": "Ilya Lyubushkin",
+      "pos": "D",
+      "team": "NSH"
+    },
+    "nick perbix": {
+      "player_id": 8480246,
+      "name": "Nick Perbix",
+      "pos": "D",
+      "team": "NSH"
+    },
+    "8480246": {
+      "player_id": 8480246,
+      "name": "Nick Perbix",
+      "pos": "D",
+      "team": "NSH"
+    },
+    "brady skjei": {
+      "player_id": 8476869,
+      "name": "Brady Skjei",
+      "pos": "D",
+      "team": "NSH"
+    },
+    "8476869": {
+      "player_id": 8476869,
+      "name": "Brady Skjei",
+      "pos": "D",
+      "team": "NSH"
+    },
+    "adam wilsby": {
+      "player_id": 8482482,
+      "name": "Adam Wilsby",
+      "pos": "D",
+      "team": "NSH"
+    },
+    "8482482": {
+      "player_id": 8482482,
+      "name": "Adam Wilsby",
+      "pos": "D",
+      "team": "NSH"
+    },
+    "justus annunen": {
+      "player_id": 8481020,
+      "name": "Justus Annunen",
+      "pos": "G",
+      "team": "NSH"
+    },
+    "8481020": {
+      "player_id": 8481020,
+      "name": "Justus Annunen",
+      "pos": "G",
+      "team": "NSH"
+    },
+    "juuse saros": {
+      "player_id": 8477424,
+      "name": "Juuse Saros",
+      "pos": "G",
+      "team": "NSH"
+    },
+    "8477424": {
+      "player_id": 8477424,
+      "name": "Juuse Saros",
+      "pos": "G",
+      "team": "NSH"
+    },
+    "nick bjugstad": {
+      "player_id": 8475760,
+      "name": "Nick Bjugstad",
+      "pos": "C",
+      "team": "NJD"
+    },
+    "8475760": {
+      "player_id": 8475760,
+      "name": "Nick Bjugstad",
+      "pos": "C",
+      "team": "NJD"
+    },
+    "jesper boqvist": {
+      "player_id": 8480003,
+      "name": "Jesper Boqvist",
+      "pos": "C",
+      "team": "NJD"
+    },
+    "8480003": {
+      "player_id": 8480003,
+      "name": "Jesper Boqvist",
+      "pos": "C",
+      "team": "NJD"
+    },
+    "jesper bratt": {
+      "player_id": 8479407,
+      "name": "Jesper Bratt",
+      "pos": "LW",
+      "team": "NJD"
+    },
+    "8479407": {
+      "player_id": 8479407,
+      "name": "Jesper Bratt",
+      "pos": "LW",
+      "team": "NJD"
+    },
+    "connor brown": {
+      "player_id": 8477015,
+      "name": "Connor Brown",
+      "pos": "RW",
+      "team": "NJD"
+    },
+    "8477015": {
+      "player_id": 8477015,
+      "name": "Connor Brown",
+      "pos": "RW",
+      "team": "NJD"
+    },
+    "cody glass": {
+      "player_id": 8479996,
+      "name": "Cody Glass",
+      "pos": "C",
+      "team": "NJD"
+    },
+    "8479996": {
+      "player_id": 8479996,
+      "name": "Cody Glass",
+      "pos": "C",
+      "team": "NJD"
+    },
+    "arseny gritsyuk": {
+      "player_id": 8481721,
+      "name": "Arseny Gritsyuk",
+      "pos": "RW",
+      "team": "NJD"
+    },
+    "8481721": {
+      "player_id": 8481721,
+      "name": "Arseny Gritsyuk",
+      "pos": "RW",
+      "team": "NJD"
+    },
+    "nico hischier": {
+      "player_id": 8480002,
+      "name": "Nico Hischier",
+      "pos": "C",
+      "team": "NJD"
+    },
+    "8480002": {
+      "player_id": 8480002,
+      "name": "Nico Hischier",
+      "pos": "C",
+      "team": "NJD"
+    },
+    "jack hughes": {
+      "player_id": 8481559,
+      "name": "Jack Hughes",
+      "pos": "C",
+      "team": "NJD"
+    },
+    "8481559": {
+      "player_id": 8481559,
+      "name": "Jack Hughes",
+      "pos": "C",
+      "team": "NJD"
+    },
+    "timo meier": {
+      "player_id": 8478414,
+      "name": "Timo Meier",
+      "pos": "RW",
+      "team": "NJD"
+    },
+    "8478414": {
+      "player_id": 8478414,
+      "name": "Timo Meier",
+      "pos": "RW",
+      "team": "NJD"
+    },
+    "dawson mercer": {
+      "player_id": 8482110,
+      "name": "Dawson Mercer",
+      "pos": "C",
+      "team": "NJD"
+    },
+    "8482110": {
+      "player_id": 8482110,
+      "name": "Dawson Mercer",
+      "pos": "C",
+      "team": "NJD"
+    },
+    "stefan noesen": {
+      "player_id": 8476474,
+      "name": "Stefan Noesen",
+      "pos": "RW",
+      "team": "NJD"
+    },
+    "8476474": {
+      "player_id": 8476474,
+      "name": "Stefan Noesen",
+      "pos": "RW",
+      "team": "NJD"
+    },
+    "evan rodrigues": {
+      "player_id": 8478542,
+      "name": "Evan Rodrigues",
+      "pos": "C",
+      "team": "NJD"
+    },
+    "8478542": {
+      "player_id": 8478542,
+      "name": "Evan Rodrigues",
+      "pos": "C",
+      "team": "NJD"
+    },
+    "declan chisholm": {
+      "player_id": 8480990,
+      "name": "Declan Chisholm",
+      "pos": "D",
+      "team": "NJD"
+    },
+    "8480990": {
+      "player_id": 8480990,
+      "name": "Declan Chisholm",
+      "pos": "D",
+      "team": "NJD"
+    },
+    "brenden dillon": {
+      "player_id": 8475455,
+      "name": "Brenden Dillon",
+      "pos": "D",
+      "team": "NJD"
+    },
+    "8475455": {
+      "player_id": 8475455,
+      "name": "Brenden Dillon",
+      "pos": "D",
+      "team": "NJD"
+    },
+    "dougie hamilton": {
+      "player_id": 8476462,
+      "name": "Dougie Hamilton",
+      "pos": "D",
+      "team": "NJD"
+    },
+    "8476462": {
+      "player_id": 8476462,
+      "name": "Dougie Hamilton",
+      "pos": "D",
+      "team": "NJD"
+    },
+    "luke hughes": {
+      "player_id": 8482684,
+      "name": "Luke Hughes",
+      "pos": "D",
+      "team": "NJD"
+    },
+    "8482684": {
+      "player_id": 8482684,
+      "name": "Luke Hughes",
+      "pos": "D",
+      "team": "NJD"
+    },
+    "johnathan kovacevic": {
+      "player_id": 8480192,
+      "name": "Johnathan Kovacevic",
+      "pos": "D",
+      "team": "NJD"
+    },
+    "8480192": {
+      "player_id": 8480192,
+      "name": "Johnathan Kovacevic",
+      "pos": "D",
+      "team": "NJD"
+    },
+    "brett pesce": {
+      "player_id": 8477488,
+      "name": "Brett Pesce",
+      "pos": "D",
+      "team": "NJD"
+    },
+    "8477488": {
+      "player_id": 8477488,
+      "name": "Brett Pesce",
+      "pos": "D",
+      "team": "NJD"
+    },
+    "jonas siegenthaler": {
+      "player_id": 8478399,
+      "name": "Jonas Siegenthaler",
+      "pos": "D",
+      "team": "NJD"
+    },
+    "8478399": {
+      "player_id": 8478399,
+      "name": "Jonas Siegenthaler",
+      "pos": "D",
+      "team": "NJD"
+    },
+    "jake allen": {
+      "player_id": 8474596,
+      "name": "Jake Allen",
+      "pos": "G",
+      "team": "NJD"
+    },
+    "8474596": {
+      "player_id": 8474596,
+      "name": "Jake Allen",
+      "pos": "G",
+      "team": "NJD"
+    },
+    "mathew barzal": {
+      "player_id": 8478445,
+      "name": "Mathew Barzal",
+      "pos": "C",
+      "team": "NYI"
+    },
+    "8478445": {
+      "player_id": 8478445,
+      "name": "Mathew Barzal",
+      "pos": "C",
+      "team": "NYI"
+    },
+    "casey cizikas": {
+      "player_id": 8475231,
+      "name": "Casey Cizikas",
+      "pos": "C",
+      "team": "NYI"
+    },
+    "8475231": {
+      "player_id": 8475231,
+      "name": "Casey Cizikas",
+      "pos": "C",
+      "team": "NYI"
+    },
+    "anthony duclair": {
+      "player_id": 8477407,
+      "name": "Anthony Duclair",
+      "pos": "LW",
+      "team": "NYI"
+    },
+    "8477407": {
+      "player_id": 8477407,
+      "name": "Anthony Duclair",
+      "pos": "LW",
+      "team": "NYI"
+    },
+    "emil heineman": {
+      "player_id": 8482476,
+      "name": "Emil Heineman",
+      "pos": "LW",
+      "team": "NYI"
+    },
+    "8482476": {
+      "player_id": 8482476,
+      "name": "Emil Heineman",
+      "pos": "LW",
+      "team": "NYI"
+    },
+    "simon holmstrom": {
+      "player_id": 8481601,
+      "name": "Simon Holmstrom",
+      "pos": "RW",
+      "team": "NYI"
+    },
+    "8481601": {
+      "player_id": 8481601,
+      "name": "Simon Holmstrom",
+      "pos": "RW",
+      "team": "NYI"
+    },
+    "bo horvat": {
+      "player_id": 8477500,
+      "name": "Bo Horvat",
+      "pos": "C",
+      "team": "NYI"
+    },
+    "8477500": {
+      "player_id": 8477500,
+      "name": "Bo Horvat",
+      "pos": "C",
+      "team": "NYI"
+    },
+    "kyle maclean": {
+      "player_id": 8481237,
+      "name": "Kyle MacLean",
+      "pos": "C",
+      "team": "NYI"
+    },
+    "8481237": {
+      "player_id": 8481237,
+      "name": "Kyle MacLean",
+      "pos": "C",
+      "team": "NYI"
+    },
+    "jean-gabriel pageau": {
+      "player_id": 8476419,
+      "name": "Jean-Gabriel Pageau",
+      "pos": "C",
+      "team": "NYI"
+    },
+    "8476419": {
+      "player_id": 8476419,
+      "name": "Jean-Gabriel Pageau",
+      "pos": "C",
+      "team": "NYI"
+    },
+    "ondrej palat": {
+      "player_id": 8476292,
+      "name": "Ondrej Palat",
+      "pos": "LW",
+      "team": "NYI"
+    },
+    "8476292": {
+      "player_id": 8476292,
+      "name": "Ondrej Palat",
+      "pos": "LW",
+      "team": "NYI"
+    },
+    "kyle palmieri": {
+      "player_id": 8475151,
+      "name": "Kyle Palmieri",
+      "pos": "C",
+      "team": "NYI"
+    },
+    "8475151": {
+      "player_id": 8475151,
+      "name": "Kyle Palmieri",
+      "pos": "C",
+      "team": "NYI"
+    },
+    "brayden schenn": {
+      "player_id": 8475170,
+      "name": "Brayden Schenn",
+      "pos": "C",
+      "team": "NYI"
+    },
+    "8475170": {
+      "player_id": 8475170,
+      "name": "Brayden Schenn",
+      "pos": "C",
+      "team": "NYI"
+    },
+    "tony deangelo": {
+      "player_id": 8477950,
+      "name": "Tony DeAngelo",
+      "pos": "D",
+      "team": "NYI"
+    },
+    "8477950": {
+      "player_id": 8477950,
+      "name": "Tony DeAngelo",
+      "pos": "D",
+      "team": "NYI"
+    },
+    "scott mayfield": {
+      "player_id": 8476429,
+      "name": "Scott Mayfield",
+      "pos": "D",
+      "team": "NYI"
+    },
+    "8476429": {
+      "player_id": 8476429,
+      "name": "Scott Mayfield",
+      "pos": "D",
+      "team": "NYI"
+    },
+    "adam pelech": {
+      "player_id": 8476917,
+      "name": "Adam Pelech",
+      "pos": "D",
+      "team": "NYI"
+    },
+    "8476917": {
+      "player_id": 8476917,
+      "name": "Adam Pelech",
+      "pos": "D",
+      "team": "NYI"
+    },
+    "ryan pulock": {
+      "player_id": 8477506,
+      "name": "Ryan Pulock",
+      "pos": "D",
+      "team": "NYI"
+    },
+    "8477506": {
+      "player_id": 8477506,
+      "name": "Ryan Pulock",
+      "pos": "D",
+      "team": "NYI"
+    },
+    "alexander romanov": {
+      "player_id": 8481014,
+      "name": "Alexander Romanov",
+      "pos": "D",
+      "team": "NYI"
+    },
+    "8481014": {
+      "player_id": 8481014,
+      "name": "Alexander Romanov",
+      "pos": "D",
+      "team": "NYI"
+    },
+    "matthew schaefer": {
+      "player_id": 8485366,
+      "name": "Matthew Schaefer",
+      "pos": "D",
+      "team": "NYI"
+    },
+    "8485366": {
+      "player_id": 8485366,
+      "name": "Matthew Schaefer",
+      "pos": "D",
+      "team": "NYI"
+    },
+    "ilya sorokin": {
+      "player_id": 8478009,
+      "name": "Ilya Sorokin",
+      "pos": "G",
+      "team": "NYI"
+    },
+    "8478009": {
+      "player_id": 8478009,
+      "name": "Ilya Sorokin",
+      "pos": "G",
+      "team": "NYI"
+    },
+    "semyon varlamov": {
+      "player_id": 8473575,
+      "name": "Semyon Varlamov",
+      "pos": "G",
+      "team": "NYI"
+    },
+    "8473575": {
+      "player_id": 8473575,
+      "name": "Semyon Varlamov",
+      "pos": "G",
+      "team": "NYI"
+    },
+    "jaroslav chmelar": {
+      "player_id": 8482877,
+      "name": "Jaroslav Chmelar",
+      "pos": "RW",
+      "team": "NYR"
+    },
+    "8482877": {
+      "player_id": 8482877,
+      "name": "Jaroslav Chmelar",
+      "pos": "RW",
+      "team": "NYR"
+    },
+    "will cuylle": {
+      "player_id": 8482157,
+      "name": "Will Cuylle",
+      "pos": "LW",
+      "team": "NYR"
+    },
+    "8482157": {
+      "player_id": 8482157,
+      "name": "Will Cuylle",
+      "pos": "LW",
+      "team": "NYR"
+    },
+    "pavel dorofeyev": {
+      "player_id": 8481604,
+      "name": "Pavel Dorofeyev",
+      "pos": "LW",
+      "team": "NYR"
+    },
+    "8481604": {
+      "player_id": 8481604,
+      "name": "Pavel Dorofeyev",
+      "pos": "LW",
+      "team": "NYR"
+    },
+    "tye kartye": {
+      "player_id": 8481789,
+      "name": "Tye Kartye",
+      "pos": "LW",
+      "team": "NYR"
+    },
+    "8481789": {
+      "player_id": 8481789,
+      "name": "Tye Kartye",
+      "pos": "LW",
+      "team": "NYR"
+    },
+    "noah laba": {
+      "player_id": 8483690,
+      "name": "Noah Laba",
+      "pos": "C",
+      "team": "NYR"
+    },
+    "8483690": {
+      "player_id": 8483690,
+      "name": "Noah Laba",
+      "pos": "C",
+      "team": "NYR"
+    },
+    "alexis lafreni\u00e8re": {
+      "player_id": 8482109,
+      "name": "Alexis Lafreni\u00e8re",
+      "pos": "LW",
+      "team": "NYR"
+    },
+    "8482109": {
+      "player_id": 8482109,
+      "name": "Alexis Lafreni\u00e8re",
+      "pos": "LW",
+      "team": "NYR"
+    },
+    "j.t. miller": {
+      "player_id": 8476468,
+      "name": "J.T. Miller",
+      "pos": "C",
+      "team": "NYR"
+    },
+    "8476468": {
+      "player_id": 8476468,
+      "name": "J.T. Miller",
+      "pos": "C",
+      "team": "NYR"
+    },
+    "gabe perreault": {
+      "player_id": 8484210,
+      "name": "Gabe Perreault",
+      "pos": "RW",
+      "team": "NYR"
+    },
+    "8484210": {
+      "player_id": 8484210,
+      "name": "Gabe Perreault",
+      "pos": "RW",
+      "team": "NYR"
+    },
+    "taylor raddysh": {
+      "player_id": 8479390,
+      "name": "Taylor Raddysh",
+      "pos": "RW",
+      "team": "NYR"
+    },
+    "8479390": {
+      "player_id": 8479390,
+      "name": "Taylor Raddysh",
+      "pos": "RW",
+      "team": "NYR"
+    },
+    "matt rempe": {
+      "player_id": 8482460,
+      "name": "Matt Rempe",
+      "pos": "C",
+      "team": "NYR"
+    },
+    "8482460": {
+      "player_id": 8482460,
+      "name": "Matt Rempe",
+      "pos": "C",
+      "team": "NYR"
+    },
+    "adam sykora": {
+      "player_id": 8483669,
+      "name": "Adam Sykora",
+      "pos": "LW",
+      "team": "NYR"
+    },
+    "8483669": {
+      "player_id": 8483669,
+      "name": "Adam Sykora",
+      "pos": "LW",
+      "team": "NYR"
+    },
+    "vincent trocheck": {
+      "player_id": 8476389,
+      "name": "Vincent Trocheck",
+      "pos": "C",
+      "team": "NYR"
+    },
+    "8476389": {
+      "player_id": 8476389,
+      "name": "Vincent Trocheck",
+      "pos": "C",
+      "team": "NYR"
+    },
+    "mika zibanejad": {
+      "player_id": 8476459,
+      "name": "Mika Zibanejad",
+      "pos": "C",
+      "team": "NYR"
+    },
+    "8476459": {
+      "player_id": 8476459,
+      "name": "Mika Zibanejad",
+      "pos": "C",
+      "team": "NYR"
+    },
+    "will borgen": {
+      "player_id": 8478840,
+      "name": "Will Borgen",
+      "pos": "D",
+      "team": "NYR"
+    },
+    "8478840": {
+      "player_id": 8478840,
+      "name": "Will Borgen",
+      "pos": "D",
+      "team": "NYR"
+    },
+    "drew fortescue": {
+      "player_id": 8484169,
+      "name": "Drew Fortescue",
+      "pos": "D",
+      "team": "NYR"
+    },
+    "8484169": {
+      "player_id": 8484169,
+      "name": "Drew Fortescue",
+      "pos": "D",
+      "team": "NYR"
+    },
+    "adam fox": {
+      "player_id": 8479323,
+      "name": "Adam Fox",
+      "pos": "D",
+      "team": "NYR"
+    },
+    "8479323": {
+      "player_id": 8479323,
+      "name": "Adam Fox",
+      "pos": "D",
+      "team": "NYR"
+    },
+    "vladislav gavrikov": {
+      "player_id": 8478882,
+      "name": "Vladislav Gavrikov",
+      "pos": "D",
+      "team": "NYR"
+    },
+    "8478882": {
+      "player_id": 8478882,
+      "name": "Vladislav Gavrikov",
+      "pos": "D",
+      "team": "NYR"
+    },
+    "vincent iorio": {
+      "player_id": 8482861,
+      "name": "Vincent Iorio",
+      "pos": "D",
+      "team": "NYR"
+    },
+    "8482861": {
+      "player_id": 8482861,
+      "name": "Vincent Iorio",
+      "pos": "D",
+      "team": "NYR"
+    },
+    "matthew robertson": {
+      "player_id": 8481525,
+      "name": "Matthew Robertson",
+      "pos": "D",
+      "team": "NYR"
+    },
+    "8481525": {
+      "player_id": 8481525,
+      "name": "Matthew Robertson",
+      "pos": "D",
+      "team": "NYR"
+    },
+    "braden schneider": {
+      "player_id": 8482073,
+      "name": "Braden Schneider",
+      "pos": "D",
+      "team": "NYR"
+    },
+    "8482073": {
+      "player_id": 8482073,
+      "name": "Braden Schneider",
+      "pos": "D",
+      "team": "NYR"
+    },
+    "urho vaakanainen": {
+      "player_id": 8480001,
+      "name": "Urho Vaakanainen",
+      "pos": "D",
+      "team": "NYR"
+    },
+    "8480001": {
+      "player_id": 8480001,
+      "name": "Urho Vaakanainen",
+      "pos": "D",
+      "team": "NYR"
+    },
+    "dylan garand": {
+      "player_id": 8482193,
+      "name": "Dylan Garand",
+      "pos": "G",
+      "team": "NYR"
+    },
+    "8482193": {
+      "player_id": 8482193,
+      "name": "Dylan Garand",
+      "pos": "G",
+      "team": "NYR"
+    },
+    "igor shesterkin": {
+      "player_id": 8478048,
+      "name": "Igor Shesterkin",
+      "pos": "G",
+      "team": "NYR"
+    },
+    "8478048": {
+      "player_id": 8478048,
+      "name": "Igor Shesterkin",
+      "pos": "G",
+      "team": "NYR"
+    },
+    "michael amadio": {
+      "player_id": 8478020,
+      "name": "Michael Amadio",
+      "pos": "RW",
+      "team": "OTT"
+    },
+    "8478020": {
+      "player_id": 8478020,
+      "name": "Michael Amadio",
+      "pos": "RW",
+      "team": "OTT"
+    },
+    "drake batherson": {
+      "player_id": 8480208,
+      "name": "Drake Batherson",
+      "pos": "RW",
+      "team": "OTT"
+    },
+    "8480208": {
+      "player_id": 8480208,
+      "name": "Drake Batherson",
+      "pos": "RW",
+      "team": "OTT"
+    },
+    "tyler boucher": {
+      "player_id": 8482674,
+      "name": "Tyler Boucher",
+      "pos": "RW",
+      "team": "OTT"
+    },
+    "8482674": {
+      "player_id": 8482674,
+      "name": "Tyler Boucher",
+      "pos": "RW",
+      "team": "OTT"
+    },
+    "andre burakovsky": {
+      "player_id": 8477444,
+      "name": "Andre Burakovsky",
+      "pos": "LW",
+      "team": "OTT"
+    },
+    "8477444": {
+      "player_id": 8477444,
+      "name": "Andre Burakovsky",
+      "pos": "LW",
+      "team": "OTT"
+    },
+    "nick cousins": {
+      "player_id": 8476393,
+      "name": "Nick Cousins",
+      "pos": "C",
+      "team": "OTT"
+    },
+    "8476393": {
+      "player_id": 8476393,
+      "name": "Nick Cousins",
+      "pos": "C",
+      "team": "OTT"
+    },
+    "dylan cozens": {
+      "player_id": 8481528,
+      "name": "Dylan Cozens",
+      "pos": "C",
+      "team": "OTT"
+    },
+    "8481528": {
+      "player_id": 8481528,
+      "name": "Dylan Cozens",
+      "pos": "C",
+      "team": "OTT"
+    },
+    "william eklund": {
+      "player_id": 8482667,
+      "name": "William Eklund",
+      "pos": "LW",
+      "team": "OTT"
+    },
+    "8482667": {
+      "player_id": 8482667,
+      "name": "William Eklund",
+      "pos": "LW",
+      "team": "OTT"
+    },
+    "warren foegele": {
+      "player_id": 8477998,
+      "name": "Warren Foegele",
+      "pos": "LW",
+      "team": "OTT"
+    },
+    "8477998": {
+      "player_id": 8477998,
+      "name": "Warren Foegele",
+      "pos": "LW",
+      "team": "OTT"
+    },
+    "ridly greig": {
+      "player_id": 8482092,
+      "name": "Ridly Greig",
+      "pos": "C",
+      "team": "OTT"
+    },
+    "8482092": {
+      "player_id": 8482092,
+      "name": "Ridly Greig",
+      "pos": "C",
+      "team": "OTT"
+    },
+    "stephen halliday": {
+      "player_id": 8483676,
+      "name": "Stephen Halliday",
+      "pos": "C",
+      "team": "OTT"
+    },
+    "8483676": {
+      "player_id": 8483676,
+      "name": "Stephen Halliday",
+      "pos": "C",
+      "team": "OTT"
+    },
+    "hayden hodgson": {
+      "player_id": 8478173,
+      "name": "Hayden Hodgson",
+      "pos": "RW",
+      "team": "OTT"
+    },
+    "8478173": {
+      "player_id": 8478173,
+      "name": "Hayden Hodgson",
+      "pos": "RW",
+      "team": "OTT"
+    },
+    "kurtis macdermid": {
+      "player_id": 8477073,
+      "name": "Kurtis MacDermid",
+      "pos": "LW",
+      "team": "OTT"
+    },
+    "8477073": {
+      "player_id": 8477073,
+      "name": "Kurtis MacDermid",
+      "pos": "LW",
+      "team": "OTT"
+    },
+    "oskar pettersson": {
+      "player_id": 8483673,
+      "name": "Oskar Pettersson",
+      "pos": "RW",
+      "team": "OTT"
+    },
+    "8483673": {
+      "player_id": 8483673,
+      "name": "Oskar Pettersson",
+      "pos": "RW",
+      "team": "OTT"
+    },
+    "shane pinto": {
+      "player_id": 8481596,
+      "name": "Shane Pinto",
+      "pos": "C",
+      "team": "OTT"
+    },
+    "8481596": {
+      "player_id": 8481596,
+      "name": "Shane Pinto",
+      "pos": "C",
+      "team": "OTT"
+    },
+    "tim st\u00fctzle": {
+      "player_id": 8482116,
+      "name": "Tim St\u00fctzle",
+      "pos": "C",
+      "team": "OTT"
+    },
+    "8482116": {
+      "player_id": 8482116,
+      "name": "Tim St\u00fctzle",
+      "pos": "C",
+      "team": "OTT"
+    },
+    "fabian zetterlund": {
+      "player_id": 8480188,
+      "name": "Fabian Zetterlund",
+      "pos": "LW",
+      "team": "OTT"
+    },
+    "8480188": {
+      "player_id": 8480188,
+      "name": "Fabian Zetterlund",
+      "pos": "LW",
+      "team": "OTT"
+    },
+    "thomas chabot": {
+      "player_id": 8478469,
+      "name": "Thomas Chabot",
+      "pos": "D",
+      "team": "OTT"
+    },
+    "8478469": {
+      "player_id": 8478469,
+      "name": "Thomas Chabot",
+      "pos": "D",
+      "team": "OTT"
+    },
+    "cameron crotty": {
+      "player_id": 8480075,
+      "name": "Cameron Crotty",
+      "pos": "D",
+      "team": "OTT"
+    },
+    "8480075": {
+      "player_id": 8480075,
+      "name": "Cameron Crotty",
+      "pos": "D",
+      "team": "OTT"
+    },
+    "tyler kleven": {
+      "player_id": 8482095,
+      "name": "Tyler Kleven",
+      "pos": "D",
+      "team": "OTT"
+    },
+    "8482095": {
+      "player_id": 8482095,
+      "name": "Tyler Kleven",
+      "pos": "D",
+      "team": "OTT"
+    },
+    "nikolas matinpalo": {
+      "player_id": 8484321,
+      "name": "Nikolas Matinpalo",
+      "pos": "D",
+      "team": "OTT"
+    },
+    "8484321": {
+      "player_id": 8484321,
+      "name": "Nikolas Matinpalo",
+      "pos": "D",
+      "team": "OTT"
+    },
+    "jake sanderson": {
+      "player_id": 8482105,
+      "name": "Jake Sanderson",
+      "pos": "D",
+      "team": "OTT"
+    },
+    "8482105": {
+      "player_id": 8482105,
+      "name": "Jake Sanderson",
+      "pos": "D",
+      "team": "OTT"
+    },
+    "jordan spence": {
+      "player_id": 8481606,
+      "name": "Jordan Spence",
+      "pos": "D",
+      "team": "OTT"
+    },
+    "8481606": {
+      "player_id": 8481606,
+      "name": "Jordan Spence",
+      "pos": "D",
+      "team": "OTT"
+    },
+    "carter yakemchuk": {
+      "player_id": 8484759,
+      "name": "Carter Yakemchuk",
+      "pos": "D",
+      "team": "OTT"
+    },
+    "8484759": {
+      "player_id": 8484759,
+      "name": "Carter Yakemchuk",
+      "pos": "D",
+      "team": "OTT"
+    },
+    "artem zub": {
+      "player_id": 8482245,
+      "name": "Artem Zub",
+      "pos": "D",
+      "team": "OTT"
+    },
+    "8482245": {
+      "player_id": 8482245,
+      "name": "Artem Zub",
+      "pos": "D",
+      "team": "OTT"
+    },
+    "leevi meril\u00e4inen": {
+      "player_id": 8482447,
+      "name": "Leevi Meril\u00e4inen",
+      "pos": "G",
+      "team": "OTT"
+    },
+    "8482447": {
+      "player_id": 8482447,
+      "name": "Leevi Meril\u00e4inen",
+      "pos": "G",
+      "team": "OTT"
+    },
+    "linus ullmark": {
+      "player_id": 8476999,
+      "name": "Linus Ullmark",
+      "pos": "G",
+      "team": "OTT"
+    },
+    "8476999": {
+      "player_id": 8476999,
+      "name": "Linus Ullmark",
+      "pos": "G",
+      "team": "OTT"
+    },
+    "denver barkey": {
+      "player_id": 8484142,
+      "name": "Denver Barkey",
+      "pos": "C",
+      "team": "PHI"
+    },
+    "8484142": {
+      "player_id": 8484142,
+      "name": "Denver Barkey",
+      "pos": "C",
+      "team": "PHI"
+    },
+    "alex bump": {
+      "player_id": 8483731,
+      "name": "Alex Bump",
+      "pos": "LW",
+      "team": "PHI"
+    },
+    "8483731": {
+      "player_id": 8483731,
+      "name": "Alex Bump",
+      "pos": "LW",
+      "team": "PHI"
+    },
+    "noah cates": {
+      "player_id": 8480220,
+      "name": "Noah Cates",
+      "pos": "LW",
+      "team": "PHI"
+    },
+    "8480220": {
+      "player_id": 8480220,
+      "name": "Noah Cates",
+      "pos": "LW",
+      "team": "PHI"
+    },
+    "sean couturier": {
+      "player_id": 8476461,
+      "name": "Sean Couturier",
+      "pos": "C",
+      "team": "PHI"
+    },
+    "8476461": {
+      "player_id": 8476461,
+      "name": "Sean Couturier",
+      "pos": "C",
+      "team": "PHI"
+    },
+    "christian dvorak": {
+      "player_id": 8477989,
+      "name": "Christian Dvorak",
+      "pos": "C",
+      "team": "PHI"
+    },
+    "8477989": {
+      "player_id": 8477989,
+      "name": "Christian Dvorak",
+      "pos": "C",
+      "team": "PHI"
+    },
+    "tyson foerster": {
+      "player_id": 8482159,
+      "name": "Tyson Foerster",
+      "pos": "RW",
+      "team": "PHI"
+    },
+    "8482159": {
+      "player_id": 8482159,
+      "name": "Tyson Foerster",
+      "pos": "RW",
+      "team": "PHI"
+    },
+    "jacob gaucher": {
+      "player_id": 8481848,
+      "name": "Jacob Gaucher",
+      "pos": "C",
+      "team": "PHI"
+    },
+    "8481848": {
+      "player_id": 8481848,
+      "name": "Jacob Gaucher",
+      "pos": "C",
+      "team": "PHI"
+    },
+    "nikita grebenkin": {
+      "player_id": 8483733,
+      "name": "Nikita Grebenkin",
+      "pos": "RW",
+      "team": "PHI"
+    },
+    "8483733": {
+      "player_id": 8483733,
+      "name": "Nikita Grebenkin",
+      "pos": "RW",
+      "team": "PHI"
+    },
+    "travis konecny": {
+      "player_id": 8478439,
+      "name": "Travis Konecny",
+      "pos": "RW",
+      "team": "PHI"
+    },
+    "8478439": {
+      "player_id": 8478439,
+      "name": "Travis Konecny",
+      "pos": "RW",
+      "team": "PHI"
+    },
+    "jett luchanko": {
+      "player_id": 8484779,
+      "name": "Jett Luchanko",
+      "pos": "C",
+      "team": "PHI"
+    },
+    "8484779": {
+      "player_id": 8484779,
+      "name": "Jett Luchanko",
+      "pos": "C",
+      "team": "PHI"
+    },
+    "porter martone": {
+      "player_id": 8485406,
+      "name": "Porter Martone",
+      "pos": "RW",
+      "team": "PHI"
+    },
+    "8485406": {
+      "player_id": 8485406,
+      "name": "Porter Martone",
+      "pos": "RW",
+      "team": "PHI"
+    },
+    "matvei michkov": {
+      "player_id": 8484387,
+      "name": "Matvei Michkov",
+      "pos": "RW",
+      "team": "PHI"
+    },
+    "8484387": {
+      "player_id": 8484387,
+      "name": "Matvei Michkov",
+      "pos": "RW",
+      "team": "PHI"
+    },
+    "owen tippett": {
+      "player_id": 8480015,
+      "name": "Owen Tippett",
+      "pos": "RW",
+      "team": "PHI"
+    },
+    "8480015": {
+      "player_id": 8480015,
+      "name": "Owen Tippett",
+      "pos": "RW",
+      "team": "PHI"
+    },
+    "trevor zegras": {
+      "player_id": 8481533,
+      "name": "Trevor Zegras",
+      "pos": "C",
+      "team": "PHI"
+    },
+    "8481533": {
+      "player_id": 8481533,
+      "name": "Trevor Zegras",
+      "pos": "C",
+      "team": "PHI"
+    },
+    "simon benoit": {
+      "player_id": 8481122,
+      "name": "Simon Benoit",
+      "pos": "D",
+      "team": "PHI"
+    },
+    "8481122": {
+      "player_id": 8481122,
+      "name": "Simon Benoit",
+      "pos": "D",
+      "team": "PHI"
+    },
+    "oliver bonk": {
+      "player_id": 8484148,
+      "name": "Oliver Bonk",
+      "pos": "D",
+      "team": "PHI"
+    },
+    "8484148": {
+      "player_id": 8484148,
+      "name": "Oliver Bonk",
+      "pos": "D",
+      "team": "PHI"
+    },
+    "jamie drysdale": {
+      "player_id": 8482142,
+      "name": "Jamie Drysdale",
+      "pos": "D",
+      "team": "PHI"
+    },
+    "8482142": {
+      "player_id": 8482142,
+      "name": "Jamie Drysdale",
+      "pos": "D",
+      "team": "PHI"
+    },
+    "helge grans": {
+      "player_id": 8482169,
+      "name": "Helge Grans",
+      "pos": "D",
+      "team": "PHI"
+    },
+    "8482169": {
+      "player_id": 8482169,
+      "name": "Helge Grans",
+      "pos": "D",
+      "team": "PHI"
+    },
+    "david jiricek": {
+      "player_id": 8483460,
+      "name": "David Jiricek",
+      "pos": "D",
+      "team": "PHI"
+    },
+    "8483460": {
+      "player_id": 8483460,
+      "name": "David Jiricek",
+      "pos": "D",
+      "team": "PHI"
+    },
+    "hunter mcdonald": {
+      "player_id": 8483760,
+      "name": "Hunter McDonald",
+      "pos": "D",
+      "team": "PHI"
+    },
+    "8483760": {
+      "player_id": 8483760,
+      "name": "Hunter McDonald",
+      "pos": "D",
+      "team": "PHI"
+    },
+    "rasmus ristolainen": {
+      "player_id": 8477499,
+      "name": "Rasmus Ristolainen",
+      "pos": "D",
+      "team": "PHI"
+    },
+    "8477499": {
+      "player_id": 8477499,
+      "name": "Rasmus Ristolainen",
+      "pos": "D",
+      "team": "PHI"
+    },
+    "travis sanheim": {
+      "player_id": 8477948,
+      "name": "Travis Sanheim",
+      "pos": "D",
+      "team": "PHI"
+    },
+    "8477948": {
+      "player_id": 8477948,
+      "name": "Travis Sanheim",
+      "pos": "D",
+      "team": "PHI"
+    },
+    "nick seeler": {
+      "player_id": 8476372,
+      "name": "Nick Seeler",
+      "pos": "D",
+      "team": "PHI"
+    },
+    "8476372": {
+      "player_id": 8476372,
+      "name": "Nick Seeler",
+      "pos": "D",
+      "team": "PHI"
+    },
+    "cam york": {
+      "player_id": 8481546,
+      "name": "Cam York",
+      "pos": "D",
+      "team": "PHI"
+    },
+    "8481546": {
+      "player_id": 8481546,
+      "name": "Cam York",
+      "pos": "D",
+      "team": "PHI"
+    },
+    "carson bjarnason": {
+      "player_id": 8484147,
+      "name": "Carson Bjarnason",
+      "pos": "G",
+      "team": "PHI"
+    },
+    "8484147": {
+      "player_id": 8484147,
+      "name": "Carson Bjarnason",
+      "pos": "G",
+      "team": "PHI"
+    },
+    "aleksei kolosov": {
+      "player_id": 8482783,
+      "name": "Aleksei Kolosov",
+      "pos": "G",
+      "team": "PHI"
+    },
+    "8482783": {
+      "player_id": 8482783,
+      "name": "Aleksei Kolosov",
+      "pos": "G",
+      "team": "PHI"
+    },
+    "dan vladar": {
+      "player_id": 8478435,
+      "name": "Dan Vladar",
+      "pos": "G",
+      "team": "PHI"
+    },
+    "8478435": {
+      "player_id": 8478435,
+      "name": "Dan Vladar",
+      "pos": "G",
+      "team": "PHI"
+    },
+    "joseph woll": {
+      "player_id": 8479361,
+      "name": "Joseph Woll",
+      "pos": "G",
+      "team": "PHI"
+    },
+    "8479361": {
+      "player_id": 8479361,
+      "name": "Joseph Woll",
+      "pos": "G",
+      "team": "PHI"
+    },
+    "justin brazeau": {
+      "player_id": 8479638,
+      "name": "Justin Brazeau",
+      "pos": "RW",
+      "team": "PIT"
+    },
+    "8479638": {
+      "player_id": 8479638,
+      "name": "Justin Brazeau",
+      "pos": "RW",
+      "team": "PIT"
+    },
+    "egor chinakhov": {
+      "player_id": 8482475,
+      "name": "Egor Chinakhov",
+      "pos": "RW",
+      "team": "PIT"
+    },
+    "8482475": {
+      "player_id": 8482475,
+      "name": "Egor Chinakhov",
+      "pos": "RW",
+      "team": "PIT"
+    },
+    "sidney crosby": {
+      "player_id": 8471675,
+      "name": "Sidney Crosby",
+      "pos": "C",
+      "team": "PIT"
+    },
+    "8471675": {
+      "player_id": 8471675,
+      "name": "Sidney Crosby",
+      "pos": "C",
+      "team": "PIT"
+    },
+    "connor dewar": {
+      "player_id": 8480980,
+      "name": "Connor Dewar",
+      "pos": "C",
+      "team": "PIT"
+    },
+    "8480980": {
+      "player_id": 8480980,
+      "name": "Connor Dewar",
+      "pos": "C",
+      "team": "PIT"
+    },
+    "david gustafsson": {
+      "player_id": 8481019,
+      "name": "David Gustafsson",
+      "pos": "C",
+      "team": "PIT"
+    },
+    "8481019": {
+      "player_id": 8481019,
+      "name": "David Gustafsson",
+      "pos": "C",
+      "team": "PIT"
+    },
+    "filip hallander": {
+      "player_id": 8480842,
+      "name": "Filip Hallander",
+      "pos": "C",
+      "team": "PIT"
+    },
+    "8480842": {
+      "player_id": 8480842,
+      "name": "Filip Hallander",
+      "pos": "C",
+      "team": "PIT"
+    },
+    "ben kindel": {
+      "player_id": 8485414,
+      "name": "Ben Kindel",
+      "pos": "C",
+      "team": "PIT"
+    },
+    "8485414": {
+      "player_id": 8485414,
+      "name": "Ben Kindel",
+      "pos": "C",
+      "team": "PIT"
+    },
+    "ville koivunen": {
+      "player_id": 8482758,
+      "name": "Ville Koivunen",
+      "pos": "RW",
+      "team": "PIT"
+    },
+    "8482758": {
+      "player_id": 8482758,
+      "name": "Ville Koivunen",
+      "pos": "RW",
+      "team": "PIT"
+    },
+    "hendrix lapierre": {
+      "player_id": 8482148,
+      "name": "Hendrix Lapierre",
+      "pos": "C",
+      "team": "PIT"
+    },
+    "8482148": {
+      "player_id": 8482148,
+      "name": "Hendrix Lapierre",
+      "pos": "C",
+      "team": "PIT"
+    },
+    "blake lizotte": {
+      "player_id": 8481481,
+      "name": "Blake Lizotte",
+      "pos": "C",
+      "team": "PIT"
+    },
+    "8481481": {
+      "player_id": 8481481,
+      "name": "Blake Lizotte",
+      "pos": "C",
+      "team": "PIT"
+    },
+    "evgeni malkin": {
+      "player_id": 8471215,
+      "name": "Evgeni Malkin",
+      "pos": "C",
+      "team": "PIT"
+    },
+    "8471215": {
+      "player_id": 8471215,
+      "name": "Evgeni Malkin",
+      "pos": "C",
+      "team": "PIT"
+    },
+    "tommy novak": {
+      "player_id": 8478438,
+      "name": "Tommy Novak",
+      "pos": "C",
+      "team": "PIT"
+    },
+    "8478438": {
+      "player_id": 8478438,
+      "name": "Tommy Novak",
+      "pos": "C",
+      "team": "PIT"
+    },
+    "rickard rakell": {
+      "player_id": 8476483,
+      "name": "Rickard Rakell",
+      "pos": "RW",
+      "team": "PIT"
+    },
+    "8476483": {
+      "player_id": 8476483,
+      "name": "Rickard Rakell",
+      "pos": "RW",
+      "team": "PIT"
+    },
+    "bryan rust": {
+      "player_id": 8475810,
+      "name": "Bryan Rust",
+      "pos": "RW",
+      "team": "PIT"
+    },
+    "8475810": {
+      "player_id": 8475810,
+      "name": "Bryan Rust",
+      "pos": "RW",
+      "team": "PIT"
+    },
+    "elmer soderblom": {
+      "player_id": 8481725,
+      "name": "Elmer Soderblom",
+      "pos": "LW",
+      "team": "PIT"
+    },
+    "8481725": {
+      "player_id": 8481725,
+      "name": "Elmer Soderblom",
+      "pos": "LW",
+      "team": "PIT"
+    },
+    "samuel girard": {
+      "player_id": 8479398,
+      "name": "Samuel Girard",
+      "pos": "D",
+      "team": "PIT"
+    },
+    "8479398": {
+      "player_id": 8479398,
+      "name": "Samuel Girard",
+      "pos": "D",
+      "team": "PIT"
+    },
+    "ryan graves": {
+      "player_id": 8477435,
+      "name": "Ryan Graves",
+      "pos": "D",
+      "team": "PIT"
+    },
+    "8477435": {
+      "player_id": 8477435,
+      "name": "Ryan Graves",
+      "pos": "D",
+      "team": "PIT"
+    },
+    "erik karlsson": {
+      "player_id": 8474578,
+      "name": "Erik Karlsson",
+      "pos": "D",
+      "team": "PIT"
+    },
+    "8474578": {
+      "player_id": 8474578,
+      "name": "Erik Karlsson",
+      "pos": "D",
+      "team": "PIT"
+    },
+    "kaedan korczak": {
+      "player_id": 8481527,
+      "name": "Kaedan Korczak",
+      "pos": "D",
+      "team": "PIT"
+    },
+    "8481527": {
+      "player_id": 8481527,
+      "name": "Kaedan Korczak",
+      "pos": "D",
+      "team": "PIT"
+    },
+    "kris letang": {
+      "player_id": 8471724,
+      "name": "Kris Letang",
+      "pos": "D",
+      "team": "PIT"
+    },
+    "8471724": {
+      "player_id": 8471724,
+      "name": "Kris Letang",
+      "pos": "D",
+      "team": "PIT"
+    },
+    "jake livanavage": {
+      "player_id": 8486169,
+      "name": "Jake Livanavage",
+      "pos": "D",
+      "team": "PIT"
+    },
+    "8486169": {
+      "player_id": 8486169,
+      "name": "Jake Livanavage",
+      "pos": "D",
+      "team": "PIT"
+    },
+    "ilya solovyov": {
+      "player_id": 8482470,
+      "name": "Ilya Solovyov",
+      "pos": "D",
+      "team": "PIT"
+    },
+    "8482470": {
+      "player_id": 8482470,
+      "name": "Ilya Solovyov",
+      "pos": "D",
+      "team": "PIT"
+    },
+    "arturs silovs": {
+      "player_id": 8481668,
+      "name": "Arturs Silovs",
+      "pos": "G",
+      "team": "PIT"
+    },
+    "8481668": {
+      "player_id": 8481668,
+      "name": "Arturs Silovs",
+      "pos": "G",
+      "team": "PIT"
+    },
+    "macklin celebrini": {
+      "player_id": 8484801,
+      "name": "Macklin Celebrini",
+      "pos": "C",
+      "team": "SJS"
+    },
+    "8484801": {
+      "player_id": 8484801,
+      "name": "Macklin Celebrini",
+      "pos": "C",
+      "team": "SJS"
+    },
+    "ty dellandrea": {
+      "player_id": 8480848,
+      "name": "Ty Dellandrea",
+      "pos": "C",
+      "team": "SJS"
+    },
+    "8480848": {
+      "player_id": 8480848,
+      "name": "Ty Dellandrea",
+      "pos": "C",
+      "team": "SJS"
+    },
+    "adam gaudette": {
+      "player_id": 8478874,
+      "name": "Adam Gaudette",
+      "pos": "RW",
+      "team": "SJS"
+    },
+    "8478874": {
+      "player_id": 8478874,
+      "name": "Adam Gaudette",
+      "pos": "RW",
+      "team": "SJS"
+    },
+    "barclay goodrow": {
+      "player_id": 8476624,
+      "name": "Barclay Goodrow",
+      "pos": "C",
+      "team": "SJS"
+    },
+    "8476624": {
+      "player_id": 8476624,
+      "name": "Barclay Goodrow",
+      "pos": "C",
+      "team": "SJS"
+    },
+    "collin graf": {
+      "player_id": 8484911,
+      "name": "Collin Graf",
+      "pos": "RW",
+      "team": "SJS"
+    },
+    "8484911": {
+      "player_id": 8484911,
+      "name": "Collin Graf",
+      "pos": "RW",
+      "team": "SJS"
+    },
+    "michael misa": {
+      "player_id": 8485402,
+      "name": "Michael Misa",
+      "pos": "C",
+      "team": "SJS"
+    },
+    "8485402": {
+      "player_id": 8485402,
+      "name": "Michael Misa",
+      "pos": "C",
+      "team": "SJS"
+    },
+    "zack ostapchuk": {
+      "player_id": 8482859,
+      "name": "Zack Ostapchuk",
+      "pos": "C",
+      "team": "SJS"
+    },
+    "8482859": {
+      "player_id": 8482859,
+      "name": "Zack Ostapchuk",
+      "pos": "C",
+      "team": "SJS"
+    },
+    "kiefer sherwood": {
+      "player_id": 8480748,
+      "name": "Kiefer Sherwood",
+      "pos": "LW",
+      "team": "SJS"
+    },
+    "8480748": {
+      "player_id": 8480748,
+      "name": "Kiefer Sherwood",
+      "pos": "LW",
+      "team": "SJS"
+    },
+    "will smith": {
+      "player_id": 8484227,
+      "name": "Will Smith",
+      "pos": "C",
+      "team": "SJS"
+    },
+    "8484227": {
+      "player_id": 8484227,
+      "name": "Will Smith",
+      "pos": "C",
+      "team": "SJS"
+    },
+    "tyler toffoli": {
+      "player_id": 8475726,
+      "name": "Tyler Toffoli",
+      "pos": "C",
+      "team": "SJS"
+    },
+    "8475726": {
+      "player_id": 8475726,
+      "name": "Tyler Toffoli",
+      "pos": "C",
+      "team": "SJS"
+    },
+    "alexander wennberg": {
+      "player_id": 8477505,
+      "name": "Alexander Wennberg",
+      "pos": "C",
+      "team": "SJS"
+    },
+    "8477505": {
+      "player_id": 8477505,
+      "name": "Alexander Wennberg",
+      "pos": "C",
+      "team": "SJS"
+    },
+    "sam dickinson": {
+      "player_id": 8484806,
+      "name": "Sam Dickinson",
+      "pos": "D",
+      "team": "SJS"
+    },
+    "8484806": {
+      "player_id": 8484806,
+      "name": "Sam Dickinson",
+      "pos": "D",
+      "team": "SJS"
+    },
+    "michael kesselring": {
+      "player_id": 8480891,
+      "name": "Michael Kesselring",
+      "pos": "D",
+      "team": "SJS"
+    },
+    "8480891": {
+      "player_id": 8480891,
+      "name": "Michael Kesselring",
+      "pos": "D",
+      "team": "SJS"
+    },
+    "shakir mukhamadullin": {
+      "player_id": 8482166,
+      "name": "Shakir Mukhamadullin",
+      "pos": "D",
+      "team": "SJS"
+    },
+    "8482166": {
+      "player_id": 8482166,
+      "name": "Shakir Mukhamadullin",
+      "pos": "D",
+      "team": "SJS"
+    },
+    "dmitry orlov": {
+      "player_id": 8475200,
+      "name": "Dmitry Orlov",
+      "pos": "D",
+      "team": "SJS"
+    },
+    "8475200": {
+      "player_id": 8475200,
+      "name": "Dmitry Orlov",
+      "pos": "D",
+      "team": "SJS"
+    },
+    "yaroslav askarov": {
+      "player_id": 8482137,
+      "name": "Yaroslav Askarov",
+      "pos": "G",
+      "team": "SJS"
+    },
+    "8482137": {
+      "player_id": 8482137,
+      "name": "Yaroslav Askarov",
+      "pos": "G",
+      "team": "SJS"
+    },
+    "alex nedeljkovic": {
+      "player_id": 8477968,
+      "name": "Alex Nedeljkovic",
+      "pos": "G",
+      "team": "SJS"
+    },
+    "8477968": {
+      "player_id": 8477968,
+      "name": "Alex Nedeljkovic",
+      "pos": "G",
+      "team": "SJS"
+    },
+    "matty beniers": {
+      "player_id": 8482665,
+      "name": "Matty Beniers",
+      "pos": "C",
+      "team": "SEA"
+    },
+    "8482665": {
+      "player_id": 8482665,
+      "name": "Matty Beniers",
+      "pos": "C",
+      "team": "SEA"
+    },
+    "berkly catton": {
+      "player_id": 8484800,
+      "name": "Berkly Catton",
+      "pos": "C",
+      "team": "SEA"
+    },
+    "8484800": {
+      "player_id": 8484800,
+      "name": "Berkly Catton",
+      "pos": "C",
+      "team": "SEA"
+    },
+    "jordan eberle": {
+      "player_id": 8474586,
+      "name": "Jordan Eberle",
+      "pos": "RW",
+      "team": "SEA"
+    },
+    "8474586": {
+      "player_id": 8474586,
+      "name": "Jordan Eberle",
+      "pos": "RW",
+      "team": "SEA"
+    },
+    "frederick gaudreau": {
+      "player_id": 8477919,
+      "name": "Frederick Gaudreau",
+      "pos": "C",
+      "team": "SEA"
+    },
+    "8477919": {
+      "player_id": 8477919,
+      "name": "Frederick Gaudreau",
+      "pos": "C",
+      "team": "SEA"
+    },
+    "kaapo kakko": {
+      "player_id": 8481554,
+      "name": "Kaapo Kakko",
+      "pos": "RW",
+      "team": "SEA"
+    },
+    "8481554": {
+      "player_id": 8481554,
+      "name": "Kaapo Kakko",
+      "pos": "RW",
+      "team": "SEA"
+    },
+    "jared mccann": {
+      "player_id": 8477955,
+      "name": "Jared McCann",
+      "pos": "LW",
+      "team": "SEA"
+    },
+    "8477955": {
+      "player_id": 8477955,
+      "name": "Jared McCann",
+      "pos": "LW",
+      "team": "SEA"
+    },
+    "bobby mcmann": {
+      "player_id": 8482259,
+      "name": "Bobby McMann",
+      "pos": "C",
+      "team": "SEA"
+    },
+    "8482259": {
+      "player_id": 8482259,
+      "name": "Bobby McMann",
+      "pos": "C",
+      "team": "SEA"
+    },
+    "ben meyers": {
+      "player_id": 8483570,
+      "name": "Ben Meyers",
+      "pos": "C",
+      "team": "SEA"
+    },
+    "8483570": {
+      "player_id": 8483570,
+      "name": "Ben Meyers",
+      "pos": "C",
+      "team": "SEA"
+    },
+    "mackie samoskevich": {
+      "player_id": 8482713,
+      "name": "Mackie Samoskevich",
+      "pos": "RW",
+      "team": "SEA"
+    },
+    "8482713": {
+      "player_id": 8482713,
+      "name": "Mackie Samoskevich",
+      "pos": "RW",
+      "team": "SEA"
+    },
+    "chandler stephenson": {
+      "player_id": 8476905,
+      "name": "Chandler Stephenson",
+      "pos": "C",
+      "team": "SEA"
+    },
+    "8476905": {
+      "player_id": 8476905,
+      "name": "Chandler Stephenson",
+      "pos": "C",
+      "team": "SEA"
+    },
+    "ryan winterton": {
+      "player_id": 8482751,
+      "name": "Ryan Winterton",
+      "pos": "C",
+      "team": "SEA"
+    },
+    "8482751": {
+      "player_id": 8482751,
+      "name": "Ryan Winterton",
+      "pos": "C",
+      "team": "SEA"
+    },
+    "shane wright": {
+      "player_id": 8483524,
+      "name": "Shane Wright",
+      "pos": "C",
+      "team": "SEA"
+    },
+    "8483524": {
+      "player_id": 8483524,
+      "name": "Shane Wright",
+      "pos": "C",
+      "team": "SEA"
+    },
+    "vince dunn": {
+      "player_id": 8478407,
+      "name": "Vince Dunn",
+      "pos": "D",
+      "team": "SEA"
+    },
+    "8478407": {
+      "player_id": 8478407,
+      "name": "Vince Dunn",
+      "pos": "D",
+      "team": "SEA"
+    },
+    "ryker evans": {
+      "player_id": 8482858,
+      "name": "Ryker Evans",
+      "pos": "D",
+      "team": "SEA"
+    },
+    "8482858": {
+      "player_id": 8482858,
+      "name": "Ryker Evans",
+      "pos": "D",
+      "team": "SEA"
+    },
+    "cale fleury": {
+      "player_id": 8479985,
+      "name": "Cale Fleury",
+      "pos": "D",
+      "team": "SEA"
+    },
+    "8479985": {
+      "player_id": 8479985,
+      "name": "Cale Fleury",
+      "pos": "D",
+      "team": "SEA"
+    },
+    "adam larsson": {
+      "player_id": 8476457,
+      "name": "Adam Larsson",
+      "pos": "D",
+      "team": "SEA"
+    },
+    "8476457": {
+      "player_id": 8476457,
+      "name": "Adam Larsson",
+      "pos": "D",
+      "team": "SEA"
+    },
+    "ryan lindgren": {
+      "player_id": 8479324,
+      "name": "Ryan Lindgren",
+      "pos": "D",
+      "team": "SEA"
+    },
+    "8479324": {
+      "player_id": 8479324,
+      "name": "Ryan Lindgren",
+      "pos": "D",
+      "team": "SEA"
+    },
+    "joshua mahura": {
+      "player_id": 8479372,
+      "name": "Joshua Mahura",
+      "pos": "D",
+      "team": "SEA"
+    },
+    "8479372": {
+      "player_id": 8479372,
+      "name": "Joshua Mahura",
+      "pos": "D",
+      "team": "SEA"
+    },
+    "brandon montour": {
+      "player_id": 8477986,
+      "name": "Brandon Montour",
+      "pos": "D",
+      "team": "SEA"
+    },
+    "8477986": {
+      "player_id": 8477986,
+      "name": "Brandon Montour",
+      "pos": "D",
+      "team": "SEA"
+    },
+    "joey daccord": {
+      "player_id": 8478916,
+      "name": "Joey Daccord",
+      "pos": "G",
+      "team": "SEA"
+    },
+    "8478916": {
+      "player_id": 8478916,
+      "name": "Joey Daccord",
+      "pos": "G",
+      "team": "SEA"
+    },
+    "philipp grubauer": {
+      "player_id": 8475831,
+      "name": "Philipp Grubauer",
+      "pos": "G",
+      "team": "SEA"
+    },
+    "8475831": {
+      "player_id": 8475831,
+      "name": "Philipp Grubauer",
+      "pos": "G",
+      "team": "SEA"
+    },
+    "pavel buchnevich": {
+      "player_id": 8477402,
+      "name": "Pavel Buchnevich",
+      "pos": "LW",
+      "team": "STL"
+    },
+    "8477402": {
+      "player_id": 8477402,
+      "name": "Pavel Buchnevich",
+      "pos": "LW",
+      "team": "STL"
+    },
+    "jonathan drouin": {
+      "player_id": 8477494,
+      "name": "Jonathan Drouin",
+      "pos": "LW",
+      "team": "STL"
+    },
+    "8477494": {
+      "player_id": 8477494,
+      "name": "Jonathan Drouin",
+      "pos": "LW",
+      "team": "STL"
+    },
+    "dalibor dvorsky": {
+      "player_id": 8484164,
+      "name": "Dalibor Dvorsky",
+      "pos": "RW",
+      "team": "STL"
+    },
+    "8484164": {
+      "player_id": 8484164,
+      "name": "Dalibor Dvorsky",
+      "pos": "RW",
+      "team": "STL"
+    },
+    "jack finley": {
+      "player_id": 8482090,
+      "name": "Jack Finley",
+      "pos": "C",
+      "team": "STL"
+    },
+    "8482090": {
+      "player_id": 8482090,
+      "name": "Jack Finley",
+      "pos": "C",
+      "team": "STL"
+    },
+    "dylan holloway": {
+      "player_id": 8482077,
+      "name": "Dylan Holloway",
+      "pos": "LW",
+      "team": "STL"
+    },
+    "8482077": {
+      "player_id": 8482077,
+      "name": "Dylan Holloway",
+      "pos": "LW",
+      "team": "STL"
+    },
+    "connor mcmichael": {
+      "player_id": 8481580,
+      "name": "Connor McMichael",
+      "pos": "LW",
+      "team": "STL"
+    },
+    "8481580": {
+      "player_id": 8481580,
+      "name": "Connor McMichael",
+      "pos": "LW",
+      "team": "STL"
+    },
+    "mason mctavish": {
+      "player_id": 8482745,
+      "name": "Mason McTavish",
+      "pos": "C",
+      "team": "STL"
+    },
+    "8482745": {
+      "player_id": 8482745,
+      "name": "Mason McTavish",
+      "pos": "C",
+      "team": "STL"
+    },
+    "jake neighbours": {
+      "player_id": 8482089,
+      "name": "Jake Neighbours",
+      "pos": "LW",
+      "team": "STL"
+    },
+    "8482089": {
+      "player_id": 8482089,
+      "name": "Jake Neighbours",
+      "pos": "LW",
+      "team": "STL"
+    },
+    "jimmy snuggerud": {
+      "player_id": 8483516,
+      "name": "Jimmy Snuggerud",
+      "pos": "RW",
+      "team": "STL"
+    },
+    "8483516": {
+      "player_id": 8483516,
+      "name": "Jimmy Snuggerud",
+      "pos": "RW",
+      "team": "STL"
+    },
+    "pius suter": {
+      "player_id": 8480459,
+      "name": "Pius Suter",
+      "pos": "C",
+      "team": "STL"
+    },
+    "8480459": {
+      "player_id": 8480459,
+      "name": "Pius Suter",
+      "pos": "C",
+      "team": "STL"
+    },
+    "robert thomas": {
+      "player_id": 8480023,
+      "name": "Robert Thomas",
+      "pos": "C",
+      "team": "STL"
+    },
+    "8480023": {
+      "player_id": 8480023,
+      "name": "Robert Thomas",
+      "pos": "C",
+      "team": "STL"
+    },
+    "alexey toropchenko": {
+      "player_id": 8480281,
+      "name": "Alexey Toropchenko",
+      "pos": "RW",
+      "team": "STL"
+    },
+    "8480281": {
+      "player_id": 8480281,
+      "name": "Alexey Toropchenko",
+      "pos": "RW",
+      "team": "STL"
+    },
+    "nathan walker": {
+      "player_id": 8477573,
+      "name": "Nathan Walker",
+      "pos": "LW",
+      "team": "STL"
+    },
+    "8477573": {
+      "player_id": 8477573,
+      "name": "Nathan Walker",
+      "pos": "LW",
+      "team": "STL"
+    },
+    "philip broberg": {
+      "player_id": 8481598,
+      "name": "Philip Broberg",
+      "pos": "D",
+      "team": "STL"
+    },
+    "8481598": {
+      "player_id": 8481598,
+      "name": "Philip Broberg",
+      "pos": "D",
+      "team": "STL"
+    },
+    "brandon carlo": {
+      "player_id": 8478443,
+      "name": "Brandon Carlo",
+      "pos": "D",
+      "team": "STL"
+    },
+    "8478443": {
+      "player_id": 8478443,
+      "name": "Brandon Carlo",
+      "pos": "D",
+      "team": "STL"
+    },
+    "cam fowler": {
+      "player_id": 8475764,
+      "name": "Cam Fowler",
+      "pos": "D",
+      "team": "STL"
+    },
+    "8475764": {
+      "player_id": 8475764,
+      "name": "Cam Fowler",
+      "pos": "D",
+      "team": "STL"
+    },
+    "logan mailloux": {
+      "player_id": 8482733,
+      "name": "Logan Mailloux",
+      "pos": "D",
+      "team": "STL"
+    },
+    "8482733": {
+      "player_id": 8482733,
+      "name": "Logan Mailloux",
+      "pos": "D",
+      "team": "STL"
+    },
+    "colton parayko": {
+      "player_id": 8476892,
+      "name": "Colton Parayko",
+      "pos": "D",
+      "team": "STL"
+    },
+    "8476892": {
+      "player_id": 8476892,
+      "name": "Colton Parayko",
+      "pos": "D",
+      "team": "STL"
+    },
+    "tyler tucker": {
+      "player_id": 8481006,
+      "name": "Tyler Tucker",
+      "pos": "D",
+      "team": "STL"
+    },
+    "8481006": {
+      "player_id": 8481006,
+      "name": "Tyler Tucker",
+      "pos": "D",
+      "team": "STL"
+    },
+    "jordan binnington": {
+      "player_id": 8476412,
+      "name": "Jordan Binnington",
+      "pos": "G",
+      "team": "STL"
+    },
+    "8476412": {
+      "player_id": 8476412,
+      "name": "Jordan Binnington",
+      "pos": "G",
+      "team": "STL"
+    },
+    "joel hofer": {
+      "player_id": 8480981,
+      "name": "Joel Hofer",
+      "pos": "G",
+      "team": "STL"
+    },
+    "8480981": {
+      "player_id": 8480981,
+      "name": "Joel Hofer",
+      "pos": "G",
+      "team": "STL"
+    },
+    "anthony cirelli": {
+      "player_id": 8478519,
+      "name": "Anthony Cirelli",
+      "pos": "C",
+      "team": "TBL"
+    },
+    "8478519": {
+      "player_id": 8478519,
+      "name": "Anthony Cirelli",
+      "pos": "C",
+      "team": "TBL"
+    },
+    "conor geekie": {
+      "player_id": 8483447,
+      "name": "Conor Geekie",
+      "pos": "C",
+      "team": "TBL"
+    },
+    "8483447": {
+      "player_id": 8483447,
+      "name": "Conor Geekie",
+      "pos": "C",
+      "team": "TBL"
+    },
+    "zemgus girgensons": {
+      "player_id": 8476878,
+      "name": "Zemgus Girgensons",
+      "pos": "C",
+      "team": "TBL"
+    },
+    "8476878": {
+      "player_id": 8476878,
+      "name": "Zemgus Girgensons",
+      "pos": "C",
+      "team": "TBL"
+    },
+    "gage goncalves": {
+      "player_id": 8482201,
+      "name": "Gage Goncalves",
+      "pos": "C",
+      "team": "TBL"
+    },
+    "8482201": {
+      "player_id": 8482201,
+      "name": "Gage Goncalves",
+      "pos": "C",
+      "team": "TBL"
+    },
+    "yanni gourde": {
+      "player_id": 8476826,
+      "name": "Yanni Gourde",
+      "pos": "C",
+      "team": "TBL"
+    },
+    "8476826": {
+      "player_id": 8476826,
+      "name": "Yanni Gourde",
+      "pos": "C",
+      "team": "TBL"
+    },
+    "jake guentzel": {
+      "player_id": 8477404,
+      "name": "Jake Guentzel",
+      "pos": "C",
+      "team": "TBL"
+    },
+    "8477404": {
+      "player_id": 8477404,
+      "name": "Jake Guentzel",
+      "pos": "C",
+      "team": "TBL"
+    },
+    "brandon hagel": {
+      "player_id": 8479542,
+      "name": "Brandon Hagel",
+      "pos": "LW",
+      "team": "TBL"
+    },
+    "8479542": {
+      "player_id": 8479542,
+      "name": "Brandon Hagel",
+      "pos": "LW",
+      "team": "TBL"
+    },
+    "pontus holmberg": {
+      "player_id": 8480995,
+      "name": "Pontus Holmberg",
+      "pos": "RW",
+      "team": "TBL"
+    },
+    "8480995": {
+      "player_id": 8480995,
+      "name": "Pontus Holmberg",
+      "pos": "RW",
+      "team": "TBL"
+    },
+    "dominic james": {
+      "player_id": 8483752,
+      "name": "Dominic James",
+      "pos": "C",
+      "team": "TBL"
+    },
+    "8483752": {
+      "player_id": 8483752,
+      "name": "Dominic James",
+      "pos": "C",
+      "team": "TBL"
+    },
+    "nikita kucherov": {
+      "player_id": 8476453,
+      "name": "Nikita Kucherov",
+      "pos": "RW",
+      "team": "TBL"
+    },
+    "8476453": {
+      "player_id": 8476453,
+      "name": "Nikita Kucherov",
+      "pos": "RW",
+      "team": "TBL"
+    },
+    "nick paul": {
+      "player_id": 8477426,
+      "name": "Nick Paul",
+      "pos": "LW",
+      "team": "TBL"
+    },
+    "8477426": {
+      "player_id": 8477426,
+      "name": "Nick Paul",
+      "pos": "LW",
+      "team": "TBL"
+    },
+    "brayden point": {
+      "player_id": 8478010,
+      "name": "Brayden Point",
+      "pos": "C",
+      "team": "TBL"
+    },
+    "8478010": {
+      "player_id": 8478010,
+      "name": "Brayden Point",
+      "pos": "C",
+      "team": "TBL"
+    },
+    "scott sabourin": {
+      "player_id": 8477149,
+      "name": "Scott Sabourin",
+      "pos": "RW",
+      "team": "TBL"
+    },
+    "8477149": {
+      "player_id": 8477149,
+      "name": "Scott Sabourin",
+      "pos": "RW",
+      "team": "TBL"
+    },
+    "erik cernak": {
+      "player_id": 8478416,
+      "name": "Erik Cernak",
+      "pos": "D",
+      "team": "TBL"
+    },
+    "8478416": {
+      "player_id": 8478416,
+      "name": "Erik Cernak",
+      "pos": "D",
+      "team": "TBL"
+    },
+    "max crozier": {
+      "player_id": 8481719,
+      "name": "Max Crozier",
+      "pos": "D",
+      "team": "TBL"
+    },
+    "8481719": {
+      "player_id": 8481719,
+      "name": "Max Crozier",
+      "pos": "D",
+      "team": "TBL"
+    },
+    "charle-edouard d'astous": {
+      "player_id": 8480426,
+      "name": "Charle-Edouard D'Astous",
+      "pos": "D",
+      "team": "TBL"
+    },
+    "8480426": {
+      "player_id": 8480426,
+      "name": "Charle-Edouard D'Astous",
+      "pos": "D",
+      "team": "TBL"
+    },
+    "victor hedman": {
+      "player_id": 8475167,
+      "name": "Victor Hedman",
+      "pos": "D",
+      "team": "TBL"
+    },
+    "8475167": {
+      "player_id": 8475167,
+      "name": "Victor Hedman",
+      "pos": "D",
+      "team": "TBL"
+    },
+    "emil lilleberg": {
+      "player_id": 8482929,
+      "name": "Emil Lilleberg",
+      "pos": "D",
+      "team": "TBL"
+    },
+    "8482929": {
+      "player_id": 8482929,
+      "name": "Emil Lilleberg",
+      "pos": "D",
+      "team": "TBL"
+    },
+    "ryan mcdonagh": {
+      "player_id": 8474151,
+      "name": "Ryan McDonagh",
+      "pos": "D",
+      "team": "TBL"
+    },
+    "8474151": {
+      "player_id": 8474151,
+      "name": "Ryan McDonagh",
+      "pos": "D",
+      "team": "TBL"
+    },
+    "j.j. moser": {
+      "player_id": 8482655,
+      "name": "J.J. Moser",
+      "pos": "D",
+      "team": "TBL"
+    },
+    "8482655": {
+      "player_id": 8482655,
+      "name": "J.J. Moser",
+      "pos": "D",
+      "team": "TBL"
+    },
+    "jonas johansson": {
+      "player_id": 8477992,
+      "name": "Jonas Johansson",
+      "pos": "G",
+      "team": "TBL"
+    },
+    "8477992": {
+      "player_id": 8477992,
+      "name": "Jonas Johansson",
+      "pos": "G",
+      "team": "TBL"
+    },
+    "andrei vasilevskiy": {
+      "player_id": 8476883,
+      "name": "Andrei Vasilevskiy",
+      "pos": "G",
+      "team": "TBL"
+    },
+    "8476883": {
+      "player_id": 8476883,
+      "name": "Andrei Vasilevskiy",
+      "pos": "G",
+      "team": "TBL"
+    },
+    "max domi": {
+      "player_id": 8477503,
+      "name": "Max Domi",
+      "pos": "C",
+      "team": "TOR"
+    },
+    "8477503": {
+      "player_id": 8477503,
+      "name": "Max Domi",
+      "pos": "C",
+      "team": "TOR"
+    },
+    "bo groulx": {
+      "player_id": 8480870,
+      "name": "Bo Groulx",
+      "pos": "C",
+      "team": "TOR"
+    },
+    "8480870": {
+      "player_id": 8480870,
+      "name": "Bo Groulx",
+      "pos": "C",
+      "team": "TOR"
+    },
+    "luke haymes": {
+      "player_id": 8485467,
+      "name": "Luke Haymes",
+      "pos": "C",
+      "team": "TOR"
+    },
+    "8485467": {
+      "player_id": 8485467,
+      "name": "Luke Haymes",
+      "pos": "C",
+      "team": "TOR"
+    },
+    "dakota joshua": {
+      "player_id": 8478057,
+      "name": "Dakota Joshua",
+      "pos": "C",
+      "team": "TOR"
+    },
+    "8478057": {
+      "player_id": 8478057,
+      "name": "Dakota Joshua",
+      "pos": "C",
+      "team": "TOR"
+    },
+    "matthew knies": {
+      "player_id": 8482720,
+      "name": "Matthew Knies",
+      "pos": "LW",
+      "team": "TOR"
+    },
+    "8482720": {
+      "player_id": 8482720,
+      "name": "Matthew Knies",
+      "pos": "LW",
+      "team": "TOR"
+    },
+    "steven lorentz": {
+      "player_id": 8478904,
+      "name": "Steven Lorentz",
+      "pos": "C",
+      "team": "TOR"
+    },
+    "8478904": {
+      "player_id": 8478904,
+      "name": "Steven Lorentz",
+      "pos": "C",
+      "team": "TOR"
+    },
+    "auston matthews": {
+      "player_id": 8479318,
+      "name": "Auston Matthews",
+      "pos": "C",
+      "team": "TOR"
+    },
+    "8479318": {
+      "player_id": 8479318,
+      "name": "Auston Matthews",
+      "pos": "C",
+      "team": "TOR"
+    },
+    "william nylander": {
+      "player_id": 8477939,
+      "name": "William Nylander",
+      "pos": "RW",
+      "team": "TOR"
+    },
+    "8477939": {
+      "player_id": 8477939,
+      "name": "William Nylander",
+      "pos": "RW",
+      "team": "TOR"
+    },
+    "john tavares": {
+      "player_id": 8475166,
+      "name": "John Tavares",
+      "pos": "C",
+      "team": "TOR"
+    },
+    "8475166": {
+      "player_id": 8475166,
+      "name": "John Tavares",
+      "pos": "C",
+      "team": "TOR"
+    },
+    "emil andrae": {
+      "player_id": 8482126,
+      "name": "Emil Andrae",
+      "pos": "D",
+      "team": "TOR"
+    },
+    "8482126": {
+      "player_id": 8482126,
+      "name": "Emil Andrae",
+      "pos": "D",
+      "team": "TOR"
+    },
+    "oliver ekman-larsson": {
+      "player_id": 8475171,
+      "name": "Oliver Ekman-Larsson",
+      "pos": "D",
+      "team": "TOR"
+    },
+    "8475171": {
+      "player_id": 8475171,
+      "name": "Oliver Ekman-Larsson",
+      "pos": "D",
+      "team": "TOR"
+    },
+    "jake mccabe": {
+      "player_id": 8476931,
+      "name": "Jake McCabe",
+      "pos": "D",
+      "team": "TOR"
+    },
+    "8476931": {
+      "player_id": 8476931,
+      "name": "Jake McCabe",
+      "pos": "D",
+      "team": "TOR"
+    },
+    "philippe myers": {
+      "player_id": 8479026,
+      "name": "Philippe Myers",
+      "pos": "D",
+      "team": "TOR"
+    },
+    "8479026": {
+      "player_id": 8479026,
+      "name": "Philippe Myers",
+      "pos": "D",
+      "team": "TOR"
+    },
+    "darren raddysh": {
+      "player_id": 8478178,
+      "name": "Darren Raddysh",
+      "pos": "D",
+      "team": "TOR"
+    },
+    "8478178": {
+      "player_id": 8478178,
+      "name": "Darren Raddysh",
+      "pos": "D",
+      "team": "TOR"
+    },
+    "morgan rielly": {
+      "player_id": 8476853,
+      "name": "Morgan Rielly",
+      "pos": "D",
+      "team": "TOR"
+    },
+    "8476853": {
+      "player_id": 8476853,
+      "name": "Morgan Rielly",
+      "pos": "D",
+      "team": "TOR"
+    },
+    "troy stecher": {
+      "player_id": 8479442,
+      "name": "Troy Stecher",
+      "pos": "D",
+      "team": "TOR"
+    },
+    "8479442": {
+      "player_id": 8479442,
+      "name": "Troy Stecher",
+      "pos": "D",
+      "team": "TOR"
+    },
+    "chris tanev": {
+      "player_id": 8475690,
+      "name": "Chris Tanev",
+      "pos": "D",
+      "team": "TOR"
+    },
+    "8475690": {
+      "player_id": 8475690,
+      "name": "Chris Tanev",
+      "pos": "D",
+      "team": "TOR"
+    },
+    "anthony stolarz": {
+      "player_id": 8476932,
+      "name": "Anthony Stolarz",
+      "pos": "G",
+      "team": "TOR"
+    },
+    "8476932": {
+      "player_id": 8476932,
+      "name": "Anthony Stolarz",
+      "pos": "G",
+      "team": "TOR"
+    },
+    "daniil but": {
+      "player_id": 8484388,
+      "name": "Daniil But",
+      "pos": "LW",
+      "team": "UTA"
+    },
+    "8484388": {
+      "player_id": 8484388,
+      "name": "Daniil But",
+      "pos": "LW",
+      "team": "UTA"
+    },
+    "michael carcone": {
+      "player_id": 8479619,
+      "name": "Michael Carcone",
+      "pos": "LW",
+      "team": "UTA"
+    },
+    "8479619": {
+      "player_id": 8479619,
+      "name": "Michael Carcone",
+      "pos": "LW",
+      "team": "UTA"
+    },
+    "logan cooley": {
+      "player_id": 8483431,
+      "name": "Logan Cooley",
+      "pos": "C",
+      "team": "UTA"
+    },
+    "8483431": {
+      "player_id": 8483431,
+      "name": "Logan Cooley",
+      "pos": "C",
+      "team": "UTA"
+    },
+    "lawson crouse": {
+      "player_id": 8478474,
+      "name": "Lawson Crouse",
+      "pos": "LW",
+      "team": "UTA"
+    },
+    "8478474": {
+      "player_id": 8478474,
+      "name": "Lawson Crouse",
+      "pos": "LW",
+      "team": "UTA"
+    },
+    "dylan guenther": {
+      "player_id": 8482699,
+      "name": "Dylan Guenther",
+      "pos": "RW",
+      "team": "UTA"
+    },
+    "8482699": {
+      "player_id": 8482699,
+      "name": "Dylan Guenther",
+      "pos": "RW",
+      "team": "UTA"
+    },
+    "barrett hayton": {
+      "player_id": 8480849,
+      "name": "Barrett Hayton",
+      "pos": "C",
+      "team": "UTA"
+    },
+    "8480849": {
+      "player_id": 8480849,
+      "name": "Barrett Hayton",
+      "pos": "C",
+      "team": "UTA"
+    },
+    "cam hebig": {
+      "player_id": 8479656,
+      "name": "Cam Hebig",
+      "pos": "C",
+      "team": "UTA"
+    },
+    "8479656": {
+      "player_id": 8479656,
+      "name": "Cam Hebig",
+      "pos": "C",
+      "team": "UTA"
+    },
+    "clayton keller": {
+      "player_id": 8479343,
+      "name": "Clayton Keller",
+      "pos": "RW",
+      "team": "UTA"
+    },
+    "8479343": {
+      "player_id": 8479343,
+      "name": "Clayton Keller",
+      "pos": "RW",
+      "team": "UTA"
+    },
+    "jack mcbain": {
+      "player_id": 8480855,
+      "name": "Jack McBain",
+      "pos": "C",
+      "team": "UTA"
+    },
+    "8480855": {
+      "player_id": 8480855,
+      "name": "Jack McBain",
+      "pos": "C",
+      "team": "UTA"
+    },
+    "ben mccartney": {
+      "player_id": 8481827,
+      "name": "Ben McCartney",
+      "pos": "LW",
+      "team": "UTA"
+    },
+    "8481827": {
+      "player_id": 8481827,
+      "name": "Ben McCartney",
+      "pos": "LW",
+      "team": "UTA"
+    },
+    "liam o'brien": {
+      "player_id": 8477070,
+      "name": "Liam O'Brien",
+      "pos": "C",
+      "team": "UTA"
+    },
+    "8477070": {
+      "player_id": 8477070,
+      "name": "Liam O'Brien",
+      "pos": "C",
+      "team": "UTA"
+    },
+    "nick schmaltz": {
+      "player_id": 8477951,
+      "name": "Nick Schmaltz",
+      "pos": "C",
+      "team": "UTA"
+    },
+    "8477951": {
+      "player_id": 8477951,
+      "name": "Nick Schmaltz",
+      "pos": "C",
+      "team": "UTA"
+    },
+    "brandon tanev": {
+      "player_id": 8479293,
+      "name": "Brandon Tanev",
+      "pos": "LW",
+      "team": "UTA"
+    },
+    "8479293": {
+      "player_id": 8479293,
+      "name": "Brandon Tanev",
+      "pos": "LW",
+      "team": "UTA"
+    },
+    "kailer yamamoto": {
+      "player_id": 8479977,
+      "name": "Kailer Yamamoto",
+      "pos": "RW",
+      "team": "UTA"
+    },
+    "8479977": {
+      "player_id": 8479977,
+      "name": "Kailer Yamamoto",
+      "pos": "RW",
+      "team": "UTA"
+    },
+    "nick desimone": {
+      "player_id": 8480084,
+      "name": "Nick DeSimone",
+      "pos": "D",
+      "team": "UTA"
+    },
+    "8480084": {
+      "player_id": 8480084,
+      "name": "Nick DeSimone",
+      "pos": "D",
+      "team": "UTA"
+    },
+    "sean durzi": {
+      "player_id": 8480434,
+      "name": "Sean Durzi",
+      "pos": "D",
+      "team": "UTA"
+    },
+    "8480434": {
+      "player_id": 8480434,
+      "name": "Sean Durzi",
+      "pos": "D",
+      "team": "UTA"
+    },
+    "maveric lamoureux": {
+      "player_id": 8483472,
+      "name": "Maveric Lamoureux",
+      "pos": "D",
+      "team": "UTA"
+    },
+    "8483472": {
+      "player_id": 8483472,
+      "name": "Maveric Lamoureux",
+      "pos": "D",
+      "team": "UTA"
+    },
+    "john marino": {
+      "player_id": 8478507,
+      "name": "John Marino",
+      "pos": "D",
+      "team": "UTA"
+    },
+    "8478507": {
+      "player_id": 8478507,
+      "name": "John Marino",
+      "pos": "D",
+      "team": "UTA"
+    },
+    "nate schmidt": {
+      "player_id": 8477220,
+      "name": "Nate Schmidt",
+      "pos": "D",
+      "team": "UTA"
+    },
+    "8477220": {
+      "player_id": 8477220,
+      "name": "Nate Schmidt",
+      "pos": "D",
+      "team": "UTA"
+    },
+    "mikhail sergachev": {
+      "player_id": 8479410,
+      "name": "Mikhail Sergachev",
+      "pos": "D",
+      "team": "UTA"
+    },
+    "8479410": {
+      "player_id": 8479410,
+      "name": "Mikhail Sergachev",
+      "pos": "D",
+      "team": "UTA"
+    },
+    "dmitri simashev": {
+      "player_id": 8484386,
+      "name": "Dmitri Simashev",
+      "pos": "D",
+      "team": "UTA"
+    },
+    "8484386": {
+      "player_id": 8484386,
+      "name": "Dmitri Simashev",
+      "pos": "D",
+      "team": "UTA"
+    },
+    "mackenzie weegar": {
+      "player_id": 8477346,
+      "name": "MacKenzie Weegar",
+      "pos": "D",
+      "team": "UTA"
+    },
+    "8477346": {
+      "player_id": 8477346,
+      "name": "MacKenzie Weegar",
+      "pos": "D",
+      "team": "UTA"
+    },
+    "jaxson stauber": {
+      "player_id": 8483530,
+      "name": "Jaxson Stauber",
+      "pos": "G",
+      "team": "UTA"
+    },
+    "8483530": {
+      "player_id": 8483530,
+      "name": "Jaxson Stauber",
+      "pos": "G",
+      "team": "UTA"
+    },
+    "karel vejmelka": {
+      "player_id": 8478872,
+      "name": "Karel Vejmelka",
+      "pos": "G",
+      "team": "UTA"
+    },
+    "8478872": {
+      "player_id": 8478872,
+      "name": "Karel Vejmelka",
+      "pos": "G",
+      "team": "UTA"
+    },
+    "brock boeser": {
+      "player_id": 8478444,
+      "name": "Brock Boeser",
+      "pos": "RW",
+      "team": "VAN"
+    },
+    "8478444": {
+      "player_id": 8478444,
+      "name": "Brock Boeser",
+      "pos": "RW",
+      "team": "VAN"
+    },
+    "filip chytil": {
+      "player_id": 8480078,
+      "name": "Filip Chytil",
+      "pos": "C",
+      "team": "VAN"
+    },
+    "8480078": {
+      "player_id": 8480078,
+      "name": "Filip Chytil",
+      "pos": "C",
+      "team": "VAN"
+    },
+    "jake debrusk": {
+      "player_id": 8478498,
+      "name": "Jake DeBrusk",
+      "pos": "LW",
+      "team": "VAN"
+    },
+    "8478498": {
+      "player_id": 8478498,
+      "name": "Jake DeBrusk",
+      "pos": "LW",
+      "team": "VAN"
+    },
+    "brendan gallagher": {
+      "player_id": 8475848,
+      "name": "Brendan Gallagher",
+      "pos": "RW",
+      "team": "VAN"
+    },
+    "8475848": {
+      "player_id": 8475848,
+      "name": "Brendan Gallagher",
+      "pos": "RW",
+      "team": "VAN"
+    },
+    "linus karlsson": {
+      "player_id": 8481024,
+      "name": "Linus Karlsson",
+      "pos": "C",
+      "team": "VAN"
+    },
+    "8481024": {
+      "player_id": 8481024,
+      "name": "Linus Karlsson",
+      "pos": "C",
+      "team": "VAN"
+    },
+    "drew o'connor": {
+      "player_id": 8482055,
+      "name": "Drew O'Connor",
+      "pos": "LW",
+      "team": "VAN"
+    },
+    "8482055": {
+      "player_id": 8482055,
+      "name": "Drew O'Connor",
+      "pos": "LW",
+      "team": "VAN"
+    },
+    "liam ohgren": {
+      "player_id": 8483499,
+      "name": "Liam Ohgren",
+      "pos": "LW",
+      "team": "VAN"
+    },
+    "8483499": {
+      "player_id": 8483499,
+      "name": "Liam Ohgren",
+      "pos": "LW",
+      "team": "VAN"
+    },
+    "elias pettersson": {
+      "player_id": 8483678,
+      "name": "Elias Pettersson",
+      "pos": "D",
+      "team": "VAN"
+    },
+    "8480012": {
+      "player_id": 8480012,
+      "name": "Elias Pettersson",
+      "pos": "C",
+      "team": "VAN"
+    },
+    "aatu r\u00e4ty": {
+      "player_id": 8482691,
+      "name": "Aatu R\u00e4ty",
+      "pos": "C",
+      "team": "VAN"
+    },
+    "8482691": {
+      "player_id": 8482691,
+      "name": "Aatu R\u00e4ty",
+      "pos": "C",
+      "team": "VAN"
+    },
+    "marco rossi": {
+      "player_id": 8482079,
+      "name": "Marco Rossi",
+      "pos": "C",
+      "team": "VAN"
+    },
+    "8482079": {
+      "player_id": 8482079,
+      "name": "Marco Rossi",
+      "pos": "C",
+      "team": "VAN"
+    },
+    "max sasson": {
+      "player_id": 8484136,
+      "name": "Max Sasson",
+      "pos": "C",
+      "team": "VAN"
+    },
+    "8484136": {
+      "player_id": 8484136,
+      "name": "Max Sasson",
+      "pos": "C",
+      "team": "VAN"
+    },
+    "zeev buium": {
+      "player_id": 8484798,
+      "name": "Zeev Buium",
+      "pos": "D",
+      "team": "VAN"
+    },
+    "8484798": {
+      "player_id": 8484798,
+      "name": "Zeev Buium",
+      "pos": "D",
+      "team": "VAN"
+    },
+    "filip hronek": {
+      "player_id": 8479425,
+      "name": "Filip Hronek",
+      "pos": "D",
+      "team": "VAN"
+    },
+    "8479425": {
+      "player_id": 8479425,
+      "name": "Filip Hronek",
+      "pos": "D",
+      "team": "VAN"
+    },
+    "victor mancini": {
+      "player_id": 8483768,
+      "name": "Victor Mancini",
+      "pos": "D",
+      "team": "VAN"
+    },
+    "8483768": {
+      "player_id": 8483768,
+      "name": "Victor Mancini",
+      "pos": "D",
+      "team": "VAN"
+    },
+    "8483678": {
+      "player_id": 8483678,
+      "name": "Elias Pettersson",
+      "pos": "D",
+      "team": "VAN"
+    },
+    "marcus pettersson": {
+      "player_id": 8477969,
+      "name": "Marcus Pettersson",
+      "pos": "D",
+      "team": "VAN"
+    },
+    "8477969": {
+      "player_id": 8477969,
+      "name": "Marcus Pettersson",
+      "pos": "D",
+      "team": "VAN"
+    },
+    "tom willander": {
+      "player_id": 8484240,
+      "name": "Tom Willander",
+      "pos": "D",
+      "team": "VAN"
+    },
+    "8484240": {
+      "player_id": 8484240,
+      "name": "Tom Willander",
+      "pos": "D",
+      "team": "VAN"
+    },
+    "thatcher demko": {
+      "player_id": 8477967,
+      "name": "Thatcher Demko",
+      "pos": "G",
+      "team": "VAN"
+    },
+    "8477967": {
+      "player_id": 8477967,
+      "name": "Thatcher Demko",
+      "pos": "G",
+      "team": "VAN"
+    },
+    "kevin lankinen": {
+      "player_id": 8480947,
+      "name": "Kevin Lankinen",
+      "pos": "G",
+      "team": "VAN"
+    },
+    "8480947": {
+      "player_id": 8480947,
+      "name": "Kevin Lankinen",
+      "pos": "G",
+      "team": "VAN"
+    },
+    "nikita tolopilo": {
+      "player_id": 8484268,
+      "name": "Nikita Tolopilo",
+      "pos": "G",
+      "team": "VAN"
+    },
+    "8484268": {
+      "player_id": 8484268,
+      "name": "Nikita Tolopilo",
+      "pos": "G",
+      "team": "VAN"
+    },
+    "ivan barbashev": {
+      "player_id": 8477964,
+      "name": "Ivan Barbashev",
+      "pos": "LW",
+      "team": "VGK"
+    },
+    "8477964": {
+      "player_id": 8477964,
+      "name": "Ivan Barbashev",
+      "pos": "LW",
+      "team": "VGK"
+    },
+    "braeden bowman": {
+      "player_id": 8483890,
+      "name": "Braeden Bowman",
+      "pos": "RW",
+      "team": "VGK"
+    },
+    "8483890": {
+      "player_id": 8483890,
+      "name": "Braeden Bowman",
+      "pos": "RW",
+      "team": "VGK"
+    },
+    "trevor connelly": {
+      "player_id": 8484803,
+      "name": "Trevor Connelly",
+      "pos": "LW",
+      "team": "VGK"
+    },
+    "8484803": {
+      "player_id": 8484803,
+      "name": "Trevor Connelly",
+      "pos": "LW",
+      "team": "VGK"
+    },
+    "nic dowd": {
+      "player_id": 8475343,
+      "name": "Nic Dowd",
+      "pos": "C",
+      "team": "VGK"
+    },
+    "8475343": {
+      "player_id": 8475343,
+      "name": "Nic Dowd",
+      "pos": "C",
+      "team": "VGK"
+    },
+    "jack eichel": {
+      "player_id": 8478403,
+      "name": "Jack Eichel",
+      "pos": "C",
+      "team": "VGK"
+    },
+    "8478403": {
+      "player_id": 8478403,
+      "name": "Jack Eichel",
+      "pos": "C",
+      "team": "VGK"
+    },
+    "tomas hertl": {
+      "player_id": 8476881,
+      "name": "Tomas Hertl",
+      "pos": "C",
+      "team": "VGK"
+    },
+    "8476881": {
+      "player_id": 8476881,
+      "name": "Tomas Hertl",
+      "pos": "C",
+      "team": "VGK"
+    },
+    "alexander holtz": {
+      "player_id": 8482125,
+      "name": "Alexander Holtz",
+      "pos": "RW",
+      "team": "VGK"
+    },
+    "8482125": {
+      "player_id": 8482125,
+      "name": "Alexander Holtz",
+      "pos": "RW",
+      "team": "VGK"
+    },
+    "brett howden": {
+      "player_id": 8479353,
+      "name": "Brett Howden",
+      "pos": "C",
+      "team": "VGK"
+    },
+    "8479353": {
+      "player_id": 8479353,
+      "name": "Brett Howden",
+      "pos": "C",
+      "team": "VGK"
+    },
+    "william karlsson": {
+      "player_id": 8476448,
+      "name": "William Karlsson",
+      "pos": "C",
+      "team": "VGK"
+    },
+    "8476448": {
+      "player_id": 8476448,
+      "name": "William Karlsson",
+      "pos": "C",
+      "team": "VGK"
+    },
+    "keegan kolesar": {
+      "player_id": 8478434,
+      "name": "Keegan Kolesar",
+      "pos": "RW",
+      "team": "VGK"
+    },
+    "8478434": {
+      "player_id": 8478434,
+      "name": "Keegan Kolesar",
+      "pos": "RW",
+      "team": "VGK"
+    },
+    "mitch marner": {
+      "player_id": 8478483,
+      "name": "Mitch Marner",
+      "pos": "RW",
+      "team": "VGK"
+    },
+    "8478483": {
+      "player_id": 8478483,
+      "name": "Mitch Marner",
+      "pos": "RW",
+      "team": "VGK"
+    },
+    "mark stone": {
+      "player_id": 8475913,
+      "name": "Mark Stone",
+      "pos": "RW",
+      "team": "VGK"
+    },
+    "8475913": {
+      "player_id": 8475913,
+      "name": "Mark Stone",
+      "pos": "RW",
+      "team": "VGK"
+    },
+    "kai uchacz": {
+      "player_id": 8485251,
+      "name": "Kai Uchacz",
+      "pos": "C",
+      "team": "VGK"
+    },
+    "8485251": {
+      "player_id": 8485251,
+      "name": "Kai Uchacz",
+      "pos": "C",
+      "team": "VGK"
+    },
+    "jeremy davies": {
+      "player_id": 8479602,
+      "name": "Jeremy Davies",
+      "pos": "D",
+      "team": "VGK"
+    },
+    "8479602": {
+      "player_id": 8479602,
+      "name": "Jeremy Davies",
+      "pos": "D",
+      "team": "VGK"
+    },
+    "noah hanifin": {
+      "player_id": 8478396,
+      "name": "Noah Hanifin",
+      "pos": "D",
+      "team": "VGK"
+    },
+    "8478396": {
+      "player_id": 8478396,
+      "name": "Noah Hanifin",
+      "pos": "D",
+      "team": "VGK"
+    },
+    "brayden mcnabb": {
+      "player_id": 8475188,
+      "name": "Brayden McNabb",
+      "pos": "D",
+      "team": "VGK"
+    },
+    "8475188": {
+      "player_id": 8475188,
+      "name": "Brayden McNabb",
+      "pos": "D",
+      "team": "VGK"
+    },
+    "jaycob megna": {
+      "player_id": 8477034,
+      "name": "Jaycob Megna",
+      "pos": "D",
+      "team": "VGK"
+    },
+    "8477034": {
+      "player_id": 8477034,
+      "name": "Jaycob Megna",
+      "pos": "D",
+      "team": "VGK"
+    },
+    "shea theodore": {
+      "player_id": 8477447,
+      "name": "Shea Theodore",
+      "pos": "D",
+      "team": "VGK"
+    },
+    "8477447": {
+      "player_id": 8477447,
+      "name": "Shea Theodore",
+      "pos": "D",
+      "team": "VGK"
+    },
+    "parker wotherspoon": {
+      "player_id": 8478450,
+      "name": "Parker Wotherspoon",
+      "pos": "D",
+      "team": "VGK"
+    },
+    "8478450": {
+      "player_id": 8478450,
+      "name": "Parker Wotherspoon",
+      "pos": "D",
+      "team": "VGK"
+    },
+    "carter hart": {
+      "player_id": 8479394,
+      "name": "Carter Hart",
+      "pos": "G",
+      "team": "VGK"
+    },
+    "8479394": {
+      "player_id": 8479394,
+      "name": "Carter Hart",
+      "pos": "G",
+      "team": "VGK"
+    },
+    "adin hill": {
+      "player_id": 8478499,
+      "name": "Adin Hill",
+      "pos": "G",
+      "team": "VGK"
+    },
+    "8478499": {
+      "player_id": 8478499,
+      "name": "Adin Hill",
+      "pos": "G",
+      "team": "VGK"
+    },
+    "carl lindbom": {
+      "player_id": 8482761,
+      "name": "Carl Lindbom",
+      "pos": "G",
+      "team": "VGK"
+    },
+    "8482761": {
+      "player_id": 8482761,
+      "name": "Carl Lindbom",
+      "pos": "G",
+      "team": "VGK"
+    },
+    "anthony beauvillier": {
+      "player_id": 8478463,
+      "name": "Anthony Beauvillier",
+      "pos": "RW",
+      "team": "WSH"
+    },
+    "8478463": {
+      "player_id": 8478463,
+      "name": "Anthony Beauvillier",
+      "pos": "RW",
+      "team": "WSH"
+    },
+    "pierre-luc dubois": {
+      "player_id": 8479400,
+      "name": "Pierre-Luc Dubois",
+      "pos": "C",
+      "team": "WSH"
+    },
+    "8479400": {
+      "player_id": 8479400,
+      "name": "Pierre-Luc Dubois",
+      "pos": "C",
+      "team": "WSH"
+    },
+    "ethen frank": {
+      "player_id": 8483573,
+      "name": "Ethen Frank",
+      "pos": "RW",
+      "team": "WSH"
+    },
+    "8483573": {
+      "player_id": 8483573,
+      "name": "Ethen Frank",
+      "pos": "RW",
+      "team": "WSH"
+    },
+    "jordan kyrou": {
+      "player_id": 8479385,
+      "name": "Jordan Kyrou",
+      "pos": "RW",
+      "team": "WSH"
+    },
+    "8479385": {
+      "player_id": 8479385,
+      "name": "Jordan Kyrou",
+      "pos": "RW",
+      "team": "WSH"
+    },
+    "ryan leonard": {
+      "player_id": 8484186,
+      "name": "Ryan Leonard",
+      "pos": "RW",
+      "team": "WSH"
+    },
+    "8484186": {
+      "player_id": 8484186,
+      "name": "Ryan Leonard",
+      "pos": "RW",
+      "team": "WSH"
+    },
+    "ivan miroshnichenko": {
+      "player_id": 8483491,
+      "name": "Ivan Miroshnichenko",
+      "pos": "LW",
+      "team": "WSH"
+    },
+    "8483491": {
+      "player_id": 8483491,
+      "name": "Ivan Miroshnichenko",
+      "pos": "LW",
+      "team": "WSH"
+    },
+    "aliaksei protas": {
+      "player_id": 8481656,
+      "name": "Aliaksei Protas",
+      "pos": "LW",
+      "team": "WSH"
+    },
+    "8481656": {
+      "player_id": 8481656,
+      "name": "Aliaksei Protas",
+      "pos": "LW",
+      "team": "WSH"
+    },
+    "ilya protas": {
+      "player_id": 8484999,
+      "name": "Ilya Protas",
+      "pos": "LW",
+      "team": "WSH"
+    },
+    "8484999": {
+      "player_id": 8484999,
+      "name": "Ilya Protas",
+      "pos": "LW",
+      "team": "WSH"
+    },
+    "justin sourdif": {
+      "player_id": 8482088,
+      "name": "Justin Sourdif",
+      "pos": "C",
+      "team": "WSH"
+    },
+    "8482088": {
+      "player_id": 8482088,
+      "name": "Justin Sourdif",
+      "pos": "C",
+      "team": "WSH"
+    },
+    "dylan strome": {
+      "player_id": 8478440,
+      "name": "Dylan Strome",
+      "pos": "C",
+      "team": "WSH"
+    },
+    "8478440": {
+      "player_id": 8478440,
+      "name": "Dylan Strome",
+      "pos": "C",
+      "team": "WSH"
+    },
+    "alex tuch": {
+      "player_id": 8477949,
+      "name": "Alex Tuch",
+      "pos": "RW",
+      "team": "WSH"
+    },
+    "8477949": {
+      "player_id": 8477949,
+      "name": "Alex Tuch",
+      "pos": "RW",
+      "team": "WSH"
+    },
+    "tom wilson": {
+      "player_id": 8476880,
+      "name": "Tom Wilson",
+      "pos": "RW",
+      "team": "WSH"
+    },
+    "8476880": {
+      "player_id": 8476880,
+      "name": "Tom Wilson",
+      "pos": "RW",
+      "team": "WSH"
+    },
+    "jakob chychrun": {
+      "player_id": 8479345,
+      "name": "Jakob Chychrun",
+      "pos": "D",
+      "team": "WSH"
+    },
+    "8479345": {
+      "player_id": 8479345,
+      "name": "Jakob Chychrun",
+      "pos": "D",
+      "team": "WSH"
+    },
+    "martin feh\u00e9rv\u00e1ry": {
+      "player_id": 8480796,
+      "name": "Martin Feh\u00e9rv\u00e1ry",
+      "pos": "D",
+      "team": "WSH"
+    },
+    "8480796": {
+      "player_id": 8480796,
+      "name": "Martin Feh\u00e9rv\u00e1ry",
+      "pos": "D",
+      "team": "WSH"
+    },
+    "cole hutson": {
+      "player_id": 8484873,
+      "name": "Cole Hutson",
+      "pos": "D",
+      "team": "WSH"
+    },
+    "8484873": {
+      "player_id": 8484873,
+      "name": "Cole Hutson",
+      "pos": "D",
+      "team": "WSH"
+    },
+    "timothy liljegren": {
+      "player_id": 8480043,
+      "name": "Timothy Liljegren",
+      "pos": "D",
+      "team": "WSH"
+    },
+    "8480043": {
+      "player_id": 8480043,
+      "name": "Timothy Liljegren",
+      "pos": "D",
+      "team": "WSH"
+    },
+    "dylan mcilrath": {
+      "player_id": 8475795,
+      "name": "Dylan McIlrath",
+      "pos": "D",
+      "team": "WSH"
+    },
+    "8475795": {
+      "player_id": 8475795,
+      "name": "Dylan McIlrath",
+      "pos": "D",
+      "team": "WSH"
+    },
+    "matt roy": {
+      "player_id": 8478911,
+      "name": "Matt Roy",
+      "pos": "D",
+      "team": "WSH"
+    },
+    "8478911": {
+      "player_id": 8478911,
+      "name": "Matt Roy",
+      "pos": "D",
+      "team": "WSH"
+    },
+    "rasmus sandin": {
+      "player_id": 8480873,
+      "name": "Rasmus Sandin",
+      "pos": "D",
+      "team": "WSH"
+    },
+    "8480873": {
+      "player_id": 8480873,
+      "name": "Rasmus Sandin",
+      "pos": "D",
+      "team": "WSH"
+    },
+    "charlie lindgren": {
+      "player_id": 8479292,
+      "name": "Charlie Lindgren",
+      "pos": "G",
+      "team": "WSH"
+    },
+    "8479292": {
+      "player_id": 8479292,
+      "name": "Charlie Lindgren",
+      "pos": "G",
+      "team": "WSH"
+    },
+    "clay stevenson": {
+      "player_id": 8483532,
+      "name": "Clay Stevenson",
+      "pos": "G",
+      "team": "WSH"
+    },
+    "8483532": {
+      "player_id": 8483532,
+      "name": "Clay Stevenson",
+      "pos": "G",
+      "team": "WSH"
+    },
+    "logan thompson": {
+      "player_id": 8480313,
+      "name": "Logan Thompson",
+      "pos": "G",
+      "team": "WSH"
+    },
+    "8480313": {
+      "player_id": 8480313,
+      "name": "Logan Thompson",
+      "pos": "G",
+      "team": "WSH"
+    },
+    "morgan barron": {
+      "player_id": 8480289,
+      "name": "Morgan Barron",
+      "pos": "C",
+      "team": "WPG"
+    },
+    "8480289": {
+      "player_id": 8480289,
+      "name": "Morgan Barron",
+      "pos": "C",
+      "team": "WPG"
+    },
+    "nikita chibrikov": {
+      "player_id": 8482787,
+      "name": "Nikita Chibrikov",
+      "pos": "RW",
+      "team": "WPG"
+    },
+    "8482787": {
+      "player_id": 8482787,
+      "name": "Nikita Chibrikov",
+      "pos": "RW",
+      "team": "WPG"
+    },
+    "kyle connor": {
+      "player_id": 8478398,
+      "name": "Kyle Connor",
+      "pos": "LW",
+      "team": "WPG"
+    },
+    "8478398": {
+      "player_id": 8478398,
+      "name": "Kyle Connor",
+      "pos": "LW",
+      "team": "WPG"
+    },
+    "alex iafallo": {
+      "player_id": 8480113,
+      "name": "Alex Iafallo",
+      "pos": "LW",
+      "team": "WPG"
+    },
+    "8480113": {
+      "player_id": 8480113,
+      "name": "Alex Iafallo",
+      "pos": "LW",
+      "team": "WPG"
+    },
+    "cole koepke": {
+      "player_id": 8481043,
+      "name": "Cole Koepke",
+      "pos": "LW",
+      "team": "WPG"
+    },
+    "8481043": {
+      "player_id": 8481043,
+      "name": "Cole Koepke",
+      "pos": "LW",
+      "team": "WPG"
+    },
+    "adam lowry": {
+      "player_id": 8476392,
+      "name": "Adam Lowry",
+      "pos": "C",
+      "team": "WPG"
+    },
+    "8476392": {
+      "player_id": 8476392,
+      "name": "Adam Lowry",
+      "pos": "C",
+      "team": "WPG"
+    },
+    "vladislav namestnikov": {
+      "player_id": 8476480,
+      "name": "Vladislav Namestnikov",
+      "pos": "C",
+      "team": "WPG"
+    },
+    "8476480": {
+      "player_id": 8476480,
+      "name": "Vladislav Namestnikov",
+      "pos": "C",
+      "team": "WPG"
+    },
+    "nino niederreiter": {
+      "player_id": 8475799,
+      "name": "Nino Niederreiter",
+      "pos": "RW",
+      "team": "WPG"
+    },
+    "8475799": {
+      "player_id": 8475799,
+      "name": "Nino Niederreiter",
+      "pos": "RW",
+      "team": "WPG"
+    },
+    "cole perfetti": {
+      "player_id": 8482149,
+      "name": "Cole Perfetti",
+      "pos": "C",
+      "team": "WPG"
+    },
+    "8482149": {
+      "player_id": 8482149,
+      "name": "Cole Perfetti",
+      "pos": "C",
+      "team": "WPG"
+    },
+    "isak rosen": {
+      "player_id": 8482765,
+      "name": "Isak Rosen",
+      "pos": "RW",
+      "team": "WPG"
+    },
+    "8482765": {
+      "player_id": 8482765,
+      "name": "Isak Rosen",
+      "pos": "RW",
+      "team": "WPG"
+    },
+    "mark scheifele": {
+      "player_id": 8476460,
+      "name": "Mark Scheifele",
+      "pos": "C",
+      "team": "WPG"
+    },
+    "8476460": {
+      "player_id": 8476460,
+      "name": "Mark Scheifele",
+      "pos": "C",
+      "team": "WPG"
+    },
+    "gabriel vilardi": {
+      "player_id": 8480014,
+      "name": "Gabriel Vilardi",
+      "pos": "C",
+      "team": "WPG"
+    },
+    "8480014": {
+      "player_id": 8480014,
+      "name": "Gabriel Vilardi",
+      "pos": "C",
+      "team": "WPG"
+    },
+    "dylan demelo": {
+      "player_id": 8476331,
+      "name": "Dylan DeMelo",
+      "pos": "D",
+      "team": "WPG"
+    },
+    "8476331": {
+      "player_id": 8476331,
+      "name": "Dylan DeMelo",
+      "pos": "D",
+      "team": "WPG"
+    },
+    "haydn fleury": {
+      "player_id": 8477938,
+      "name": "Haydn Fleury",
+      "pos": "D",
+      "team": "WPG"
+    },
+    "8477938": {
+      "player_id": 8477938,
+      "name": "Haydn Fleury",
+      "pos": "D",
+      "team": "WPG"
+    },
+    "josh morrissey": {
+      "player_id": 8477504,
+      "name": "Josh Morrissey",
+      "pos": "D",
+      "team": "WPG"
+    },
+    "8477504": {
+      "player_id": 8477504,
+      "name": "Josh Morrissey",
+      "pos": "D",
+      "team": "WPG"
+    },
+    "neal pionk": {
+      "player_id": 8480145,
+      "name": "Neal Pionk",
+      "pos": "D",
+      "team": "WPG"
+    },
+    "8480145": {
+      "player_id": 8480145,
+      "name": "Neal Pionk",
+      "pos": "D",
+      "team": "WPG"
+    },
+    "dylan samberg": {
+      "player_id": 8480049,
+      "name": "Dylan Samberg",
+      "pos": "D",
+      "team": "WPG"
+    },
+    "8480049": {
+      "player_id": 8480049,
+      "name": "Dylan Samberg",
+      "pos": "D",
+      "team": "WPG"
+    },
+    "john st. ivany": {
+      "player_id": 8481030,
+      "name": "John St. Ivany",
+      "pos": "D",
+      "team": "WPG"
+    },
+    "8481030": {
+      "player_id": 8481030,
+      "name": "John St. Ivany",
+      "pos": "D",
+      "team": "WPG"
+    },
+    "connor hellebuyck": {
+      "player_id": 8476945,
+      "name": "Connor Hellebuyck",
+      "pos": "G",
+      "team": "WPG"
+    },
+    "8476945": {
+      "player_id": 8476945,
+      "name": "Connor Hellebuyck",
+      "pos": "G",
+      "team": "WPG"
+    }
+  }
+}
