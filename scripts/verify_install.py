@@ -3,6 +3,7 @@
 
 from __future__ import annotations
 
+import os
 import sys
 from pathlib import Path
 
@@ -13,7 +14,9 @@ if str(ROOT) not in sys.path:
 from bangerforge.bootstrap import (  # noqa: E402
     REQUIRED_FILES,
     ROOT_DIR,
+    _RECOVERY_HINT,
     format_install_report,
+    missing_required_files,
     verify_install,
 )
 
@@ -23,14 +26,22 @@ def main() -> int:
     print(f"Python: {sys.executable}")
     print()
 
+    missing = missing_required_files()
     print("Required files:")
     for rel in REQUIRED_FILES:
-        path = ROOT_DIR / rel
-        status = "OK" if path.is_file() else "MISSING"
+        status = "MISSING" if rel in missing else "OK"
         print(f"  [{status}] {rel}")
     print()
 
-    issues = verify_install()
+    issues = verify_install(check_files=False)
+    if missing:
+        issues.insert(
+            0,
+            "Missing files (repo may be partially synced): " + ", ".join(missing),
+        )
+        if (ROOT_DIR / ".git").is_dir():
+            issues.append(_RECOVERY_HINT)
+
     print(format_install_report(issues))
     print()
 
@@ -39,6 +50,7 @@ def main() -> int:
         return 1
 
     print("You can start the app with:  streamlit run app.py")
+    os.environ["BANGERFORGE_VERIFY"] = "1"
     try:
         import app  # noqa: F401
         print("Import smoke test: import app — OK")

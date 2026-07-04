@@ -7,7 +7,6 @@ from typing import Any
 
 from bangerforge.models import MoveRecommendation, PlayerProfile, RosterEntry
 from bangerforge.nhl_client import count_team_games_in_week, resolve_player
-from bangerforge.projections import enrich_roster_profiles, schedule_boost
 from bangerforge.stats import build_player_profile
 
 
@@ -25,6 +24,8 @@ def rank_waiver_targets(
     limit: int = 5,
 ) -> list[PlayerProfile]:
     """Rank free agents by banger score with schedule boost."""
+    from bangerforge.projections import schedule_boost
+
     weights = settings.get("banger_weights", {})
     recent_window = int(settings.get("recent_games_window", 10))
     w_tuple = tuple(weights.items())

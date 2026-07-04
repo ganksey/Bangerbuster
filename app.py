@@ -5,13 +5,35 @@ Run: streamlit run app.py
 
 from __future__ import annotations
 
+import os
+
+import streamlit as st
+
+from bangerforge.bootstrap import format_install_report, projections, verify_install
+
+_VERIFY_MODE = os.environ.get("BANGERFORGE_VERIFY") == "1"
+
+# ── Page config + install gate (before heavy imports) ───────────────────────
+if not _VERIFY_MODE:
+    st.set_page_config(
+        page_title="BangerForge",
+        page_icon="🔥",
+        layout="wide",
+        initial_sidebar_state="expanded",
+    )
+
+    _install_issues = verify_install()
+    if _install_issues:
+        st.error("BangerForge install is incomplete or out of date.")
+        st.code(format_install_report(_install_issues))
+        st.stop()
+
 import io
 from datetime import date, datetime, timedelta
 from typing import Any
 
 import pandas as pd
 import plotly.graph_objects as go
-import streamlit as st
 
 from bangerforge.config import (
     CATEGORY_LABELS,
@@ -30,6 +52,7 @@ from bangerforge.nhl_client import (
     NHLAPIError,
     build_player_directory,
     fantasy_week_bounds,
+    resolve_player,
     search_players,
 )
 from bangerforge.optimizer import (
@@ -64,26 +87,9 @@ from bangerforge.persistence import (
     save_waiver_agents,
     save_weekly_plan,
 )
-from bangerforge.bootstrap import projections, verify_install, format_install_report
 from bangerforge.roster_profiles import enrich_roster_tab_profiles
 from bangerforge.roster_stat_mode import resolve_roster_stat_mode, roster_stat_label
-from bangerforge.stats import compare_snuggerud_vs_smith
 from bangerforge.utils import normalize_position, safe_int
-from bangerforge.nhl_client import resolve_player
-
-# ── Page config ──────────────────────────────────────────────────────────────
-st.set_page_config(
-    page_title="BangerForge",
-    page_icon="🔥",
-    layout="wide",
-    initial_sidebar_state="expanded",
-)
-
-_install_issues = verify_install()
-if _install_issues:
-    st.error("BangerForge install is incomplete or out of date.")
-    st.code(format_install_report(_install_issues))
-    st.stop()
 
 CUSTOM_CSS = """
 <style>
@@ -414,6 +420,8 @@ def tab_dashboard(week_start: str, week_end: str) -> None:
             st.markdown(f"- {p}")
 
     with st.expander("🔥 Snuggerud vs Smith — Keeper Edge"):
+        from bangerforge.stats import compare_snuggerud_vs_smith
+
         comp = compare_snuggerud_vs_smith(
             recent_window=int(settings.get("recent_games_window", 10)),
             weights=settings.get("banger_weights"),

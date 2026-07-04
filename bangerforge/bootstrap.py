@@ -7,7 +7,6 @@ so app.py can import this thin module without triggering partial/stale chains.
 from __future__ import annotations
 
 import importlib
-import sys
 from pathlib import Path
 from typing import Any
 
@@ -20,10 +19,17 @@ REQUIRED_FILES = (
     "bangerforge/__init__.py",
     "bangerforge/bootstrap.py",
     "bangerforge/config.py",
+    "bangerforge/models.py",
+    "bangerforge/nhl_client.py",
+    "bangerforge/optimizer.py",
+    "bangerforge/opponents.py",
+    "bangerforge/persistence.py",
     "bangerforge/projections.py",
     "bangerforge/roster_constants.py",
     "bangerforge/roster_profiles.py",
     "bangerforge/roster_stat_mode.py",
+    "bangerforge/stats.py",
+    "bangerforge/utils.py",
 )
 
 # module_name -> symbols that must be importable (catches renamed/missing exports).
@@ -57,12 +63,68 @@ REQUIRED_SYMBOLS: dict[str, tuple[str, ...]] = {
         "GOALIE_CATEGORIES",
         "SKATER_CATEGORIES",
     ),
+    "bangerforge.models": (
+        "RosterEntry",
+    ),
+    "bangerforge.nhl_client": (
+        "NHLAPIError",
+        "build_player_directory",
+        "fantasy_week_bounds",
+        "search_players",
+        "resolve_player",
+    ),
+    "bangerforge.optimizer": (
+        "parse_name_list",
+        "rank_waiver_targets",
+        "suggest_five_moves",
+        "daily_lineup_suggestion",
+        "build_week_plan_text",
+    ),
+    "bangerforge.opponents": (
+        "create_opponent",
+        "delete_opponent",
+        "get_active_opponent_id",
+        "get_opponent_roster",
+        "list_opponents",
+        "migrate_legacy_opponent_file",
+        "names_to_roster",
+        "save_opponent_roster",
+        "set_active_opponent",
+    ),
+    "bangerforge.persistence": (
+        "load_my_roster",
+        "save_my_roster",
+        "load_opponent_current",
+        "save_opponent_current",
+        "load_opponent_history",
+        "save_opponent_week",
+        "load_settings",
+        "save_settings",
+        "load_waiver_agents",
+        "save_waiver_agents",
+        "load_weekly_plan",
+        "save_weekly_plan",
+    ),
+    "bangerforge.stats": (
+        "compare_snuggerud_vs_smith",
+    ),
+    "bangerforge.utils": (
+        "normalize_position",
+        "safe_int",
+    ),
 }
 
 _PROJECTIONS_MODULE: Any | None = None
 
+_RECOVERY_HINT = (
+    "Fix: open a terminal in the project folder and run "
+    "`git pull origin main`, then `py scripts\\verify_install.py` "
+    "(or `python scripts/verify_install.py`)."
+)
 
-def _missing_files() -> list[str]:
+
+def missing_required_files() -> list[str]:
+    """Return relative paths of required files that are absent."""
     return [
         rel for rel in REQUIRED_FILES
         if not (ROOT_DIR / rel).is_file()
@@ -83,25 +145,23 @@ def _check_module_symbols(module_name: str, symbols: tuple[str, ...]) -> list[st
     return issues
 
 
-def verify_install() -> list[str]:
+def verify_install(*, check_files: bool = True) -> list[str]:
     """Return human-readable install issues (empty list = OK)."""
     issues: list[str] = []
 
-    missing = _missing_files()
-    if missing:
-        issues.append(
-            "Missing files (repo may be partially synced): "
-            + ", ".join(missing)
-        )
+    if check_files:
+        missing = missing_required_files()
+        if missing:
+            issues.append(
+                "Missing files (repo may be partially synced): "
+                + ", ".join(missing)
+            )
 
     for module_name, symbols in REQUIRED_SYMBOLS.items():
         issues.extend(_check_module_symbols(module_name, symbols))
 
     if issues and (ROOT_DIR / ".git").is_dir():
-        issues.append(
-            "Fix: open a terminal in the project folder and run "
-            "`git pull origin main`, then `python scripts/verify_install.py`."
-        )
+        issues.append(_RECOVERY_HINT)
 
     return issues
 
@@ -127,7 +187,7 @@ def _load_projections_module() -> Any:
         hint = (
             "Could not import bangerforge.projections. "
             "Your copy may be out of date — run `git pull origin main` "
-            "and `python scripts/verify_install.py`."
+            "and `py scripts\\verify_install.py`."
         )
         raise ImportError(f"{hint} Original error: {exc}") from exc
 
