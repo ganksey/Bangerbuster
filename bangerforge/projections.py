@@ -4,6 +4,17 @@ from __future__ import annotations
 
 from typing import Any
 
+__all__ = [
+    "schedule_boost",
+    "enrich_roster_profiles",
+    "enrich_roster_display_profiles",
+    "enrich_roster_window_profiles",
+    "project_category_totals",
+    "category_matchups",
+    "attack_and_protect_plans",
+    "select_best_lineup",
+]
+
 from bangerforge.config import CATEGORY_LABELS, LOWER_IS_BETTER, ROSTER_SLOTS
 from bangerforge.models import CategoryMatchup, PlayerProfile, RosterEntry
 from bangerforge.nhl_client import count_team_games_in_week

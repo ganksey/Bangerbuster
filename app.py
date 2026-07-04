@@ -64,13 +64,7 @@ from bangerforge.persistence import (
     save_waiver_agents,
     save_weekly_plan,
 )
-from bangerforge.projections import (
-    attack_and_protect_plans,
-    category_matchups,
-    enrich_roster_profiles,
-    project_category_totals,
-    select_best_lineup,
-)
+from bangerforge.bootstrap import projections, verify_install, format_install_report
 from bangerforge.roster_profiles import enrich_roster_tab_profiles
 from bangerforge.roster_stat_mode import resolve_roster_stat_mode, roster_stat_label
 from bangerforge.stats import compare_snuggerud_vs_smith
@@ -84,6 +78,12 @@ st.set_page_config(
     layout="wide",
     initial_sidebar_state="expanded",
 )
+
+_install_issues = verify_install()
+if _install_issues:
+    st.error("BangerForge install is incomplete or out of date.")
+    st.code(format_install_report(_install_issues))
+    st.stop()
 
 CUSTOM_CSS = """
 <style>
@@ -367,8 +367,8 @@ def tab_dashboard(week_start: str, week_end: str) -> None:
 
     try:
         with st.spinner("Loading NHL stats (cached after first run)..."):
-            my_p = enrich_roster_profiles(st.session_state.my_roster, week_start, week_end, settings)
-            opp_p = enrich_roster_profiles(st.session_state.opponent_roster, week_start, week_end, settings)
+            my_p = projections.enrich_roster_profiles(st.session_state.my_roster, week_start, week_end, settings)
+            opp_p = projections.enrich_roster_profiles(st.session_state.opponent_roster, week_start, week_end, settings)
     except NHLAPIError as exc:
         st.error(f"NHL API error: {exc}")
         return
@@ -376,9 +376,9 @@ def tab_dashboard(week_start: str, week_end: str) -> None:
         st.error(f"Dashboard error: {exc}")
         return
 
-    my_totals = project_category_totals(my_p, all_cats)
-    opp_totals = project_category_totals(opp_p, all_cats)
-    matchups = category_matchups(my_totals, opp_totals, all_cats)
+    my_totals = projections.project_category_totals(my_p, all_cats)
+    opp_totals = projections.project_category_totals(opp_p, all_cats)
+    matchups = projections.category_matchups(my_totals, opp_totals, all_cats)
     wins = sum(1 for m in matchups if m.status == "win")
     losses = sum(1 for m in matchups if m.status == "lose")
 
@@ -402,7 +402,7 @@ def tab_dashboard(week_start: str, week_end: str) -> None:
         st.plotly_chart(category_radar(matchups), use_container_width=True)
 
     st.markdown("#### Top Recommendations")
-    attack, protect = attack_and_protect_plans(matchups)
+    attack, protect = projections.attack_and_protect_plans(matchups)
     rec_col1, rec_col2 = st.columns(2)
     with rec_col1:
         st.markdown("**🎯 Category Attack Plan**")
@@ -686,15 +686,15 @@ def tab_matchup(week_start: str, week_end: str) -> None:
     all_cats = skater_cats + goalie_cats
 
     try:
-        my_p = enrich_roster_profiles(st.session_state.my_roster, week_start, week_end, settings)
-        opp_p = enrich_roster_profiles(st.session_state.opponent_roster, week_start, week_end, settings)
+        my_p = projections.enrich_roster_profiles(st.session_state.my_roster, week_start, week_end, settings)
+        opp_p = projections.enrich_roster_profiles(st.session_state.opponent_roster, week_start, week_end, settings)
     except NHLAPIError as exc:
         st.error(str(exc))
         return
 
-    my_totals = project_category_totals(my_p, all_cats)
-    opp_totals = project_category_totals(opp_p, all_cats)
-    matchups = category_matchups(my_totals, opp_totals, all_cats)
+    my_totals = projections.project_category_totals(my_p, all_cats)
+    opp_totals = projections.project_category_totals(opp_p, all_cats)
+    matchups = projections.category_matchups(my_totals, opp_totals, all_cats)
 
     for m in matchups:
         col1, col2, col3, col4 = st.columns([2, 1, 1, 2])
@@ -706,7 +706,7 @@ def tab_matchup(week_start: str, week_end: str) -> None:
             st.progress(min(abs(m.delta) / max(m.theirs, 1), 1.0))
             st.caption(f"Vulnerability: {m.delta:+.1f} projected — attack with streamers.")
 
-    attack, protect = attack_and_protect_plans(matchups)
+    attack, protect = projections.attack_and_protect_plans(matchups)
     ac, pc = st.columns(2)
     with ac:
         st.markdown("#### 🎯 Category Attack Plan")
@@ -740,8 +740,8 @@ def tab_planner(week_start: str, week_end: str) -> None:
     settings = st.session_state.settings
 
     try:
-        my_p = enrich_roster_profiles(st.session_state.my_roster, week_start, week_end, settings)
-        opp_p = enrich_roster_profiles(st.session_state.opponent_roster, week_start, week_end, settings)
+        my_p = projections.enrich_roster_profiles(st.session_state.my_roster, week_start, week_end, settings)
+        opp_p = projections.enrich_roster_profiles(st.session_state.opponent_roster, week_start, week_end, settings)
     except NHLAPIError as exc:
         st.error(str(exc))
         return
@@ -749,9 +749,9 @@ def tab_planner(week_start: str, week_end: str) -> None:
     skater_cats = settings.get("active_skater_categories", SKATER_CATEGORIES)
     goalie_cats = settings.get("active_goalie_categories", GOALIE_CATEGORIES)
     all_cats = skater_cats + goalie_cats
-    my_totals = project_category_totals(my_p, all_cats)
-    opp_totals = project_category_totals(opp_p, all_cats)
-    matchups = category_matchups(my_totals, opp_totals, all_cats)
+    my_totals = projections.project_category_totals(my_p, all_cats)
+    opp_totals = projections.project_category_totals(opp_p, all_cats)
+    matchups = projections.category_matchups(my_totals, opp_totals, all_cats)
 
     waiver_names = st.session_state.waiver_agents or [
         "Kiefer Sherwood", "Alexey Toropchenko", "Jake Neighbours",
@@ -799,7 +799,7 @@ def tab_bot_mode(week_start: str, week_end: str) -> None:
     settings = st.session_state.settings
 
     try:
-        my_p = enrich_roster_profiles(st.session_state.my_roster, week_start, week_end, settings)
+        my_p = projections.enrich_roster_profiles(st.session_state.my_roster, week_start, week_end, settings)
     except NHLAPIError as exc:
         st.error(str(exc))
         return
@@ -810,14 +810,14 @@ def tab_bot_mode(week_start: str, week_end: str) -> None:
             st.markdown(f"**{pos}** ({len(players)}): " + ", ".join(players) if players else f"**{pos}**: empty")
 
     if st.button("🚀 Full Week Auto-Plan"):
-        opp_p = enrich_roster_profiles(
+        opp_p = projections.enrich_roster_profiles(
             st.session_state.opponent_roster, week_start, week_end, settings,
         )
         skater_cats = settings.get("active_skater_categories", SKATER_CATEGORIES)
         goalie_cats = settings.get("active_goalie_categories", GOALIE_CATEGORIES)
-        matchups = category_matchups(
-            project_category_totals(my_p, skater_cats + goalie_cats),
-            project_category_totals(opp_p, skater_cats + goalie_cats),
+        matchups = projections.category_matchups(
+            projections.project_category_totals(my_p, skater_cats + goalie_cats),
+            projections.project_category_totals(opp_p, skater_cats + goalie_cats),
             skater_cats + goalie_cats,
         )
         waiver_p = rank_waiver_targets(
