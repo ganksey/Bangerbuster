@@ -18,6 +18,8 @@ from bangerforge.config import (
     DEFAULT_BANGER_WEIGHTS,
     DEFAULT_OPPONENT_DEMO,
     GOALIE_CATEGORIES,
+    ROSTER_STAT_WINDOW_END,
+    ROSTER_STAT_WINDOW_START,
     SKATER_CATEGORIES,
 )
 from bangerforge.models import RosterEntry
@@ -52,6 +54,7 @@ from bangerforge.projections import (
     attack_and_protect_plans,
     category_matchups,
     enrich_roster_profiles,
+    enrich_roster_window_profiles,
     project_category_totals,
     select_best_lineup,
 )
@@ -113,11 +116,44 @@ def status_badge(status: str) -> str:
     return f'<span class="{badges.get(status, "toss-badge")}">{labels.get(status, status)}</span>'
 
 
-def profile_to_row(p: Any, show_rates: str = "recent") -> dict[str, Any]:
-    """Convert PlayerProfile to display row — per-game first."""
-    stats = p.recent if show_rates == "recent" else p.season
-    if stats.games_played < 3:
-        stats = p.season
+def roster_profile_to_row(p: Any) -> dict[str, Any]:
+    """Roster tab row — per-game rates from Feb 25 through end of reg season."""
+    stats = p.window
+    row = {
+        "Name": p.name,
+        "Pos": p.pos,
+        "Team": p.team,
+        "GP": stats.games_played,
+        "G/GP": round(stats.goals_pg, 2),
+        "A/GP": round(stats.assists_pg, 2),
+        "P/GP": round(stats.points_pg, 2),
+        "PPP/GP": round(stats.ppp_pg, 2),
+        "SOG/GP": round(stats.shots_pg, 2),
+        "Hits/GP": round(stats.hits_pg, 2),
+        "Blk/GP": round(stats.blocks_pg, 2),
+        "PIM/GP": round(stats.pim_pg, 2),
+        "Proj G": p.projected_games_week,
+        "Banger Score": p.banger_score,
+        "Notes": p.notes,
+    }
+    if p.is_goalie:
+        row.update({
+            "W/GP": round(stats.wins_pg, 2),
+            "Sv/GP": round(stats.saves_pg, 1),
+            "SV%": round(stats.save_pct, 3),
+            "GAA": round(stats.gaa, 2),
+            "SO/GP": round(stats.shutouts_pg, 2),
+        })
+    return row
+
+
+def roster_dataframe(profiles: list[Any]) -> pd.DataFrame:
+    return pd.DataFrame([roster_profile_to_row(p) for p in profiles])
+
+
+def projection_profile_to_row(p: Any) -> dict[str, Any]:
+    """Non-roster tabs — recent/season blended per-game rates."""
+    stats = p.recent if p.recent.games_played >= 3 else p.season
     row = {
         "Name": p.name,
         "Pos": p.pos,
@@ -132,25 +168,12 @@ def profile_to_row(p: Any, show_rates: str = "recent") -> dict[str, Any]:
         "PIM/GP": round(stats.pim_pg, 2),
         "Proj G": p.projected_games_week,
         "Banger Score": p.banger_score,
-        "Notes": p.notes,
-        "_season_note": (
-            f"({stats.season_goals}G/{stats.season_games}GP season)"
-            if stats.season_games else ""
-        ),
     }
-    if p.is_goalie:
-        row.update({
-            "W/GP": round(stats.wins_pg, 2),
-            "Sv/GP": round(stats.saves_pg, 1),
-            "SV%": round(stats.save_pct, 3),
-            "GAA": round(stats.gaa, 2),
-            "SO/GP": round(stats.shutouts_pg, 2),
-        })
     return row
 
 
-def roster_dataframe(profiles: list[Any]) -> pd.DataFrame:
-    return pd.DataFrame([profile_to_row(p) for p in profiles])
+def projection_dataframe(profiles: list[Any]) -> pd.DataFrame:
+    return pd.DataFrame([projection_profile_to_row(p) for p in profiles])
 
 
 def category_bar_chart(matchups: list[Any]) -> go.Figure:
@@ -376,9 +399,10 @@ def tab_my_roster(week_start: str, week_end: str) -> None:
                 st.warning("No player found.")
 
     try:
-        profiles = enrich_roster_profiles(
-            st.session_state.my_roster, week_start, week_end, settings,
-        )
+        with st.spinner(f"Loading roster stats ({ROSTER_STAT_WINDOW_START} – reg season end)..."):
+            profiles = enrich_roster_window_profiles(
+                st.session_state.my_roster, week_start, week_end, settings,
+            )
     except NHLAPIError as exc:
         st.error(str(exc))
         return
@@ -387,6 +411,11 @@ def tab_my_roster(week_start: str, week_end: str) -> None:
         st.warning("Roster empty — add players or reload defaults.")
         return
 
+    st.caption(
+        f"Stats are **per-game** from **{ROSTER_STAT_WINDOW_START}** through "
+        f"**{ROSTER_STAT_WINDOW_END}** (end of regular season). "
+        f"**GP** = games played in that window."
+    )
     df = roster_dataframe(profiles)
     id_lookup = {p.name: p.player_id for p in profiles}
     df["player_id"] = df["Name"].map(id_lookup)
@@ -411,11 +440,6 @@ def tab_my_roster(week_start: str, week_end: str) -> None:
         st.session_state.my_roster = editor_to_roster(merged, st.session_state.my_roster)
         save_my_roster(st.session_state.my_roster)
         st.success("Roster saved!")
-
-    st.caption(
-        "Per-game stats from current 2025-26 season. "
-        "Recent form (last N games) used when available; season/GP as fallback."
-    )
 
 
 def tab_opponent(week_start: str, week_end: str) -> None:
@@ -468,14 +492,19 @@ def tab_opponent(week_start: str, week_end: str) -> None:
             st.success(f"Loaded {pick}")
 
     try:
-        profiles = enrich_roster_profiles(
-            st.session_state.opponent_roster, week_start, week_end, settings,
-        )
+        with st.spinner(f"Loading opponent stats ({ROSTER_STAT_WINDOW_START} – reg season end)..."):
+            profiles = enrich_roster_window_profiles(
+                st.session_state.opponent_roster, week_start, week_end, settings,
+            )
     except NHLAPIError as exc:
         st.error(str(exc))
         return
 
     if profiles:
+        st.caption(
+            f"Per-game rates from **{ROSTER_STAT_WINDOW_START}** through "
+            f"**{ROSTER_STAT_WINDOW_END}**. **GP** = games in that window."
+        )
         st.dataframe(roster_dataframe(profiles), use_container_width=True, hide_index=True)
 
 
@@ -516,7 +545,7 @@ def tab_waiver(week_start: str, week_end: str) -> None:
                     f"Blocks {rates.blocks_pg:.1f}, PIM {rates.pim_pg:.1f})."
                 )
 
-        st.dataframe(roster_dataframe(ranked), use_container_width=True, hide_index=True)
+        st.dataframe(projection_dataframe(ranked), use_container_width=True, hide_index=True)
 
 
 def tab_matchup(week_start: str, week_end: str) -> None:

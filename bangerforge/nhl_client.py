@@ -257,6 +257,51 @@ def count_team_games_in_week(team: str, start: str, end: str) -> int:
     return len(sched.get(team, []))
 
 
+def _parse_boxscore_banger(data: dict[str, Any]) -> dict[int, dict[str, int]]:
+    """Extract player hits/blocks from boxscore JSON."""
+    result: dict[int, dict[str, int]] = {}
+    pbg = data.get("playerByGameStats", {})
+    for side in ("awayTeam", "homeTeam"):
+        team_stats = pbg.get(side, {})
+        for group in ("forwards", "defense", "goalies"):
+            for player in team_stats.get(group, []):
+                pid = int(player["playerId"])
+                result[pid] = {
+                    "hits": int(player.get("hits", 0)),
+                    "blocks": int(player.get("blockedShots", 0)),
+                }
+    return result
+
+
+def _load_boxscore_disk_entry(game_id: int) -> dict[int, dict[str, int]] | None:
+    disk = _load_disk_cache("boxscore_banger_cache.json")
+    if not disk:
+        return None
+    entry = disk.get(str(game_id))
+    if not entry:
+        return None
+    return {int(k): v for k, v in entry.items()}
+
+
+def _save_boxscore_disk_entry(game_id: int, stats: dict[int, dict[str, int]]) -> None:
+    path_key = "boxscore_banger_cache.json"
+    disk = _load_disk_cache(path_key) or {}
+    disk[str(game_id)] = {str(k): v for k, v in stats.items()}
+    _save_disk_cache(path_key, disk)
+
+
+@st.cache_data(ttl=86400, show_spinner=False)
+def fetch_game_banger_stats(game_id: int) -> dict[int, dict[str, int]]:
+    """Per-player hits/blocks from a game boxscore, keyed by player_id."""
+    cached = _load_boxscore_disk_entry(game_id)
+    if cached is not None:
+        return cached
+    data = _request_json(f"{NHL_WEB_BASE}/gamecenter/{game_id}/boxscore")
+    result = _parse_boxscore_banger(data)
+    _save_boxscore_disk_entry(game_id, result)
+    return result
+
+
 def fantasy_week_bounds(
     week_start: date | None = None,
     start_dow: int = 0,

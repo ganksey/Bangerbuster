@@ -15,6 +15,7 @@ data/opponent_weeks.json
 data/waiver_agents.json
 data/weekly_plan.json
 data/player_cache.json
+data/boxscore_banger_cache.json
 
 # IDE / OS
 .idea/

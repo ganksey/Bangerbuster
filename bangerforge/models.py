@@ -50,6 +50,7 @@ class PlayerProfile:
     is_goalie: bool = False
     recent: PerGameStats = field(default_factory=PerGameStats)
     season: PerGameStats = field(default_factory=PerGameStats)
+    window: PerGameStats = field(default_factory=PerGameStats)  # Feb 25 – end reg (roster only)
     projected_games_week: int = 0
     banger_score: float = 0.0
     notes: str = ""

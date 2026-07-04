@@ -15,6 +15,10 @@ NHL_STATS_BASE = "https://api.nhle.com/stats/rest/en"
 CURRENT_SEASON = 20252026
 CURRENT_SEASON_STR = "20252026"
 
+# Roster display window: per-game rates + GP only on My/Opponent Roster tabs
+ROSTER_STAT_WINDOW_START = "2026-02-25"
+ROSTER_STAT_WINDOW_END = "2026-04-19"  # regular-season cutoff (inclusive)
+
 # Fantasy roster slots
 ROSTER_SLOTS = {
     "C": 3,

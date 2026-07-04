@@ -7,7 +7,7 @@ from typing import Any
 from bangerforge.config import CATEGORY_LABELS, LOWER_IS_BETTER, ROSTER_SLOTS
 from bangerforge.models import CategoryMatchup, PlayerProfile, RosterEntry
 from bangerforge.nhl_client import count_team_games_in_week
-from bangerforge.stats import build_player_profile
+from bangerforge.stats import build_player_profile, build_roster_player_profile
 
 
 def schedule_boost(games: int, settings: dict[str, Any]) -> float:
@@ -50,6 +50,34 @@ def enrich_roster_profiles(
             notes=entry.notes,
         )
         profiles.append(profile)
+    return profiles
+
+
+def enrich_roster_window_profiles(
+    roster: list[RosterEntry],
+    week_start: str,
+    week_end: str,
+    settings: dict[str, Any],
+) -> list[PlayerProfile]:
+    """Roster-tab profiles using Feb 25 – end-of-season per-game window."""
+    weights = settings.get("banger_weights", {})
+    w_tuple = tuple(weights.items())
+    profiles: list[PlayerProfile] = []
+    for entry in roster:
+        if not entry.player_id:
+            continue
+        games = count_team_games_in_week(entry.team, week_start, week_end)
+        boost = schedule_boost(games, settings)
+        profiles.append(build_roster_player_profile(
+            entry.player_id,
+            entry.name,
+            entry.pos,
+            entry.team,
+            projected_games=games,
+            weights=w_tuple,
+            schedule_boost=boost,
+            notes=entry.notes,
+        ))
     return profiles
 
 

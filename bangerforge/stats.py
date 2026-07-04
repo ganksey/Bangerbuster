@@ -2,15 +2,21 @@
 
 from __future__ import annotations
 
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from typing import Any
 
 import streamlit as st
 
-from bangerforge.config import DEFAULT_BANGER_WEIGHTS
+from bangerforge.config import (
+    DEFAULT_BANGER_WEIGHTS,
+    ROSTER_STAT_WINDOW_END,
+    ROSTER_STAT_WINDOW_START,
+)
 from bangerforge.models import PerGameStats, PlayerProfile
 from bangerforge.utils import normalize_position
 from bangerforge.nhl_client import (
     _parse_toi_minutes,
+    fetch_game_banger_stats,
     fetch_goalie_game_log,
     fetch_goalie_summary_bulk,
     fetch_player_landing,
@@ -22,6 +28,116 @@ from bangerforge.nhl_client import (
 
 def _safe_div(numerator: float, denominator: float) -> float:
     return numerator / denominator if denominator else 0.0
+
+
+def _filter_logs_by_roster_window(
+    logs: list[dict],
+    *,
+    start: str = ROSTER_STAT_WINDOW_START,
+    end: str = ROSTER_STAT_WINDOW_END,
+) -> list[dict]:
+    """Keep regular-season game log rows from Feb 25 through reg-season end."""
+    return [
+        g for g in logs
+        if start <= str(g.get("gameDate", "")) <= end
+    ]
+
+
+def _sum_hits_blocks_for_games(player_id: int, games: list[dict]) -> tuple[int, int]:
+    """Aggregate hits/blocks from boxscores for games in the roster window."""
+    game_ids = sorted({int(g["gameId"]) for g in games if g.get("gameId")})
+    if not game_ids:
+        return 0, 0
+
+    hits = 0
+    blocks = 0
+    with ThreadPoolExecutor(max_workers=8) as pool:
+        futures = {pool.submit(fetch_game_banger_stats, gid): gid for gid in game_ids}
+        for future in as_completed(futures):
+            try:
+                box = future.result()
+            except Exception:  # noqa: BLE001
+                continue
+            row = box.get(player_id, {})
+            hits += int(row.get("hits", 0))
+            blocks += int(row.get("blocks", 0))
+    return hits, blocks
+
+
+@st.cache_data(ttl=1800, show_spinner=False)
+def compute_skater_roster_window_stats(
+    player_id: int,
+    start: str = ROSTER_STAT_WINDOW_START,
+    end: str = ROSTER_STAT_WINDOW_END,
+) -> PerGameStats:
+    """Per-game rates from Feb 25 through end of regular season (roster display)."""
+    logs = _filter_logs_by_roster_window(fetch_skater_game_log(player_id), start=start, end=end)
+    gp = len(logs)
+    if gp == 0:
+        return PerGameStats(source="window", games_played=0)
+
+    totals = {
+        "goals": sum(g.get("goals", 0) for g in logs),
+        "assists": sum(g.get("assists", 0) for g in logs),
+        "points": sum(g.get("points", 0) for g in logs),
+        "ppp": sum(g.get("powerPlayPoints", 0) for g in logs),
+        "shots": sum(g.get("shots", 0) for g in logs),
+        "pim": sum(g.get("pim", 0) for g in logs),
+    }
+    hits, blocks = _sum_hits_blocks_for_games(player_id, logs)
+
+    return PerGameStats(
+        goals_pg=_safe_div(totals["goals"], gp),
+        assists_pg=_safe_div(totals["assists"], gp),
+        points_pg=_safe_div(totals["points"], gp),
+        ppp_pg=_safe_div(totals["ppp"], gp),
+        shots_pg=_safe_div(totals["shots"], gp),
+        hits_pg=_safe_div(hits, gp),
+        blocks_pg=_safe_div(blocks, gp),
+        pim_pg=_safe_div(totals["pim"], gp),
+        games_played=gp,
+        season_goals=totals["goals"],
+        season_assists=totals["assists"],
+        season_points=totals["points"],
+        season_games=gp,
+        source="window",
+    )
+
+
+@st.cache_data(ttl=1800, show_spinner=False)
+def compute_goalie_roster_window_stats(
+    player_id: int,
+    start: str = ROSTER_STAT_WINDOW_START,
+    end: str = ROSTER_STAT_WINDOW_END,
+) -> PerGameStats:
+    """Goalie per-game rates from Feb 25 through end of regular season."""
+    logs = fetch_goalie_game_log(player_id)
+    window = [
+        g for g in logs
+        if start <= str(g.get("gameDate", "")) <= end
+        and (g.get("gamesStarted") or int(g.get("shotsAgainst", 0)) > 0)
+    ]
+    gp = len(window)
+    if gp == 0:
+        return PerGameStats(source="window", games_played=0)
+
+    wins = sum(1 for g in window if g.get("decision") == "W")
+    saves = sum(int(g.get("shotsAgainst", 0)) - int(g.get("goalsAgainst", 0)) for g in window)
+    shots = sum(int(g.get("shotsAgainst", 0)) for g in window)
+    ga = sum(int(g.get("goalsAgainst", 0)) for g in window)
+    shutouts = sum(int(g.get("shutouts", 0)) for g in window)
+    toi_min = sum(_parse_toi_minutes(g.get("toi", "0:00")) for g in window)
+
+    return PerGameStats(
+        wins_pg=_safe_div(wins, gp),
+        saves_pg=_safe_div(saves, gp),
+        save_pct=_safe_div(saves, shots),
+        gaa=_safe_div(ga, toi_min / 60.0) if toi_min else 0.0,
+        shutouts_pg=_safe_div(shutouts, gp),
+        games_played=gp,
+        season_games=gp,
+        source="window",
+    )
 
 
 @st.cache_data(ttl=1800, show_spinner=False)
@@ -260,6 +376,48 @@ def build_player_profile(
         is_goalie=is_goalie,
         recent=recent,
         season=season,
+        projected_games_week=projected_games,
+        banger_score=score,
+        notes=notes,
+    )
+
+
+@st.cache_data(ttl=900, show_spinner=False)
+def build_roster_player_profile(
+    player_id: int,
+    name: str,
+    pos: str,
+    team: str,
+    projected_games: int = 0,
+    weights: tuple[tuple[str, float], ...] = (),
+    schedule_boost: float = 1.0,
+    notes: str = "",
+) -> PlayerProfile:
+    """Profile for roster tabs — stats from Feb 25 through end of reg season only."""
+    is_goalie = pos.upper() == "G"
+    wdict = dict(weights) if weights else dict(DEFAULT_BANGER_WEIGHTS)
+
+    if is_goalie:
+        window = compute_goalie_roster_window_stats(player_id)
+        recent = compute_goalie_recent_stats(player_id, 10)
+        season = compute_goalie_season_stats(player_id)
+    else:
+        window = compute_skater_roster_window_stats(player_id)
+        recent = compute_skater_recent_stats(player_id, 10)
+        season = compute_skater_season_stats(player_id)
+
+    pg = projected_games or 1
+    score = banger_score(window, wdict, pg, is_goalie, schedule_boost)
+
+    return PlayerProfile(
+        player_id=player_id,
+        name=name,
+        pos=normalize_position(pos),
+        team=team,
+        is_goalie=is_goalie,
+        recent=recent,
+        season=season,
+        window=window,
         projected_games_week=projected_games,
         banger_score=score,
         notes=notes,
